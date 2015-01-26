@@ -43,6 +43,9 @@ group :development, :test do
   # gem 'devise'
   # gem 'cancan'
 
+# Testing
+  # gem 'rspec'
+
 #Unused gems from rails generation
 
   # Use ActiveModel has_secure_password
