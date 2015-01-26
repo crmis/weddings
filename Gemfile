@@ -30,14 +30,14 @@ group :development, :test do
 
 # Gems added by the development team
 
-group :development do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
-# group :production do
-#   # Use postgresql for deployment
-#   gem 'pg'
-# end
+  group :development do
+    # Use sqlite3 as the database for Active Record
+    gem 'sqlite3'
+  end
+  group :production do
+     # Use postgresql for deployment
+     gem 'pg'
+   end
 
 #Authentication and Roles
   # gem 'devise'
