@@ -28,7 +28,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-# Gems added by the development team
+# Gems added by the development team (groups at top)
 
   group :development do
     # Use sqlite3 as the database for Active Record
@@ -38,6 +38,10 @@ group :development, :test do
      # Use postgresql for deployment
      gem 'pg'
    end
+
+   # tz-info for windows timezone data
+   gem 'tzinfo-data'
+
 
 #Authentication and Roles
   # gem 'devise'
