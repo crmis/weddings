@@ -2,7 +2,7 @@
 
 :octocat:
 
-(SDS)
+{<img src="https://codeclimate.com/github/crmis/weddings/badges/gpa.svg" />}[https://codeclimate.com/github/crmis/weddings]
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
