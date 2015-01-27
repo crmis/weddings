@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :rooms
+
   root :to => redirect('/pages/home')
   get 'pages/home'
   get 'pages/info'
