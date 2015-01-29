@@ -2,6 +2,7 @@
 
 :octocat:
 
+{<img src="https://travis-ci.org/crmis/weddings.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/crmis/weddings]
 {<img src="https://codeclimate.com/github/crmis/weddings/badges/gpa.svg" />}[https://codeclimate.com/github/crmis/weddings]
 {<img src="https://hakiri.io/github/crmis/weddings/master.svg" alt="security" />}[https://hakiri.io/github/crmis/weddings/master]
 
