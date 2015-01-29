@@ -35,8 +35,11 @@ source 'https://rubygems.org'
      gem 'pg'
   end
 
-   # tz-info for windows timezone data
-   gem 'tzinfo-data'
+  # Paperclip for better image uploads
+  gem 'paperclip', '~> 4.2'
+
+  # tz-info for windows timezone data
+  gem 'tzinfo-data'
 
 #Authentication and Roles
   # gem 'devise'

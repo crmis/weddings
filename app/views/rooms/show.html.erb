@@ -27,7 +27,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @room.picture %>
+  <%= image_tag @room.picture(:medium) %>
 </p>
 
 <%= link_to 'Edit', edit_room_path(@room) %> |
