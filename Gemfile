@@ -33,6 +33,7 @@ source 'https://rubygems.org'
   group :production do
      # Use postgresql for deployment database
      gem 'pg'
+     gem 'rails_12factor'
   end
 
   # Paperclip for better image uploads
