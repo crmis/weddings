@@ -10,6 +10,7 @@
       <th>Size</th>
       <th>Capacity</th>
       <th>Price</th>
+      <th>Picture</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= room.size %></td>
         <td><%= room.capacity %></td>
         <td><%= room.price %></td>
+        <td><%= room.picture %></td>
         <td><%= link_to 'Show', room %></td>
         <td><%= link_to 'Edit', edit_room_path(room) %></td>
         <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
