@@ -1,0 +1,28 @@
+os:
+  - linux
+  # - osx
+
+before_install:
+  - sudo apt-get update
+
+# matrix:
+# allow_failures:
+# - os: osx
+
+rvm:
+  - 2.2.0
+  #- 2.1.5
+  #- 2.1.4
+  - 2.0.0
+  - 1.9.3
+
+# addons:
+#   code_climate:
+#     repo_token:
+
+notifications:
+  email:
+    recipients:
+      - tom.jcox@icloud.com
+    on_success: change # default: change
+    on_failure: change # default: always
