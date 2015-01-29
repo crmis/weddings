@@ -3,6 +3,7 @@
 :octocat:
 {<img alt="Status?branch=master" src="https://codeship.com/projects/8d2b6b80-87d3-0132-91a5-6629d5e23383/status?branch=master" />}[https://codeship.com/projects/59264]
 {<img src="https://codeclimate.com/github/crmis/weddings/badges/gpa.svg" />}[https://codeclimate.com/github/crmis/weddings]
+{<img src="https://gemnasium.com/crmis/weddings.svg" alt="Dependency Status" />}[https://gemnasium.com/crmis/weddings]
 {<img src="https://hakiri.io/github/crmis/weddings/master.svg" alt="security" />}[https://hakiri.io/github/crmis/weddings/master]
 
 This README would normally document whatever steps are necessary to get the
