@@ -44,5 +44,3 @@ source 'https://rubygems.org'
 
 # Testing
   # gem 'rspec' Add correctly to groups
-
-end
