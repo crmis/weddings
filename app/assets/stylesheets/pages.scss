@@ -9,3 +9,24 @@
 // }
 
 body { padding-top: 0px; }
+
+.title {
+   margin-left: 35%;
+   xborder: solid;
+   margin-top: 4px;
+
+}
+#main-div{
+	min-height: 100%;
+	/* the combined width of three divs, margins and padding ...
+		use this value to display all three divs beside each other */
+	width: 79em;
+	/* to center the div use the commands below ...
+		a margin of half the combined width, position set to 'absolute'
+		and left: 50% */
+	margin-left: -40em;
+	position: absolute;
+	left: 50%;
+	background-color: #E6E6D0;
+	borders: solid blue;
+}

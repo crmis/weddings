@@ -1,37 +1,48 @@
 <p id="notice"><%= notice %></p>
+<div id="all-content">
+  <div class="main-title2">Our Rooms</div>
+  <% @rooms.each do |room| %>
+    <div id="product-box">
+      <fieldset>
 
-<h1>Listing All Rooms</h1>
+      <div id="img-box" , title="select image for more details ..." >
+        <!-- <% if not room.picture.blank? %> -->
+          <%= link_to (image_tag room.picture,:size => "100x125"),room %>
+        <!-- <% else %>
+          <%= link_to (image_tag("no-image.jpg",:size => "100x125")),room %>
+        <% end %> -->
+      </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Size</th>
-      <th>Capacity</th>
-      <th>Price</th>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <div id="details-box">
+          <div id="title-box">
+            <%= room.name %>
+          </div>
 
-  <tbody>
-    <% @rooms.each do |room| %>
-      <tr>
-        <td><%= room.name %></td>
-        <td><%= room.description %></td>
-        <td><%= room.size %></td>
-        <td><%= room.capacity %></td>
-        <td><%= room.price %></td>
-        <td><%= image_tag room.picture(:thumb) %></td>
-        <td><%= link_to 'Show', room %></td>
-        <td><%= link_to 'Edit', edit_room_path(room) %></td>
-        <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+          <div id="rmtype">
+            <% if not room.rmcat.rmtype.blank? %>
+             Room Type: <%= room.rmcat.rmtype  %>
+            <% end %>
+          </div>
+
+          <div id="size-box">
+            <% if not room.size.blank? %>
+             Room Size: <%= room.size  %>Square Feet.
+             <% end %>
+          </div>
+
+        <div id="capacity">
+          <% if not room.capacity.blank? %>
+            Capacity: <%= room.capacity %> People
+          <% end %>
+        </div>
+
+          <div id="price-box">
+            <% if not room.price.blank? %>
+              Price: <%= room.price %> GBP
+            <% end %>
+          </div>
+      </div>
+      </fieldset>
+    </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Room', new_room_path %>
+    <%= link_to 'New Room', new_room_path %>

@@ -1,34 +1,52 @@
 <p id="notice"><%= notice %></p>
+<div id="all-details">
+<fieldset>
 
-<p>
-  <strong>Room Name:</strong>
-  <%= @room.name %>
-</p>
+<div class="main-title"> <%= @room.name %> </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @room.description %>
-</p>
+<div class="sub-title">
+  <% if not @room.picture.blank? %>
+    <%= link_to (image_tag @room.picture, size: "450x300"),
+        rooms_path, :title => 'return to "all" rooms ...' %>
+  <% else %>
+    <%= image_tag "no-image.jpg", :size => "200x250" %>
+  <% end %>
+</div>
 
-<p>
-  <strong>Size (m2):</strong>
-  <%= @room.size %>
-</p>
+<div class="sub-title">
+  <% if not @room.rmcat.rmtype.blank? %>
+    Room Type: <%= @room.rmcat.rmtype %>
+  <% end %>
+</div>
 
-<p>
-  <strong>Capacity (people):</strong>
-  <%= @room.capacity %>
-</p>
+<div class="sub-title">
+  <% if not @room.description.blank? %>
+    Description: <%= @room.description %>
+  <% end %>
+</div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @room.price %>
-</p>
+<div class="sub-title">
+  <% if not @room.size.blank? %>
+    Room Size: <%= @room.size %> Square feet
+  <% end %>
+</div>
 
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag @room.picture(:medium) %>
-</p>
+<div class="sub-title">
+  <% if not @room.capacity.blank? %>
+    Room Capacity: <%= @room.capacity %> People
+  <% end %>
+</div>
+
+
+<div class="sub-title">
+  <% if not @room.price.blank? %>
+    Room Price: <%= @room.price %> GBP
+  <% end %>
+</div>
+
+
+</div>
+</fieldset>
 
 <%= link_to 'Edit', edit_room_path(@room) %> |
 <%= link_to 'Back', rooms_path %>

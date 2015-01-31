@@ -1,0 +1,70 @@
+
+.form1{
+	width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	font-family: serif;
+	/* effects all font body, header, title and label text sizes ...*/
+	font-sizes: 0.8em;
+	borders: 0.1em solid green;
+}
+
+.main-title{
+	font-weight:bold;
+	font-size: 1.2em;
+	line-height: 1.1em;
+  margin-left: 45%;
+	borders: 0.1em solid green;
+}
+
+label{
+	/* labels appear on line above fields */
+	display: block;
+	font-weight:bold;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.field {
+	margin-bottom: 0.5em;
+}
+
+
+/*  set the font-size of the date picker 'gem' calendar see "_form.html.erb" */
+div.ui-datepicker{
+	 font-size: 0.7em;
+}
+
+.actions {
+    margin-bottom: 0.5em;
+}
+
+/* 'notice' is a unique id element, for usage id='notice' see application.html.erb  */
+#notice { color: green; }
+
+#alert { color: red; }
+
+.field_with_errors {
+	padding: 0.1em;
+	background-color: pink;
+	display: table;
+ }
+
+/* 'error_explanation' is a unique id element, usage id='error_explanation' see 'users/form.html.erb' */
+#error_explanation {
+	width: 15em;
+	float: right;
+	font-size: 1em;
+	padding: 1em;
+	/* margins top right bottom left */
+	margin: 4em 2em 0em 0em;
+	background-colors: #f0f0f0;
+}
+
+#error_explanation ul li {
+    font-size: 0.8em;
+	font-style: italic;
+    list-style: circle ;
+	color: black;
+}

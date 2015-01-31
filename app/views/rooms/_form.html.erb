@@ -10,32 +10,42 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="form1">
+  <fieldset>
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+		<%= f.label :rmcat_id, "Room Type:" %><br />
+	<%= f.collection_select :rmcat_id, Rmcat.all,
+      :id,:rmcat_info, {:include_blank => 'Please Select'} %>
+
+  </div>
+  <div class="field">
+    <%= f.label :description, "Description:" %><br>
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :size %><br>
+    <%= f.label :size, "Size (square feet):" %><br>
     <%= f.text_field :size %>
   </div>
   <div class="field">
-    <%= f.label :capacity %><br>
+    <%= f.label :capacity, "Capacity:" %><br>
     <%= f.number_field :capacity %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
+    <%= f.label :price, "Price:" %><br>
     <%= f.text_field :price %>
   </div>
   <div class="field">
-    <%= f.label :picture %><br>
+    <%= f.label :picture, "Image:" %><br>
     <%= f.file_field :picture %>
   </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>
+</fieldset>
+</div>
 <% end %>

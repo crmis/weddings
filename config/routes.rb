@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  resources :rmcats
+
   resources :rooms
 
   root :to => redirect('/pages/home')
   get 'pages/home'
   get 'pages/info'
+  get 'pages/contactus'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

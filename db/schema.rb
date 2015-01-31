@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150129014552) do
+ActiveRecord::Schema.define(version: 20150130190306) do
+
+  create_table "rmcats", force: :cascade do |t|
+    t.string   "rmtype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "rooms", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150129014552) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.integer  "rmcat_id"
   end
 
 end

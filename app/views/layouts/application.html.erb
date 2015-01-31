@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="main-div">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      </button> -->
+      <a class="navbar-brand" href="/pages/home">Home</a>  -
+      <a class="navbar-brand" href="/rooms">Rooms</a>  -
+      <a class="navbar-brand" href="/pages/contactus">Contact us</a>
+    </div>
+    </div>
+  </nav>
+<div class="title">
+  <%= image_tag("logo.gif") %>
+</div>
 <%= yield %>
-
+</div>
 </body>
 </html>
