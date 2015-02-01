@@ -13,43 +13,16 @@
  *= require_tree .
  *= require_self
  */
- body { padding-top: 0px;
-    background: #833ad1;
-  }
- /* footer { margin-top: 100px; background-color: #ebebeb; padding: 30px 0;} */
+ body {padding-top: 0px;background: #833ad1;}
 
-
-/* This needs to go in pages.scss and be 'converted' to scss */
  .landing-image { padding-left: 14.5%; border: 2em; }
 
- .center-content {
-   margin-left: 20%;
- }
- .navbar {
-   min-height: 45px;
-   background-color: #DBB8FF;
-   width: 100%;
-   margin-lefts: 21.5%;
-   font-size: 20px;
- }
+ .center-content {margin-left: 20%;}
 
-  .navbar-header {
-    padding-left: 37%;
-    padding-top: 4px;
-
-
-}
-
- }
+ .navbar {min-height: 45px;background-color: #DBB8FF;width: 100%;margin-lefts: 21.5%;font-size: 20px;}
+ .navbar-header {padding-left: 37%;padding-top: 4px;}
  .navbar a.brand { font-size: 18px; }
- .navbar a.brand:hover {
-   color: #833ad1;
-   background-color: transparent;
-   text-decoration: none;
- }
+ .navbar a.brand:hover {color: #833ad1;background-color: transparent;text-decoration: none;}
  navbar navbar-default navbar-fixed-top
 
- h1 {
-    color: red;
-
- }
+ h1 {color: red;}
