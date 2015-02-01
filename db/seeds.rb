@@ -1,7 +1,18 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# Created by the seed dump gem. https://github.com/rroblak/seed_dump
+Rmcat.create!([
+  {rmtype: "Ceremony"},
+  {rmtype: "Reception"}
+])
+Room.create!([
+  {name: "Maple Room", description: "This beautiful ceremony room is one of our customers' favourite wedding settings. It can seat up to 100 people and can be decorated suited to your preferences. ", size: "586", capacity: 100, price: "500.0", picture: nil, picture_file_name: "CON_Maple_Room_Ceremony_1_04_2011.jpg", picture_content_type: "image/jpeg", picture_file_size: 99661, picture_updated_at: "2015-01-30 15:14:04", rmcat_id: 1},
+  {name: "Castle Room", description: "this is a great gothic style castle wedding room. perfect if you're looking for something a bit different. It will surely leave you with a night to remember!", size: "344", capacity: 223, price: "300.0", picture: nil, picture_file_name: "Peckforton-Castle-wedding-venue-9.jpg", picture_content_type: "image/jpeg", picture_file_size: 113953, picture_updated_at: "2015-01-30 22:40:35", rmcat_id: 2},
+  {name: "Regal Room", description: "This is the Regal Room. It has a real air of elegance for the perfect wedding reception.", size: "450", capacity: 200, price: "445.0", picture: nil, picture_file_name: "sferas-wedding-photography-014-570x350.jpg", picture_content_type: "image/jpeg", picture_file_size: 79925, picture_updated_at: "2015-01-30 22:46:51", rmcat_id: 2},
+  {name: "The Grand Hall", description: "This is the Grand Hall. If you are planning a wedding on a large scale, this would be perfect for you.", size: "860", capacity: 550, price: "700.0", picture: nil, picture_file_name: "venue.jpg", picture_content_type: "image/jpeg", picture_file_size: 59846, picture_updated_at: "2015-01-30 22:48:33", rmcat_id: 2},
+  {name: "The Beaumant", description: "The Beaumant may be one of our budget options but it does not scrimp on style. ", size: "350", capacity: 90, price: "180.0", picture: nil, picture_file_name: "wedding_reception_venues_chicago_-_las_vegas_reception_venues___las_vegas_wedding_blog.jpg", picture_content_type: "image/jpeg", picture_file_size: 622375, picture_updated_at: "2015-01-30 22:50:55", rmcat_id: 2},
+  {name: "Belverdere", description: "This stunningly beautiful ceremony room brings a real touch off class to your big day!", size: "340", capacity: 150, price: "280.0", picture: nil, picture_file_name: "wedding-venues-chicago-belvedere.jpg", picture_content_type: "image/jpeg", picture_file_size: 206094, picture_updated_at: "2015-01-30 22:52:46", rmcat_id: 1},
+  {name: "Winter Wonderland", description: "Looking for something different? This one has to be seen to be believed! ", size: "310", capacity: 100, price: "500.0", picture: nil, picture_file_name: "Winter-Wedding-Venue.jpg", picture_content_type: "image/jpeg", picture_file_size: 190953, picture_updated_at: "2015-01-30 22:54:28", rmcat_id: 1},
+  {name: "Ambleside", description: "Give your guests a night to remember and party the night away in our Ambleside room!", size: "222", capacity: 140, price: "330.0", picture: nil, picture_file_name: "7688666.jpg", picture_content_type: "image/jpeg", picture_file_size: 93269, picture_updated_at: "2015-01-30 22:57:43", rmcat_id: 2},
+  {name: "The Lakeside", description: "Really impress your guests this summer and hold your ceremony beside our beautiful lake", size: "445", capacity: 300, price: "350.0", picture: nil, picture_file_name: "lakeside-wedding.jpg", picture_content_type: "image/jpeg", picture_file_size: 49628, picture_updated_at: "2015-01-30 23:00:09", rmcat_id: 1}
+])
