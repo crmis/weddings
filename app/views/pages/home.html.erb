@@ -1,8 +1,22 @@
 <body>
-
-    <div class="landing-image">
-      <%= image_tag("home_landing.jpg") %>
-    <!-- Add slideshow with lake_landing + other image -->
-    </div>
+  <div class="landing-image">
+    <div id="carousel" class="owl-carousel">
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      </div>
+  </div>
 
 </body>
+<script>
+$(document).ready(function() {
+  $("#carousel").owlCarousel({
+    items : 1, //1 items above 1000px browser width
+    autoPlay: true
+  });
+});
+</script>
