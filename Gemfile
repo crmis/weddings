@@ -24,6 +24,8 @@ source 'http://rubygems.org'
     gem 'spring'
     # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
     gem 'seed_dump'
+    # rspec for testing
+    gem 'rspec'
   end
 
 # Gems added by the development team (groups at top)
@@ -47,6 +49,3 @@ source 'http://rubygems.org'
 #Authentication and Roles
   # gem 'devise'
   # gem 'cancan'
-
-# Testing
-  # gem 'rspec' Add correctly to groups
