@@ -33,9 +33,9 @@ source 'http://rubygems.org'
     gem 'sqlite3'
   end
   group :production do
-     # Use postgresql for deployment database
-     gem 'pg'
-     gem 'rails_12factor'
+     # Use postgresql for deployment database (not in use currently)
+     # gem 'pg'
+     # gem 'rails_12factor'
   end
 
   # Paperclip for better image uploads
