@@ -4,8 +4,9 @@
 
 #all-content {
 	widths: 80em;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 4.5%;
+	margin-rights: auto;
+	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
 	font-size: 0.8em;
 	borders: 0.1em solid black;
 }
@@ -38,8 +39,8 @@
 
 #title-box {
 	padding-top: 0.3em;
-  padding-bottom: 0.7em;
-	font-size: 1.15em;
+  padding-bottom: 0.2em;
+	font-size: 1.5em;
 	font-weight:bold;
 	borders: 0.1em solid DarkGray;
 }
@@ -84,10 +85,3 @@
   font-size: 1.1em;
   borders: 0.1em solid orange;
  }
-
- .main-title2{
-   font-weight:bold;
-   font-size: 2em;
-   line-height: 1.1em;
-   margin-left: 45%;
-   borders: 0.1em solid green;

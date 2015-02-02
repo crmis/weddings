@@ -40,13 +40,14 @@
 
 <div class="sub-title">
   <% if not @room.price.blank? %>
-    Room Price: <%= @room.price %> GBP
-  <% end %>
+    Room Price: <%=number_to_currency @room.price, unit: "£" %>
+  <% end %><br/>
+  <%= link_to 'Back', rooms_path %>
 </div>
 
-
-</div>
 </fieldset>
+</div>
 
-<%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+
+
+<!-- <%= link_to 'Edit', edit_room_path(@room) %> | -->

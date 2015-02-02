@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 <div id="all-content">
-  <div class="main-title2">Our Rooms</div>
   <% @rooms.each do |room| %>
     <div id="product-box">
       <fieldset>
@@ -26,7 +25,7 @@
 
           <div id="size-box">
             <% if not room.size.blank? %>
-             Room Size: <%= room.size  %>Square Feet.
+             Room Size: <%= room.size  %> Square Feet
              <% end %>
           </div>
 
@@ -38,11 +37,11 @@
 
           <div id="price-box">
             <% if not room.price.blank? %>
-              Price: <%= room.price %> GBP
+              Price: <%= number_to_currency room.price, unit: "£" %>
             <% end %>
           </div>
       </div>
       </fieldset>
+      <!-- <%= link_to 'New Room', new_room_path %> -->
     </div>
     <% end %>
-    <%= link_to 'New Room', new_room_path %>
