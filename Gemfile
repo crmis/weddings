@@ -30,14 +30,14 @@ source 'http://rubygems.org'
     gem 'rspec'
   end
 
-# Gems added by the development team (groups at top)
+  # Gems added by the development team (groups at top)
 
-  # Authentication and Roles
-  gem 'devise'               # => add notes
-  gem 'cancancan', '~> 1.10' # => add notes
+    # Authentication and Roles
+    gem 'devise'               # => add notes
+    gem 'cancancan', '~> 1.10' # => add notes
 
-  # Paperclip for better image uploads
-  gem 'paperclip', '~> 4.2'
+    # Paperclip for better image uploads
+    gem 'paperclip', '~> 4.2'
 
-  # tz-info for windows timezone data
-  gem 'tzinfo-data'
+    # tz-info for windows timezone data
+    gem 'tzinfo-data'
