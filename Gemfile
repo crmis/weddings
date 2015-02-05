@@ -1,43 +1,43 @@
 source 'http://rubygems.org'
   # Generated with rails 4.2.0 on ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin14.0]
-    # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+    # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
     gem 'rails', '4.2.0'
-    # Use sqlite3 as the database for Active Record
-    gem 'sqlite3'
-    # Use SCSS for stylesheets
+    # Use sqlite3 as the database for Active Record.
+    gem 'sqlite3', '1.3.10'
+    # Use SCSS for stylesheets.
     gem 'sass-rails', '~> 5.0'
-    # Use Uglifier as compressor for JavaScript assets
-    gem 'uglifier', '>= 1.3.0'
-    # Use CoffeeScript for .coffee assets and views
+    # Use Uglifier as compressor for JavaScript assets.
+    gem 'uglifier', '~> 2.7.0'
+    # Use CoffeeScript for .coffee assets and views.
     gem 'coffee-rails', '~> 4.1.0'
-    # Use jquery as the JavaScript library
-    gem 'jquery-rails'
+    # Use jquery as the JavaScript library.
+    gem 'jquery-rails', '~> 4.0.3'
     # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-    gem 'turbolinks'
+    gem 'turbolinks', '~> 2.5.3'
     # bundle exec rake doc:rails generates the API under doc/api.
     gem 'sdoc', '~> 0.4.0', group: :doc
 
     group :development, :test do
       # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-      gem 'byebug'
+      # gem 'byebug', '~> 3.5.1'
       # Access an IRB console on exception pages or by using <%= console %> in views
-      gem 'web-console', '~> 2.0'
+      gem 'web-console', '~> 2.0.0'
       # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-      gem 'spring'
+      gem 'spring', '~> 1.2.0'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
-      gem 'seed_dump'
-      # rspec for testing
-      gem 'rspec'
+      gem 'seed_dump', '3.2.1'
+      # rspec for testing.
+      gem 'rspec', '~> 3.1.0'
     end
 
-  # Gems added by the development team (groups at top)
+  # Gems added by the development team (groups at top).
+    # Devise for authentication.
+    gem 'devise', '~> 3.4.1'
+    # Cancancan for user roles.
+    gem 'cancancan', '~> 1.10.1'
 
-    # Authentication and Roles
-    gem 'devise'               # => add notes
-    gem 'cancancan', '~> 1.10' # => add notes
-
-    # Paperclip for better image uploads
+    # Paperclip for better image uploads.
     gem 'paperclip', '~> 4.2'
 
-    # tz-info for windows timezone data
-    gem 'tzinfo-data'
+    # tz-info for windows timezone data.
+    gem 'tzinfo-data', '~> 1.2015.1'
