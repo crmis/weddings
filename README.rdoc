@@ -15,7 +15,7 @@
 
 * The test suite is rspec, to run this use 'bundle exec rspec'. Check the spec/ folder for examples.
 
-* To skip a CI build (for non critical edits) add '[skip CI]' to your commit message.
+* Deployment instructions.
 
 * ...
 
