@@ -64,15 +64,6 @@
   borders: 0.1em solid orange;
 }
 
-#pagination {
-	width: 73.5em;
-	float: left;
-	padding-top: 0.3em;
-	text-align: center;
-	font-size: 1em;
-	borders: 0.1em solid DarkGray;
-}
-
 #size-box {
 	padding-top: 0.4em;
 	font-size: 1.1em;
