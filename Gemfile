@@ -27,7 +27,7 @@ source 'http://rubygems.org'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
       gem 'seed_dump', '3.2.1'
       # rspec for testing.
-      gem 'rspec', '~> 3.1.0'
+      gem 'rspec', '~> 3.2.0'
     end
 
   # Gems added by the development team (groups at top).
