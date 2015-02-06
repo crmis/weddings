@@ -30,6 +30,10 @@ source 'http://rubygems.org'
       gem 'rspec-rails', '~> 3.1.0'
     end
 
+    # group :test do
+      # gem 'codeclimate-test-reporter', require: nil
+    # end
+
     # Devise for authentication.
     gem 'devise', '~> 3.4.1'
 
