@@ -39,13 +39,14 @@
 <div class="title">
   <%= image_tag("logo.gif") %>
 </div>
-  <!-- Needs styling -->
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+<div class="notice-alert">
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+</div>
 <%= yield %>
 </div>
 </body>
