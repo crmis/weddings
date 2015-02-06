@@ -1,5 +1,7 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
+  skip_authorize_resource :only => :show
 
   # GET /rooms
   def index
@@ -13,6 +15,8 @@ class RoomsController < ApplicationController
   # GET /rooms/new
   def new
     @room = Room.new
+    #Single auth
+    #authorize! :new, @room
   end
 
   # GET /rooms/1/edit
