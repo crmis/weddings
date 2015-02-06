@@ -3,8 +3,7 @@
     <div class="main-title"> <%= @room.name %> </div>
     <div class="sub-title">
       <% if not @room.picture.blank? %>
-        <%= link_to (image_tag @room.picture, size: "450x300"),
-            rooms_path, :title => 'return to "all" rooms ...' %>
+        <%= link_to (image_tag @room.picture, size: "450x300"), rooms_path, :title => 'return to rooms.' %>
       <% else %>
         <%= image_tag "no-image.jpg", :size => "200x250" %>
       <% end %>

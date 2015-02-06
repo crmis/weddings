@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meadow View - Weddings</title>
+  <title>Meadow View | Weddings</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,12 +11,9 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      </button> -->
-
       <a class="navbar-brand" href="/pages/home">Home</a>  -
       <a class="navbar-brand" href="/rooms">Rooms</a>  -
-      <a class="navbar-brand" href="/pages/contactus">Contact us</a> -
+      <a class="navbar-brand" href="/pages/contactus">Contact us</a>
       <a class="navbar-brand">
         <% if can? :add, @room %>
         <%= link_to "New Room", new_room_path(@room) %>

@@ -19,11 +19,11 @@
 
  .center-content {margin-left: 20%;}
 
- .navbar {min-height: 45px;background-color: #DBB8FF;width: 100%;margin-lefts: 21.5%;font-size: 20px;}
- .navbar-header {padding-left: 0%;padding-top: 4px; width: 98%;}
- .navbar a.brand { font-size: 18px; }
- .navbar a.brand:hover {color: #833ad1;background-color: transparent;text-decoration: none;}
- navbar navbar-default navbar-fixed-top
+ .navbar {min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 11.375px;}
+ .navbar-header {padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
+ /* .navbar a.brand { font-size: 10px; } */
+ .navbar a.brand:hover {color: #833ad1; background-color: transparent; text-decoration: none;}
+ /*navbar navbar-default navbar-fixed-top*/
 
  h1 {color: red;}
 
