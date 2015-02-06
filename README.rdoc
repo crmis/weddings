@@ -2,6 +2,10 @@
 
 :octocat:
 
+--add koxzi95 fork status
+
+--add crmis master status
+
 {<img src="https://codeclimate.com/github/crmis/weddings/badges/gpa.svg" />}[https://codeclimate.com/github/crmis/weddings]
 {<img src="https://gemnasium.com/crmis/weddings.svg" alt="Dependency Status" />}[https://gemnasium.com/crmis/weddings]
 
