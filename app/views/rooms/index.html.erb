@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div id="all-content">
   <% @rooms.each do |room| %>
     <div id="product-box">
@@ -42,6 +41,8 @@
           </div>
       </div>
       </fieldset>
-      <!-- <%= link_to 'New Room', new_room_path %> -->
+      <% if can? :add, @room %>
+        <%= link_to "New Room", new_room_path(@room) %>
+      <% end %>
     </div>
     <% end %>
