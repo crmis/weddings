@@ -33,7 +33,7 @@ source 'http://rubygems.org'
   # Gems added by the development team (groups at top).
     # Devise for authentication.
     gem 'devise', '~> 3.4.1'
-    
+
     # Cancancan for user roles.
     gem 'cancancan', '~> 1.10.1'
 
