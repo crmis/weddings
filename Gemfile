@@ -26,11 +26,10 @@ source 'http://rubygems.org'
       gem 'spring', '~> 1.2.0'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
       gem 'seed_dump', '3.2.1'
-      # rspec for testing.
-      gem 'rspec', '~> 3.2.0'
+      # rspec for BDD tests (Behaviour Driven Development)
+      gem 'rspec-rails', '~> 3.1.0'
     end
 
-  # Gems added by the development team (groups at top).
     # Devise for authentication.
     gem 'devise', '~> 3.4.1'
 
