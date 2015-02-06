@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- body {padding-top: 0px;background: #833ad1;}
+ body {padding-top: 0px; background: #833ad1;}
 
  .landing-image { padding-left: 14.5%; border: 2em; }
 
