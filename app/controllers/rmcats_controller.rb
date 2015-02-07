@@ -1,5 +1,6 @@
 class RmcatsController < ApplicationController
   before_action :set_rmcat, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /rmcats
   def index
