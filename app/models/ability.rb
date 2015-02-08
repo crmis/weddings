@@ -7,8 +7,10 @@ class Ability
     else
       can [:read], [Room, Rmcat]
     end
-    # if user.customer?
-    #
-    # end
+    if user.customer?
+      can [:read], [Room]
+      # Yes is really is cannot
+      cannot [:read], [Rmcat]
+    end
   end
 end
