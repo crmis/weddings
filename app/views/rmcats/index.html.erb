@@ -1,25 +1,26 @@
-<h1>Listing Rmcats</h1>
+<div class="form1">
+  <h1>Listing Room Types</h1>
+  <fieldset>
+    <table>
+      <thead>
+        <tr>
+          <th>Room Type</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Rmtype</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @rmcats.each do |rmcat| %>
-      <tr>
-        <td><%= rmcat.rmtype %></td>
-        <td><%= link_to 'Show', rmcat %></td>
-        <td><%= link_to 'Edit', edit_rmcat_path(rmcat) %></td>
-        <td><%= link_to 'Destroy', rmcat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Room Category', new_rmcat_path %>
+      <tbody>
+        <% @rmcats.each do |rmcat| %>
+          <tr>
+            <td><%= rmcat.rmtype %></td>
+            <td><%= link_to 'Show', rmcat %></td>
+            <td><%= link_to 'Edit', edit_rmcat_path(rmcat) %></td>
+            <td><%= link_to 'Destroy', rmcat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </fieldset>
+    <br>
+<div>
+  <%= link_to 'New Room Category', new_rmcat_path %>
