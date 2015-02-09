@@ -25,4 +25,4 @@ en:
   unauthorized:
     default: "You must be logged in to do that"
     manage:
-      all: "Not authorized to %{action} %{subject}."
+      all: "Not authorised to %{action} %{subject}."
