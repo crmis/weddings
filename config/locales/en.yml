@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  # Customise cancancan messages
+  unauthorized:
+    default: "You must be logged in to do that"
+    manage:
+      all: "Not authorised to %{action} %{subject}."

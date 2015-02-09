@@ -1,6 +1,11 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: [:show, :edit, :update, :destroy]
 
+  # This is the CanCan helper for auth.
+  # The skip is so users can view the rooms but nothing else.
+  load_and_authorize_resource
+  skip_authorize_resource :only => :show
+
   # GET /rooms
   def index
     @rooms = Room.all
@@ -13,6 +18,8 @@ class RoomsController < ApplicationController
   # GET /rooms/new
   def new
     @room = Room.new
+    #Single auth
+    #authorize! :new, @room
   end
 
   # GET /rooms/1/edit

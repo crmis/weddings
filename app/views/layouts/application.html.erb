@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meadow View - Weddings</title>
+  <title>Meadow View | Weddings</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,18 +11,14 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      </button> -->
-
       <a class="navbar-brand" href="/pages/home">Home</a>  -
       <a class="navbar-brand" href="/rooms">Rooms</a>  -
-      <a class="navbar-brand" href="/pages/contactus">Contact us</a> -
+      <a class="navbar-brand" href="/pages/contactus">Contact us</a>
       <a class="navbar-brand">
         <% if can? :add, @room %>
-        <%= link_to "New Room", new_room_path(@room) %>
+        - <%= link_to "New Room", new_room_path(@room) %>
         <% end %>
       </a>
-       <!-- Styling -->
        <div class="login">
         <% if user_signed_in? %>
           Logged in as <%= current_user.email %>.
@@ -42,13 +38,14 @@
 <div class="title">
   <%= image_tag("logo.gif") %>
 </div>
-  <!-- Needs styling -->
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+<div class="notice-alert">
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+</div>
 <%= yield %>
 </div>
 </body>
