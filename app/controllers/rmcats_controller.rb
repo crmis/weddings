@@ -25,7 +25,7 @@ class RmcatsController < ApplicationController
     @rmcat = Rmcat.new(rmcat_params)
 
     if @rmcat.save
-      redirect_to @rmcat, notice: 'Rmcat was successfully created.'
+      redirect_to @rmcat, notice: 'Room Category was successfully created.'
     else
       render :new
     end
@@ -34,7 +34,7 @@ class RmcatsController < ApplicationController
   # PATCH/PUT /rmcats/1
   def update
     if @rmcat.update(rmcat_params)
-      redirect_to @rmcat, notice: 'Rmcat was successfully updated.'
+      redirect_to @rmcat, notice: 'Room Category was successfully updated.'
     else
       render :edit
     end
@@ -43,7 +43,12 @@ class RmcatsController < ApplicationController
   # DELETE /rmcats/1
   def destroy
     @rmcat.destroy
-    redirect_to rmcats_url, notice: 'Rmcat was successfully destroyed.'
+    # If the Rmcat has been sucessfully destroyed
+    if @rmcat.destroy
+      redirect_to rmcats_url, notice: 'Room Category was successfully destroyed.'
+    else
+      redirect_to rmcats_url, notice: 'Cannot delete assigned Room Category.'
+    end
   end
 
   private
