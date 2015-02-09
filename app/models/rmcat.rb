@@ -5,5 +5,5 @@ class Rmcat < ActiveRecord::Base
   def rmcat_info
     "#{id} #{rmtype}"
   end
-
+  
 end
