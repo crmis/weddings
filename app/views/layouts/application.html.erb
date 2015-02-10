@@ -11,8 +11,9 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container">
 <div class="navbar-header">
-
+<!-- if there is a user signed in -->
 <% if user_signed_in? %>
+    <!-- if user is admin display navigation bar with all privilidges -->
   <% if current_user.admin? %>
 
     <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
@@ -42,6 +43,7 @@
     </ul>
 
   <% end %>
+  <!-- if a customer is signed in display navbar with sufficient privilidges -->
   <% if current_user.customer? %>
       <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
         <li>
