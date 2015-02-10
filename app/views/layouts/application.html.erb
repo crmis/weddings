@@ -42,6 +42,7 @@
     </ul>
 
   <% end %>
+  <!-- else if not logged in -->
 <% else %>
 
     <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
@@ -49,6 +50,13 @@
         <a class="navbar-brand" href="/rooms">Rooms</a>
       </li>
       <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
+      <li>
+      Account
+      <ul>
+        <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
+        <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+      </ul>
+      </li>
     </ul>
 
 <% end %>
@@ -66,11 +74,11 @@
           <% if current_user.admin? %>
             Signed in as Admin.
           <% end %>
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          <!-- <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> -->
           <% else %>
-          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+          <!-- <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> -->
         <% end %>
       </div>
     </div>
