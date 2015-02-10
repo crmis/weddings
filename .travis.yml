@@ -1,24 +1,24 @@
 os:
   - linux
-  # - osx
+  - osx
 
-before_install:
-  - sudo apt-get update
+matrix:
+  allow_failures:
+    - os: osx
 
-# matrix:
-# allow_failures:
-# - os: osx
+
+language: ruby
 
 rvm:
   - 2.2.0
-  #- 2.1.5
-  #- 2.1.4
   - 2.0.0
   - 1.9.3
 
-# addons:
-#   code_climate:
-#     repo_token:
+before_install:
+  - sudo apt-get update
+  - brew update
+  - gem update --system
+  - gem --version
 
 notifications:
   email:
