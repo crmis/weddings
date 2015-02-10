@@ -1,10 +1,10 @@
 os:
   - linux
-  - osx
+  # - osx
 
-matrix:
-  allow_failures:
-    - os: osx
+# matrix:
+  # allow_failures:
+    # - os: osx
 
 
 language: ruby
@@ -12,11 +12,10 @@ language: ruby
 rvm:
   - 2.2.0
   - 2.0.0
-  - 1.9.3
 
 before_install:
   - sudo apt-get update
-  - brew update
+  # - brew update
   - gem update --system
   - gem --version
 
