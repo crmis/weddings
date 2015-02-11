@@ -19,10 +19,10 @@
   .navbar {min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 5px;}
   .navbar-header {padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
   /* The .brand makes it show up, the actual div for these is "navbar-brand" */
-  .navbar a.brand:link {text-decoration: none; color: black;}
+  .navbar-brand:link {text-decoration: none; color: black;}
   .navbar a.brand:visited {text-decoration: none; color: black;}
   .navbar a.brand:active {text-decoration: none; color: black;}
-  .navbar a.brand:hover {text-decoration: none; color: #FF0000;}
+  .navbar a.brand:hover {text-decoration: none; color: black;}
   /* Currently not in use:
       .navbar a.brand { font-size: 10px; }
       . a.brand:hover {color: #833ad1; background-color: transparent; text-decoration: none;}
