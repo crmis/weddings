@@ -15,6 +15,79 @@
  */
  body {padding-top: 0px; background: #833ad1;}
 
+/* Navbar */
+  .navbar {min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 5px;}
+  .navbar-header {padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
+  /* The .brand makes it show up, the actual div for these is "navbar-brand" */
+  .navbar a.brand:link {text-decoration: none; color: black;}
+  .navbar a.brand:visited {text-decoration: none; color: black;}
+  .navbar a.brand:active {text-decoration: none; color: black;}
+  .navbar a.brand:hover {text-decoration: none; color: #FF0000;}
+  /* Currently not in use:
+      .navbar a.brand { font-size: 10px; }
+      . a.brand:hover {color: #833ad1; background-color: transparent; text-decoration: none;}
+      navbar navbar-default navbar-fixed-top
+  */
+   ul {
+     text-align: left;
+     display: inline;
+     margin: 0;
+     padding: 15px 4px 17px 0;
+     list-style: none;
+     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+   }
+   ul li {
+     font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+     display: inline-block;
+     margin-right: -4px;
+     position: relative;
+     padding: 15px 20px;
+     background: #DBB8FF;
+     cursor: pointer;
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+   }
+   ul li:hover {
+     xbackground: #DBB8FF;
+     cxolor: #DBB8FF;
+   }
+   ul li ul {
+     padding: 0;
+     position: absolute;
+     top: 48px;
+     left: 0;
+     width: 150px;
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow: none;
+     display: none;
+     opacity: 0;
+     visibility: hidden;
+     -webkit-transiton: opacity 0.2s;
+     -moz-transition: opacity 0.2s;
+     -ms-transition: opacity 0.2s;
+     -o-transition: opacity 0.2s;
+     -transition: opacity 0.2s;
+   }
+   ul li ul li {
+     background: #DBB8FF;
+     display: block;
+     color: #fff;
+
+   }
+   ul li ul li:hover { background: #DBB8FF; }
+   ul li:hover ul {
+     display: block;
+     opacity: 1;
+     visibility: visible;
+   }
+/* End Navbar */
+
  .landing-image { padding-left: 14.5%; border: 2em; }
 
  .center-content {margin-left: 20%;}
@@ -22,78 +95,3 @@
  .contact-details {font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; margin-left: 18%;}
 
  .notice-alert {margin-left:42.5%;}
-
-/* Navbar */
- .navbar {min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 5px;}
- .navbar-header {padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
- /* The .brand makes it show up, the actual div for these is "navbar-brand" */
- .navbar a.brand:link {text-decoration: none; color: black;}
- .navbar a.brand:visited {text-decoration: none; color: black;}
- .navbar a.brand:active {text-decoration: none; color: black;}
- .navbar a.brand:hover {text-decoration: none; color: #FF0000;}
-
- /* Currently not in use */
-    /*
-     .navbar a.brand { font-size: 10px; }
-     . a.brand:hover {color: #833ad1; background-color: transparent; text-decoration: none;}
-     navbar navbar-default navbar-fixed-top
-   */
-  ul {
-    text-align: left;
-    display: inline;
-    margin: 0;
-    padding: 15px 4px 17px 0;
-    list-style: none;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  }
-  ul li {
-    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-    display: inline-block;
-    margin-right: -4px;
-    position: relative;
-    padding: 15px 20px;
-    background: #DBB8FF;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-  ul li:hover {
-    xbackground: #DBB8FF;
-    cxolor: #DBB8FF;
-  }
-  ul li ul {
-    padding: 0;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 150px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transiton: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -ms-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    -transition: opacity 0.2s;
-  }
-  ul li ul li {
-    background: #DBB8FF;
-    display: block;
-    color: #fff;
-
-  }
-  ul li ul li:hover { background: #DBB8FF; }
-  ul li:hover ul {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-/* End Navbar */
