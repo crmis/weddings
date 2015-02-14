@@ -5,9 +5,9 @@ RSpec.describe RoomsController, :type => :controller do
   # This should return the minimal set of attributes required to create a valid
   # Room. As you add validations to Room, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+
+  # :name, :description, :size, :capacity, :price, :picture, :rmcat_id
+  let(:valid_attributes) {{name: 'The New Room', description: 'This is the brand new room', size: '250', capacity: '100', price: '650', picture: '#{rails.root}/spec/support/room-controller-valid.jpg', rmcat_id: '1'}}
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
