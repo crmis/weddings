@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
   # Generated with rails 4.2.0 on ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin14.0]
     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
     gem 'rails', '4.2.0'
@@ -28,6 +28,8 @@ source 'http://rubygems.org'
       gem 'seed_dump', '3.2.1'
       # rspec for BDD tests (Behaviour Driven Development)
       gem 'rspec-rails', '~> 3.2.0'
+      # Factory Girl for testing setup
+      gem 'factory_girl_rails'
     end
 
     # Devise for authentication.
