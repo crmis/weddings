@@ -201,7 +201,7 @@ DEPENDENCIES
   devise (~> 3.4.1)
   factory_girl_rails (~> 4.0.0)
   jquery-rails (~> 4.0.3)
-  paperclip (~> 4.2)
+  paperclip (~> 4.2.1)
   rails (= 4.2.0)
   rspec-rails (~> 3.2.0)
   sass-rails (~> 5.0)

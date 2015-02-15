@@ -39,7 +39,7 @@ source 'https://rubygems.org'
     gem 'cancancan', '~> 1.10.1'
 
     # Paperclip for better image uploads.
-    gem 'paperclip', '~> 4.2'
+    gem 'paperclip', '~> 4.2.1'
 
     # tz-info for windows timezone data.
     gem 'tzinfo-data', '~> 1.2015.1'
