@@ -19,29 +19,29 @@ RSpec.describe RoomsController, :type => :controller do
     end
   end
 
-  # describe "GET show" do
-  #   it "assigns the requested room as @room" do
-  #     room = Room.create! valid_attributes
-  #     get :show, {:id => room.to_param}, valid_session
-  #     expect(assigns(:room)).to eq(room)
-  #   end
-  # end
-  #
-  # describe "GET new" do
-  #   it "assigns a new room as @room" do
-  #     get :new, {}
-  #     expect(assigns(:room)).to be_a_new(Room)
-  #   end
-  # end
-  #
-  # describe "GET edit" do
-  #   it "assigns the requested room as @room" do
-  #     room = Room.create! valid_attributes
-  #     get :edit, {:id => room.to_param}
-  #     expect(assigns(:room)).to eq(room)
-  #   end
-  # end
-  #
+  describe "GET show" do
+    it "assigns the requested room as @room" do
+      room = FactoryGirl.create(:room)
+      get :show, {:id => room.to_param}
+      expect(assigns(:room)).to eq(room)
+    end
+  end
+
+  describe "GET new" do
+    it "assigns a new room as @room" do
+      get :new, {}
+      expect(assigns(:room)).to be_a_new(Room)
+    end
+  end
+
+  describe "GET edit" do
+    it "assigns the requested room as @room" do
+      room = FactoryGirl.create(:room)
+      get :edit, {:id => room.to_param}
+      expect(assigns(:room)).to eq(room)
+    end
+  end
+
   # describe "POST create" do
   #   describe "with valid params" do
   #     it "creates a new Room" do
@@ -119,17 +119,17 @@ RSpec.describe RoomsController, :type => :controller do
   #     end
   #   end
   # end
-  #
+
   # describe "DELETE destroy" do
   #   it "destroys the requested room" do
-  #     room = Room.create! valid_attributes
+  #     room = FactoryGirl.create(:room)
   #     expect {
   #       delete :destroy, {:id => room.to_param}
   #     }.to change(Room, :count).by(-1)
   #   end
   #
   #   it "redirects to the rooms list" do
-  #     room = Room.create! valid_attributes
+  #     room = FactoryGirl.create(:room)
   #     delete :destroy, {:id => room.to_param}
   #     expect(response).to redirect_to(rooms_url)
   #   end
