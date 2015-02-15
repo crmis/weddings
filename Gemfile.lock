@@ -54,6 +54,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.0)
+    database_cleaner (1.4.0)
     debug_inspector (0.0.2)
     devise (3.4.1)
       bcrypt (~> 3.0)
@@ -198,6 +199,7 @@ PLATFORMS
 DEPENDENCIES
   cancancan (~> 1.10.1)
   coffee-rails (~> 4.1.0)
+  database_cleaner (~> 1.4.0)
   devise (~> 3.4.1)
   factory_girl_rails (~> 4.0.0)
   jquery-rails (~> 4.0.3)
