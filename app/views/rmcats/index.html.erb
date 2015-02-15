@@ -13,7 +13,7 @@
         <% @rmcats.each do |rmcat| %>
           <tr>
             <td><%= rmcat.rmtype %></td>
-            <td><%= link_to 'Show', rmcat %></td>
+            <!--<td><%= link_to 'Show', rmcat %></td>-->
             <td><%= link_to 'Edit', edit_rmcat_path(rmcat) %></td>
             <td><%= link_to 'Destroy', rmcat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
