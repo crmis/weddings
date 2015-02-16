@@ -16,7 +16,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  config.after(:each) do
-    FileUtils.rm @file_path
-  end
+  # config.after(:suite) do
+  #   FileUtils.rm @file_path
+  # end
 end

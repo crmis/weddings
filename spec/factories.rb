@@ -30,8 +30,13 @@ FactoryGirl.define do
     size "250"
     capacity "650"
     price "2500"
-    picture { File.new("#{Rails.root}/spec/support/images/room-controller-valid.jpg") }
+    # picture { File.new("#{Rails.root}/spec/support/images/room-controller-valid.jpg") }
+    picture_file_name 'room-controller-valid.jpg'
+    picture_content_type 'image/jpeg'
+    picture_file_size 1.megabyte
   end
 
-
+  factory :rmcat do
+    rmtype "New Roomcat"
+  end
 end
