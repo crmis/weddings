@@ -32,9 +32,10 @@ source 'http://rubygems.org'
       gem 'factory_girl_rails', '~> 4.0.0'
       # Database Cleaner for testing
       gem 'database_cleaner', '~> 1.4.0'
-      # Codeclimate Test Reporting
-      gem 'codeclimate-test-reporter', '~> 0.4.6', require: nil
     end
+
+    # Codeclimate Test Reporting
+    gem 'codeclimate-test-reporter', '~> 0.4.6', group: :test, require: nil
 
     # Devise for authentication.
     gem 'devise', '~> 3.4.1'
