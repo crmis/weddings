@@ -8,7 +8,8 @@ Write specifically which browser (and version if possible) this is reported to b
 
 Write out the steps to replicate the error. What did you expect to happen? What happened instead?
 
-If possible provide a snippet of code, and the syntax if possible. Check the guide on how to do so: [Mastering Markdown.](https://guides.github.com/features/mastering-markdown/)
+If possible provide a snippet of code, and the syntax if possible. Check the guide on how to do so:
+[Mastering Markdown.](https://guides.github.com/features/mastering-markdown/)
 
 ## Steps
 
