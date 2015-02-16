@@ -22,6 +22,11 @@ before_install:
 before_script:
   - bundle exec rake db:create db:migrate db:schema:load
 
+addons:
+  code_climate:
+      repo_token:
+        secure: "YqvY8jjWUhf8MHBzJNKxGV//pigQkEIdVFSbokv+TahSlylZym0uzJilj5HflsI8Yp/pBuB0IsKh4zbLhs4WHhNSnBKE9h49PFwWnRpCl877uapMjqyboMotz8bApKwnVWsGXLLQI+5tALoAjMk1hK1hTq8DbXvqawQJ3FaT32o="
+
 notifications:
   email:
     recipients:

@@ -9,7 +9,4 @@ RSpec.configure do |config|
       DatabaseCleaner.clean
     end
   end
-  # config.after(:suite) do
-  #   FileUtils.remove_file("#{Rails.root}/public/system/rooms/pictures/000/000/001/original/room-controller-valid.jpg", force = false)
-  # end
 end
