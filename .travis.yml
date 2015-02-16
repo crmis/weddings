@@ -25,7 +25,7 @@ before_script:
 addons:
   code_climate:
       repo_token:
-        secure: "YqvY8jjWUhf8MHBzJNKxGV//pigQkEIdVFSbokv+TahSlylZym0uzJilj5HflsI8Yp/pBuB0IsKh4zbLhs4WHhNSnBKE9h49PFwWnRpCl877uapMjqyboMotz8bApKwnVWsGXLLQI+5tALoAjMk1hK1hTq8DbXvqawQJ3FaT32o="
+        secure: YqvY8jjWUhf8MHBzJNKxGV//pigQkEIdVFSbokv+TahSlylZym0uzJilj5HflsI8Yp/pBuB0IsKh4zbLhs4WHhNSnBKE9h49PFwWnRpCl877uapMjqyboMotz8bApKwnVWsGXLLQI+5tALoAjMk1hK1hTq8DbXvqawQJ3FaT32o=
 
 notifications:
   email:
