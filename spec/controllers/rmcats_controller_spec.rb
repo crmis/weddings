@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe RoomsController, :type => :controller do
+RSpec.describe RmcatsController, :type => :controller do
 
   # This should return the minimal set of attributes required to create a valid
   # Room. As you add validations to Room, be sure to
@@ -12,33 +12,33 @@ RSpec.describe RoomsController, :type => :controller do
   # Not working yet, login_admin
 
   describe "GET index" do
-    it "assigns all rooms as @rooms" do
-      room = FactoryGirl.create(:room)
+    it "assigns all rmcats as @rmcats" do
+      rmcat = FactoryGirl.create(:rmcat)
       get :index, {}
-      expect(assigns(:rooms)).to eq([room])
+      expect(assigns(:rmcats)).to eq([rmcat])
     end
   end
 
   describe "GET show" do
-    it "assigns the requested room as @room" do
-      room = FactoryGirl.create(:room)
-      get :show, {:id => room.to_param}
-      expect(assigns(:room)).to eq(room)
+    it "assigns the requested rmcat as @rmcat" do
+      rmcat = FactoryGirl.create(:rmcat)
+      get :show, {:id => rmcat.to_param}
+      expect(assigns(:rmcat)).to eq(rmcat)
     end
   end
 
   describe "GET new" do
-    it "assigns a new room as @room" do
+    it "assigns a new rmcat as @rmcat" do
       get :new, {}
-      expect(assigns(:room)).to be_a_new(Room)
+      expect(assigns(:rmcat)).to be_a_new(Rmcat)
     end
   end
 
   describe "GET edit" do
-    it "assigns the requested room as @room" do
-      room = FactoryGirl.create(:room)
-      get :edit, {:id => room.to_param}
-      expect(assigns(:room)).to eq(room)
+    it "assigns the requested rmcat as @rmcat" do
+      rmcat = FactoryGirl.create(:rmcat)
+      get :edit, {:id => rmcat.to_param}
+      expect(assigns(:rmcat)).to eq(rmcat)
     end
   end
 

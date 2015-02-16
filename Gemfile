@@ -23,11 +23,15 @@ source 'http://rubygems.org'
       # Access an IRB console on exception pages or by using <%= console %> in views
       gem 'web-console', '~> 2.0.0'
       # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-      gem 'spring', '~> 1.2.0'
+      gem 'spring', '~> 1.3.2'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
       gem 'seed_dump', '3.2.1'
       # rspec for BDD tests (Behaviour Driven Development)
       gem 'rspec-rails', '~> 3.2.0'
+      # Factory Girl for testing setup
+      gem 'factory_girl_rails', '~> 4.0.0'
+      # Database Cleaner for testing
+      gem 'database_cleaner', '~> 1.4.0'
     end
 
     # Devise for authentication.
@@ -37,7 +41,7 @@ source 'http://rubygems.org'
     gem 'cancancan', '~> 1.10.1'
 
     # Paperclip for better image uploads.
-    gem 'paperclip', '~> 4.2'
+    gem 'paperclip', '~> 4.2.1'
 
     # tz-info for windows timezone data.
     gem 'tzinfo-data', '~> 1.2015.1'
