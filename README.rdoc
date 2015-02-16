@@ -13,9 +13,7 @@
 
 * Rails version: 4.2.0
 
-* The test suite is rspec, to run this use 'bundle exec rspec'. Check the spec/ folder for examples.
-
-* Deployment instructions.
+* The test suite is rspec, to run this run 'rspec'. Check the spec/ folder for examples and Factory Girl Config
 
 * ...
 
