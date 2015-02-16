@@ -23,6 +23,4 @@ class Room < ActiveRecord::Base
   validates :price, :presence => { :message => "cannot be blank ..."}
   validates :price, :numericality => {:greater_than_or_equal_to => 100, :message => "Price: cannot be less than 100"}
   validates :price, :numericality => {:less_than => 5001, :message => "Price: cannot more than 5000"}
-
-
 end
