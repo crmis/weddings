@@ -20,7 +20,7 @@ before_install:
   - gem --version
 
 before_script:
-  - bundle exec rake db:create db:migrate db:schema:load
+  - CODECLIMATE_REPO_TOKEN=812d48041b7faafd2a04d75ecc3d59ab6e9c9586c628c9272e80cf51f56a9c62 bundle exec rake db:create db:migrate db:schema:load
 
 addons:
   code_climate:
