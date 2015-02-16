@@ -3,7 +3,7 @@
 >Cox | Rees | Mitchell
 
 ## Tom Cox
-#### [Github](https://github.com/Koxzi95) | [Website](http://koxzi.me) | [Twitter](https://twitter.com/Koxzi95) |  
+#### [Github](https://github.com/Koxzi95) | [Website](http://koxzi.me) | [Twitter](https://twitter.com/Koxzi95) | [![endorse](https://api.coderwall.com/koxzi95/endorsecount.png)](https://coderwall.com/koxzi95)
 
 ## Richard Mitchell
 #### [Github](https://github.com/mr-mitch)
