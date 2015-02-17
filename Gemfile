@@ -14,7 +14,7 @@ source 'http://rubygems.org'
     gem 'jquery-rails', '~> 4.0.3'
     # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
     gem 'turbolinks', '~> 2.5.3'
-    # Yard for documentation
+    # Yard for documentation, replaces sdoc
     gem 'yard', '~> 0.8.7.6', group: :doc
 
     group :development, :test do
@@ -45,6 +45,9 @@ source 'http://rubygems.org'
 
     # Paperclip for better image uploads.
     gem 'paperclip', '~> 4.2.1'
+
+    # JSON for Rails
+    gem 'json', '~> 1.8.2'
 
     # tz-info for windows timezone data.
     gem 'tzinfo-data', '~> 1.2015.1'
