@@ -18,7 +18,3 @@ notifications:
     on_failure: change
   slack:
     secure: eXNnCpfZoj1EiKPGmZ+9HYLwOPN2Tvjo26OtWa7rMl+y8rqsThrH5ykC8fbGmjSHynk1OMp+GK+lC1CjVvfSbI3Ypu6y9rbngeYJm3xiLf/vUMT/pw6+i4oke6DG5uWHHPJwYxN2632SM4RsYEklX3OdGBzadipqLBbqZ5eh+e4=
-addons:
-  code_climate:
-    repo_token:
-      secure: hXC9tojqP4/LxBVwQytzpvzHDU2bxKpunCFEoSKBD2CwKb6RMenka4NU8nZGi6ET/d1fuvCRUXE1phXp8oLbdPTX/Z8os8n2GQx6F0sCL7PqTESJwB+2f0bePCUv4yyObnATpCh4QwhENIT74WyH11vK45++XacdT22aU6oBrRM=
