@@ -7,6 +7,8 @@
 ===== crmis Master Status: {<img src="https://travis-ci.org/crmis/weddings.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/crmis/weddings]
 
 {<img src="https://codeclimate.com/github/crmis/weddings/badges/gpa.svg" />}[https://codeclimate.com/github/crmis/weddings]
+{<img src="https://codeclimate.com/github/crmis/weddings/badges/coverage.svg" />}[https://codeclimate.com/github/crmis/weddings]
+* Note that test cov is for Koxzi95/weddings. This still needs to be integrated with TravisCI.
 {<img src="https://gemnasium.com/crmis/weddings.svg" alt="Dependency Status" />}[https://gemnasium.com/crmis/weddings]
 
 * Ruby version: 2.1.5p273 (2014-11-13 revision 48405)
@@ -16,7 +18,3 @@
 * To use the test suite run 'rspec'. Check the spec/ folder for examples and Factory Girl Configuration
 
 * ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
