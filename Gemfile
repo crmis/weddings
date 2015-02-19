@@ -27,7 +27,7 @@ source 'http://rubygems.org'
       # rspec for BDD tests (Behaviour Driven Development)
       gem 'rspec-rails', '~> 3.2.0'
       # Factory Girl for testing setup
-      gem 'factory_girl_rails', '~> 4.0.0'
+      gem 'factory_girl_rails', '~> 4.5.0'
       # Database Cleaner for testing
       gem 'database_cleaner', '~> 1.4.0'
     end
