@@ -1,6 +1,6 @@
 app/models/user.rb 2d93c79dba9a4ebead849018c196cf6dd3bd3776
-app/models/room.rb 09f90ad182a13738c9ee81973736ba19241f207e
-app/models/rmcat.rb 1d4261a7f08356299d94e8b2bbd336170cad0a03
+app/models/room.rb ce5b3e9d101efcbb7eaf89d66d85c3f453b4ec98
+app/models/rmcat.rb e4eb3294ab373ab56015be557de737b82984bee2
 app/models/ability.rb d473776b217a27957eb4927de78960c8c8a13627
 app/helpers/rooms_helper.rb 7c724273b04bbe65302864993e84d7c73a7628a6
 app/helpers/pages_helper.rb 20e02ca3eeef0daaf0a3eebd24fb7bcc271e3a30
@@ -8,5 +8,5 @@ app/helpers/rmcats_helper.rb f12c7f153cf35fe61f6ea9e2f3f813d5d906f65a
 app/helpers/application_helper.rb eef3d3adce96afe8b14c19b6135323f47543d979
 app/controllers/rooms_controller.rb bb7341744a6a4134039cfd559e37e9fae3f2ea37
 app/controllers/pages_controller.rb 0775c7bef8cae34a2db384b0d1cab1fca4d22451
-app/controllers/rmcats_controller.rb 4480c8564c772051d73c92aeaf6c850c30d3a5ce
+app/controllers/rmcats_controller.rb 752339a1fecc6c55192c4308a162eac14809911a
 app/controllers/application_controller.rb 89a5c6056cae8dcc51b6846cdb4eef02a5e3a0b3
