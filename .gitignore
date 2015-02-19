@@ -37,8 +37,3 @@ Gemfile.lock
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
-
-# Specific ignore whilst we get database_cleaner working
-public/system/rooms/pictures/000/000/001/medium/room-controller-valid.jpg
-public/system/rooms/pictures/000/000/001/original/room-controller-valid.jpg
-public/system/rooms/pictures/000/000/001/thumb/room-controller-valid.jpg
