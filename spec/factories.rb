@@ -26,7 +26,7 @@ end
 #   customer false
 # end
 #
-# # Admin User
+# # Admin
 # factory :admin, class: User do
 #   first_name "Admin"
 #   last_name  "User"
@@ -34,7 +34,7 @@ end
 #   customer false
 # end
 #
-# # Customer User
+# # Customer
 # factory :customer, class: User do
 #   first_name "Admin"
 #   last_name  "User"
