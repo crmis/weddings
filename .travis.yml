@@ -21,5 +21,6 @@ notifications:
     recipients:
     - tom.jcox@icloud.com
 deploy:
+  provider: heroku
   api_key:
     secure: QtSt0Dm3spUovzGaNYyReL2iPsd7Aii0PIH7EAYsJ2takkoXqqO7g0CMUMuvcJHbwOxYxEJ+O7z4v3KO21ys+VX9TekGRpOVcxA3dHCxHkEQCIgpSLxAHXAWbHEraLeyd9ge7B17IlYHCxGY+y4YUEWLPBveReJmn+VH6Xrw7jQ=
