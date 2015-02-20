@@ -1,20 +1,25 @@
 os:
-- linux
+  - linux
+
 language: ruby
 rvm:
-- 2.2.0
-- 2.0.0
+  - 2.2.0
+  - 2.0.0
+
 before_install:
-- sudo apt-get update
-- gem update --system
-- gem --version
+  - sudo apt-get update
+  - gem update --system
+  - gem --version
 before_script:
-- bundle exec rake db:create db:migrate db:schema:load
+  - bundle exec rake db:create db:migrate db:schema:load
+
+addons:
+  code_climate:
+    repo_token:
+      - 812d48041b7faafd2a04d75ecc3d59ab6e9c9586c628c9272e80cf51f56a9c62      
 notifications:
+  on_success: change
+  on_failure: change
   email:
     recipients:
     - tom.jcox@icloud.com
-    on_success: change
-    on_failure: change
-  slack:
-    secure: eXNnCpfZoj1EiKPGmZ+9HYLwOPN2Tvjo26OtWa7rMl+y8rqsThrH5ykC8fbGmjSHynk1OMp+GK+lC1CjVvfSbI3Ypu6y9rbngeYJm3xiLf/vUMT/pw6+i4oke6DG5uWHHPJwYxN2632SM4RsYEklX3OdGBzadipqLBbqZ5eh+e4=
