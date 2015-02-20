@@ -8,6 +8,7 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'devise'
 require 'database_cleaner'
+require 'factory_girl_rails'
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -31,6 +32,7 @@ RSpec.configure do |config|
 
   config.include Devise::TestHelpers, :type => :controller
 
+  # Is this needed because: spec\support\database_cleaner.rb
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
