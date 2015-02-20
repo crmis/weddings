@@ -2,16 +2,6 @@ source 'http://rubygems.org'
   # Generated with rails 4.2.0 on ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin14.0]
     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
     gem 'rails', '4.2.0'
-    group :development do
-      # Use sqlite3 as the database for Active Record.
-      gem 'sqlite3'
-    end
-    group :production do
-      # Postgres for production Active Record database.
-      gem 'pg'
-      # 12 Factor App Gem for Heroku.
-      gem 'rails_12factor'
-    end
     # Use SCSS for stylesheets.
     gem 'sass-rails', '~> 5.0'
     # Use Uglifier as compressor for JavaScript assets.
@@ -23,13 +13,16 @@ source 'http://rubygems.org'
     # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
     gem 'turbolinks', '~> 2.5.3'
 
+    group :production do
+      # Postgres for production Active Record database.
+      gem 'pg'
+      # 12 Factor App Gem for Heroku.
+      gem 'rails_12factor'
+    end
+
     group :development do
-      # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-      # gem 'byebug', '~> 3.5.1'
-      # Access an IRB console on exception pages or by using <%= console %> in views
-      gem 'web-console', '~> 2.0.0'
-      # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-      gem 'spring', '~> 1.3.2'
+      # Use sqlite3 as the database for Active Record.
+      gem 'sqlite3'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
       gem 'seed_dump', '3.2.1'
       # rspec for BDD tests (Behaviour Driven Development)
@@ -38,6 +31,12 @@ source 'http://rubygems.org'
       gem 'factory_girl_rails', '~> 4.5.0'
       # Database Cleaner for testing
       gem 'database_cleaner', '~> 1.4.0'
+      # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+      gem 'spring', '~> 1.3.2'
+      # Access an IRB console on exception pages or by using <%= console %> in views
+      gem 'web-console', '~> 2.0.0'
+      # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+      # gem 'byebug', '~> 3.5.1'
     end
 
     group :test do
