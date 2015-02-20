@@ -2,12 +2,14 @@ source 'http://rubygems.org'
   # Generated with rails 4.2.0 on ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin14.0]
     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
     gem 'rails', '4.2.0'
-    # Use sqlite3 as the database for Active Record.
     group :development do
+      # Use sqlite3 as the database for Active Record.
       gem 'sqlite3'
     end
     group :production do
+      # Postgres for production Active Record database.
       gem 'pg'
+      # 12 Factor App Gem for Heroku.
       gem 'rails_12factor'
     end
     # Use SCSS for stylesheets.
