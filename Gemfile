@@ -59,3 +59,6 @@ source 'http://rubygems.org'
 
     # tz-info for windows timezone data.
     gem 'tzinfo-data', '~> 1.2015.1'
+
+    # New Relic for application metrics
+    gem 'newrelic_rpm'
