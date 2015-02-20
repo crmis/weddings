@@ -62,4 +62,4 @@ source 'http://rubygems.org'
     gem 'tzinfo-data', '~> 1.2015.1'
 
     # New Relic for application metrics
-    gem 'newrelic_rpm'
+    gem 'newrelic_rpm', '~> 3.10.0.279'
