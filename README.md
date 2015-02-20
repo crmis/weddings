@@ -2,10 +2,9 @@
 
 :octocat:
 
-#### Koxzi95 Master Status: [ ![Codeship Status for Koxzi95/weddings](https://codeship.com/projects/7f33ca50-9087-0132-c49a-4692b7ab2422/status?branch=master)](https://codeship.com/projects/61544)
-
-#### crmis Master Status: [![Build Status](https://travis-ci.org/crmis/weddings.svg?branch=master)](https://travis-ci.org/crmis/weddings)
-
+[![Build Status](https://travis-ci.org/crmis/weddings.svg?branch=master)](https://travis-ci.org/crmis/weddings)
+[![Code Climate](https://codeclimate.com/github/crmis/weddings/badges/gpa.svg)](https://codeclimate.com/github/crmis/weddings)
+[![Test Coverage](https://codeclimate.com/github/crmis/weddings/badges/coverage.svg)](https://codeclimate.com/github/crmis/weddings)
 [![Dependency Status](https://gemnasium.com/crmis/weddings.svg)](https://gemnasium.com/crmis/weddings)
 
 * Note that test coverage badge is for [koxzi95/weddings](https://github.com/Koxzi95/weddings). This still needs to be integrated with TravisCI.
