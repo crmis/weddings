@@ -15,16 +15,5 @@ RSpec.configure do |config|
 
   config.include Devise::TestHelpers, :type => :controller
 
-  # Is this needed because: spec\support\database_cleaner.rb
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
-  end
-  config.around(:each) do |example|
-    DatabaseCleaner.cleaning do
-      example.run
-    end
-  end
-
   config.infer_spec_type_from_file_location!
 end
