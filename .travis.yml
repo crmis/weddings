@@ -23,4 +23,7 @@ notifications:
 deploy:
   provider: heroku
   api_key:
-    secure: QtSt0Dm3spUovzGaNYyReL2iPsd7Aii0PIH7EAYsJ2takkoXqqO7g0CMUMuvcJHbwOxYxEJ+O7z4v3KO21ys+VX9TekGRpOVcxA3dHCxHkEQCIgpSLxAHXAWbHEraLeyd9ge7B17IlYHCxGY+y4YUEWLPBveReJmn+VH6Xrw7jQ=
+    secure: vQi59892dFjqpdhKrPwB6dBtCC7xtPUG5uxF842jBLH1KeZrRq2eMh/oOuQdou+kfUSj/JmhjKR5DFVAi/w+ib+VM3mQmz+bjJjQAZNexA6xglXdWBMg47QjN+sHu+baw7JY50PbD3XPuGuz0gVizNY9FHtSD6Efk1giu3gZMJQ=
+  app: mvweddings
+  on:
+    repo: crmis/weddings
