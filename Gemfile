@@ -64,5 +64,5 @@ source 'http://rubygems.org'
     # New Relic for application metrics
     gem 'newrelic_rpm', '~> 3.10.0.279'
 
-    # Unicorn for worker process management
-    gem 'unicorn', '~> 4.8.3'
+    # Unicorn for worker process management (won't bundle on non-unix)
+    # gem 'unicorn', '~> 4.8.3'
