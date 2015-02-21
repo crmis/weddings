@@ -1,0 +1,68 @@
+.roomnavbar {min-height: 45px; background-colors: #FEFF00;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 30px; padding-left: 1%;}
+.roomnavbar-header {background-color: #FEFF00; padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
+/* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
+.roomnavbar-brand:link {text-decoration: none; color: black;}
+.roomnavbar-brand:visited {text-decoration: none; color: black;}
+.roomnavbar-brand:active {text-decoration: none; color: black;}
+.roomnavbar-brand:hover {text-decoration: none; color: black;}
+
+.roomliststyle ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+  background-color: #FFF499;
+}
+/*.roomheader {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  background-colors: #FEFF00;
+  cursor: pointer;
+  margin-left: 45%;
+  font-size: 2em;
+  }*/
+.roomliststyle li {background-color: #FFF9A6; margin-right: 0.3px;}
+.roomliststyle ul li {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  /*background-color: #FEFF00;*/
+  cursor: pointer;
+
+}
+.roomliststyle ul li:hover {
+  xbackground: #FEFF00;
+  cxolor: #FEFF00;
+}
+.roomliststyle ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  /*-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;*/
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  /*background-color: #FEFF00;*/
+}
+.roomliststyle ul li ul li {
+  /*background-color: #FEFF00;*/
+  display: block;
+  color: #fff;
+
+}
+.roomliststyle ul li ul li:hover { background-color: #FEFF00; }
+.roomliststyle ul li:hover ul {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  background-color: #FEFF00;
+}
