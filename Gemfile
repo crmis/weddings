@@ -22,7 +22,7 @@ source 'http://rubygems.org'
 
     group :development do
       # Use sqlite3 as the database for Active Record.
-      gem 'sqlite3'
+      gem 'sqlite3', '~> 1.3.10'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
       gem 'seed_dump', '3.2.1'
       # rspec for BDD tests (Behaviour Driven Development)
