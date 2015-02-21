@@ -1,5 +1,8 @@
 class Rmcat < ActiveRecord::Base
 
+  # @attribute name [Room] The name of the object
+  # @association relatedObjs [Array<AnotherClass>] Objects needed to perform a certain function
+
   has_many :rooms
 
   def rmcat_info

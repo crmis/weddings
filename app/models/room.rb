@@ -1,5 +1,8 @@
 class Room < ActiveRecord::Base
 
+  # @attribute name [Room] The name of the object
+  # @association relatedObjs [Array<AnotherClass>] Objects needed to perform a certain function
+
   belongs_to :rmcat
 
   has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"

@@ -1,4 +1,6 @@
 class Ability
+  # @attribute name [Room] The name of the object
+  # @association relatedObjs [Array<AnotherClass>] Objects needed to perform a certain function
   include CanCan::Ability
   def initialize(user)
     user ||= User.new # guest user (not logged in)
