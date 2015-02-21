@@ -1,6 +1,12 @@
 class Ability
-  # @attribute name [Room] The name of the object
-  # @association relatedObjs [Array<AnotherClass>] Objects needed to perform a certain function
+  # @!attribute name
+  #   @return [String] The name of the task.
+
+  # @!attribute description
+  #   @return [String] The description of the task.
+
+  # @!attribute active
+  #   @return [Boolean] Marks whether the task is active or not.
   include CanCan::Ability
   def initialize(user)
     user ||= User.new # guest user (not logged in)
