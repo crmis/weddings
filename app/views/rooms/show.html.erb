@@ -1,9 +1,29 @@
+
+<nav class="roomnavbar navbar-default" role="navigation">
+<div class="roomcontainer">
+  <div class="rooomnavbar-header">
+      <!-- <div class="roomheader"><a class="roomnavbar-brand" href="/rooms">Rooms</a></div> -->
+          <ul class="roomliststyle">
+
+            <li><a class="roomnavbar-brand" href="/rooms/1">Maple Room</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/2">Castle Room</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/3">Regal Room</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/4">The Grand Hall</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/5">The Beaumant</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/6">Belverdere</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/7">Winter Wonderland</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/8">Ambleside</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/9">The Lakeside</a></li>
+          </ul>
+
+  </div>
+</div>
+</nav>
 <div id="all-details">
-  <fieldset>
     <div class="main-title"> <%= @room.name %> </div>
-    <div class="sub-title">
+    <div id="show-img">
       <% if not @room.picture.blank? %>
-        <%= link_to (image_tag @room.picture, size: "450x300"), rooms_path, :title => 'return to rooms.' %>
+        <%= link_to (image_tag @room.picture, size: "650x500"), rooms_path, :title => 'return to rooms.' %>
       <% else %>
         <%= image_tag "no-image.jpg", :size => "200x250" %>
       <% end %>
@@ -43,5 +63,4 @@
       <% end %>
       <%= link_to 'Back', rooms_path %>
     </div>
-  </fieldset>
 </div>

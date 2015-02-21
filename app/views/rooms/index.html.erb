@@ -1,45 +1,43 @@
-<div id="all-content">
-  <% @rooms.each do |room| %>
-    <div id="product-box">
-      <fieldset>
 
-      <div id="img-box" , title="select image for more details ..." >
-        <!-- <% if not room.picture.blank? %> -->
-          <%= link_to (image_tag room.picture,:size => "100x125"),room %>
-        <!-- <% else %>
-          <%= link_to (image_tag("no-image.jpg",:size => "100x125")),room %>
-        <% end %> -->
+<nav class="roomnavbar navbar-default" role="navigation">
+<div class="roomcontainer">
+  <div class="rooomnavbar-header">
+      <!-- <div class="roomheader"><a class="roomnavbar-brand" href="/rooms">Rooms</a></div> -->
+          <ul class="roomliststyle">
+
+            <li><a class="roomnavbar-brand" href="/rooms/1">Maple Room</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/2">Castle Room</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/3">Regal Room</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/4">The Grand Hall</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/5">The Beaumant</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/6">Belverdere</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/7">Winter Wonderland</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/8">Ambleside</a></li>
+            <li><a class="roomnavbar-brand" href="/rooms/9">The Lakeside</a></li>
+          </ul>
+
+  </div>
+</div>
+</nav>
+<body>
+  <div class="landing-image">
+    <div id="carousel" class="owl-carousel">
+      <div> <%= image_tag("home_landing.jpg") %> </div>
+      <div> <%= image_tag("lake_landing.jpg") %> </div>
+      <div> <%= image_tag("bw_landing.jpg") %> </div>
+      <div> <%= image_tag("cake_landing.jpg") %> </div>
+      <div> <%= image_tag("ring_landing.jpg") %> </div>
+      <div> <%= image_tag("car_landing.jpg") %> </div>
+      <div> <%= image_tag("flower_landing.jpg") %> </div>
       </div>
+  </div>
 
-      <div id="details-box">
-          <div id="title-box">
-            <%= room.name %>
-          </div>
-
-          <div id="rmtype">
-            <% if not room.rmcat.rmtype.blank? %>
-             Room Type: <%= room.rmcat.rmtype  %>
-            <% end %>
-          </div>
-
-          <div id="size-box">
-            <% if not room.size.blank? %>
-             Room Size: <%= room.size  %> Square Feet
-             <% end %>
-          </div>
-
-        <div id="capacity">
-          <% if not room.capacity.blank? %>
-            Capacity: <%= room.capacity %> People
-          <% end %>
-        </div>
-
-          <div id="price-box">
-            <% if not room.price.blank? %>
-              Price: <%= number_to_currency room.price, unit: "£" %>
-            <% end %>
-          </div>
-      </div>
-      </fieldset>
-    </div>
-    <% end %>
+</body>
+<script>
+$(document).ready(function() {
+  $("#carousel").owlCarousel({
+    items : 1, //1 items above 1000px browser width
+    autoPlay: true
+  });
+});
+</script>

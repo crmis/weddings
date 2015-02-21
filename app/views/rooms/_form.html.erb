@@ -1,4 +1,4 @@
-<%= form_for @room, :html => { :multipart => true } do |f| %>
+<%= form_for(@room) do |f| %>
   <% if @room.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@room.errors.count, "error") %> prohibited this room from being saved:</h2>
@@ -17,8 +17,10 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :rmcat_id, "Room Type:" %><br />
-    <%= f.collection_select :rmcat_id, Rmcat.all, :id,:rmcat_info, {:include_blank => 'Please Select'} %>
+		<%= f.label :rmcat_id, "Room Type:" %><br />
+	<%= f.collection_select :rmcat_id, Rmcat.all,
+      :id,:rmcat_info, {:include_blank => 'Please Select'} %>
+
   </div>
   <div class="field">
     <%= f.label :description, "Description:" %><br>
