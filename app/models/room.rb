@@ -1,7 +1,7 @@
 class Room < ActiveRecord::Base
 
   # @attribute name [Room] The name of the object
-  # @association relatedObjs [Array<AnotherClass>] Objects needed to perform a certain function
+  # @association rmcat_id [Rmcat] Objects needed to perform a certain function
 
   belongs_to :rmcat
 
