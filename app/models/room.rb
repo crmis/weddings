@@ -1,12 +1,5 @@
 class Room < ActiveRecord::Base
-  # @!attribute name
-  #   @return [String] The name of the task.
 
-  # @!attribute description
-  #   @return [String] The description of the task.
-
-  # @!attribute active
-  #   @return [Boolean] Marks whether the task is active or not.
   belongs_to :rmcat
 
   has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"

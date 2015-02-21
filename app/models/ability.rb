@@ -1,12 +1,4 @@
 class Ability
-  # @!attribute name
-  #   @return [String] The name of the task.
-
-  # @!attribute description
-  #   @return [String] The description of the task.
-
-  # @!attribute active
-  #   @return [Boolean] Marks whether the task is active or not.
   include CanCan::Ability
   def initialize(user)
     user ||= User.new # guest user (not logged in)

@@ -1,12 +1,5 @@
 class Rmcat < ActiveRecord::Base
-    # @!attribute name
-    #   @return [String] The name of the task.
 
-    # @!attribute description
-    #   @return [String] The description of the task.
-
-    # @!attribute active
-    #   @return [Boolean] Marks whether the task is active or not.
   has_many :rooms
 
   def rmcat_info
