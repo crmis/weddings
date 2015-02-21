@@ -65,4 +65,6 @@ source 'http://rubygems.org'
     gem 'newrelic_rpm', '~> 3.10.0.279'
 
     # Unicorn for worker process management (won't bundle on non-unix)
-    # gem 'unicorn', '~> 4.8.3'
+    # => comment this line out and bundle if working on windows, it will always
+    # => be present on the master deployed branch.
+    gem 'unicorn', '~> 4.8.3'
