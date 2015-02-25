@@ -45,5 +45,5 @@ bower.json
 
 ## Node/Grunt ignores:
 /node_modules/
-Gruntfile.js
+# Gruntfile.js
 # package.json
