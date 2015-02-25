@@ -56,22 +56,6 @@
         </li>
       </ul>
     <% end %>
-    <!-- if a customer is signed in display navbar with sufficient privilidges -->
-    <% if current_user %>
-      <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
-        <li>
-          <a class="navbar-brand" href="/rooms">Rooms</a>
-        </li>
-        <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
-        <li>
-        Account
-        <ul>
-          <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-brand' %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-brand'  %></li>
-        </ul>
-        </li>
-      </ul>
-    <% end %>
     <!-- else if not logged in -->
     <% else %>
       <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
