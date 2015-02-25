@@ -30,6 +30,7 @@
             <li><a class="navbar-brand" href="/rmcats/new">New Room Type</a></li>
           </ul>
         </li>
+        <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
         <li>
         Account
         <ul>
@@ -37,7 +38,6 @@
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-brand'  %></li>
         </ul>
         </li>
-        <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
       </ul>
     <% end %>
     <!-- if a customer is signed in display navbar with sufficient privilidges -->
