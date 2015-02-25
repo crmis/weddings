@@ -42,3 +42,8 @@ config/initializers/secret_token.rb
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
+
+## Node/Grunt ignores:
+/node_modules/
+Gruntfile.js
+# package.json
