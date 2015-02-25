@@ -29,7 +29,7 @@ RSpec.describe RmcatsController, :type => :controller do
   #
   # describe "GET show" do
   #   it "assigns the requested rmcat as @rmcat" do
-  #     rmcat = FactoryGirl.create(:room)
+  #     rmcat = FactoryGirl.create(:rmcat)
   #     get :show, {:id => rmcat.to_param}
   #     expect(assigns(:rmcat)).to eq(rmcat)
   #   end
