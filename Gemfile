@@ -26,7 +26,7 @@ source 'http://rubygems.org'
       # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
       gem 'seed_dump', '3.2.1'
       # rspec for BDD tests (Behaviour Driven Development)
-      gem 'rspec-rails', '~> 3.2.0'
+      gem 'rspec-rails', '~> 3.2.1'
       # Factory Girl for testing setup
       gem 'factory_girl_rails', '~> 4.5.0'
       # Database Cleaner for testing
