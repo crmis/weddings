@@ -67,4 +67,4 @@ source 'http://rubygems.org'
     # Unicorn for worker process management (won't bundle on non-unix)
     # => comment this line out and bundle if working on windows, it will always
     # => be present on the master deployed branch.
-    gem 'unicorn', '~> 4.8.3'
+    # gem 'unicorn', '~> 4.8.3'

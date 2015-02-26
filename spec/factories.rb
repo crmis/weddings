@@ -16,28 +16,21 @@ FactoryGirl.define do
     rmtype "The New Roomcat"
     association :rooms, factory: :room
   end
+
+  factory :user do
+    email "basicuser@mvmanor.co.uk"
+    password "u"
+    password_confirmation "u"
+    admin false
+    customer false
+  end
+
+  # Admin
+  factory :admin, class: User do
+    email "basicadmin@mvmanor.co.uk"
+    password "a"
+    password_confirmation "a"
+    admin true
+    customer false
+  end
 end
-
-
-# factory :user do
-#   first_name "John"
-#   last_name  "Doe"
-#   admin false
-#   customer false
-# end
-#
-# # Admin
-# factory :admin, class: User do
-#   first_name "Admin"
-#   last_name  "User"
-#   admin true
-#   customer false
-# end
-#
-# # Customer
-# factory :customer, class: User do
-#   first_name "Admin"
-#   last_name  "User"
-#   admin false
-#   customer true
-# end

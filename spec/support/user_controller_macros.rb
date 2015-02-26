@@ -1,26 +1,15 @@
 module UserControllerMacros
-  # Needs improving
   def login_admin
     before(:each) do
       @request.env["devise.mapping"] = Devise.mappings[:admin]
-      admin = FactoryGirl.create(:admin)
-      sign_in :admin # sign_in(scope, resource)
+      sign_in FactoryGirl.create(:admin) # Using factory girl as an example
     end
   end
 
   def login_user
     before(:each) do
       @request.env["devise.mapping"] = Devise.mappings[:user]
-      user = FactoryGirl.create(:user)
-      sign_in user
-    end
-  end
-
-  def login_customer
-    before(:each) do
-      @request.env["devise.mapping"] = Devise.mappings[:customer]
-      user = FactoryGirl.create(:user)
-      sign_in :customer
+      sign_in FactoryGirl.create(:user) # Using factory girl as an example
     end
   end
 end
