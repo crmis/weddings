@@ -13,7 +13,7 @@ FactoryGirl.define do
   end
 
   factory :rmcat do
-    rmtype "New Roomcat"
+    rmtype "The New Roomcat"
     association :rooms, factory: :room
   end
 end
