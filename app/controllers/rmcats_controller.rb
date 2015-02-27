@@ -1,4 +1,6 @@
 class RmcatsController < ApplicationController
+  # @see def resource_not_found
+  around_filter :resource_not_found
   before_action :set_rmcat, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource
 
@@ -55,6 +57,13 @@ class RmcatsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_rmcat
       @rmcat = Rmcat.find(params[:id])
+    end
+
+    # If resource not found redirect to root and flash error.
+    def resource_not_found
+      yield
+    rescue ActiveRecord::RecordNotFound
+      redirect_to root_url, :notice => "Room Category not found."
     end
 
     # Only allow a trusted parameter "white list" through.

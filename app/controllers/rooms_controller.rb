@@ -1,4 +1,6 @@
 class RoomsController < ApplicationController
+  # @see def resource_not_found
+  around_filter :resource_not_found
   before_action :set_room, only: [:show, :edit, :update, :destroy]
 
   # This is the CanCan helper for auth.
@@ -56,6 +58,13 @@ class RoomsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_room
       @room = Room.find(params[:id])
+    end
+
+    # If resource not found redirect to root and flash error.
+    def resource_not_found
+      yield
+    rescue ActiveRecord::RecordNotFound
+      redirect_to root_url, :notice => "Room not found."
     end
 
     # Only allow a trusted parameter "white list" through.
