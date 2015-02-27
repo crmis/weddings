@@ -1,3 +1,4 @@
+# @author Tom Cox <tom.jcox@icloud.com>
 require 'rails_helper'
   RSpec.describe RmcatsController, :type => :routing do
   describe "rmcats routing" do
