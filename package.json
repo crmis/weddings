@@ -1,28 +1,28 @@
 {
-  "name": "weddings",
-  "version": "0.3.0",
-  "description": "Wedding organiser website built with Ruby on Rails",
-  "main": "Gruntfile.js",
-  "dependencies": {
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-nodeunit": "^0.4.1",
-    "grunt-contrib-uglify": "^0.5.1",
-    "grunt-csscomb": "^3.0.0",
-    "grunt": "^0.4.5",
-    "csscomb": "^3.0.4",
-    "grunt-check-gems": "0.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/crmis/weddings.git"
-  },
-  "author": "crmis",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/crmis/weddings/issues"
-  },
-  "homepage": "https://mvweddings.herokuapp.com"
+	"name": "weddings",
+	"version": "0.3.0",
+	"description": "Wedding organiser website built with Ruby on Rails",
+	"main": "Gruntfile.js",
+	"dependencies": {
+		"grunt-contrib-jshint": "^0.10.0",
+		"grunt-contrib-nodeunit": "^0.4.1",
+		"grunt-contrib-uglify": "^0.5.1",
+		"grunt-csscomb": "^3.0.0",
+		"grunt": "^0.4.5",
+		"csscomb": "^3.0.4",
+		"grunt-check-gems": "0.0.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/crmis/weddings.git"
+	},
+	"author": "crmis",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/crmis/weddings/issues"
+	},
+	"homepage": "https://mvweddings.herokuapp.com"
 }

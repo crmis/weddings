@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
-  # @author Tom Cox <tom.jcox@icloud.com>
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+	# @author Tom Cox <tom.jcox@icloud.com>
+	# Include default devise modules. Others available are:
+	# :confirmable, :lockable, :timeoutable and :omniauthable
+	devise :database_authenticatable, :registerable,
+	:recoverable, :rememberable, :trackable, :validatable
 end
