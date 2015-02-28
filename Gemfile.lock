@@ -220,6 +220,7 @@ DEPENDENCIES
   newrelic_rpm (~> 3.10.0.279)
   paperclip (~> 4.2.1)
   pg
+  puma
   rails (= 4.2.0)
   rails_12factor
   rspec-rails (~> 3.2.1)
