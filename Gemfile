@@ -64,10 +64,11 @@ gem 'tzinfo-data', '~> 1.2015.1'
 # New Relic for application metrics
 gem 'newrelic_rpm', '~> 3.10.0.279'
 
-# CLI gem for atom-beautify package. (Ctrl+Shift+B)
+# CLI gem for atom-beautify package. (Ctrl+Alt+B)
 gem 'ruby-beautify'
 
 # Unicorn for worker process management (won't bundle on non-unix)
-# => comment this line out and bundle if working on windows, it will always
-# => be present on the master deployed branch.
-# gem 'unicorn', '~> 4.8.3'
+# => should now only bundle on OSX & Linux. And hopefully deploy!
+platforms :ruby do
+	gem 'unicorn', '~> 4.8.3'
+end

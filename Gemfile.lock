@@ -231,5 +231,6 @@ DEPENDENCIES
   turbolinks (~> 2.5.3)
   tzinfo-data (~> 1.2015.1)
   uglifier (~> 2.7.0)
+  unicorn (~> 4.8.3)
   web-console (~> 2.0.0)
   yard (~> 0.8.7.6)
