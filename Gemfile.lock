@@ -104,8 +104,6 @@ GEM
       mime-types
     pg (0.18.1)
     pg (0.18.1-x86-mingw32)
-    puma (2.11.1)
-      rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -222,7 +220,6 @@ DEPENDENCIES
   newrelic_rpm (~> 3.10.0.279)
   paperclip (~> 4.2.1)
   pg
-  puma
   rails (= 4.2.0)
   rails_12factor
   rspec-rails (~> 3.2.1)
@@ -234,5 +231,6 @@ DEPENDENCIES
   turbolinks (~> 2.5.3)
   tzinfo-data (~> 1.2015.1)
   uglifier (~> 2.7.0)
+  unicorn (~> 4.8.3)
   web-console (~> 2.0.0)
   yard (~> 0.8.7.6)
