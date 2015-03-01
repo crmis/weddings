@@ -71,7 +71,5 @@ gem 'ruby-beautify'
 platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
 	# => should now only bundle on OSX & Linux. And hopefully deploy!
-	# gem 'unicorn', '~> 4.8.3', :platforms => :ruby
-	# Trialling Puma
-	gem 'puma', :platforms => :ruby
+	gem 'unicorn', '~> 4.8.3', :platforms => :ruby
 end
