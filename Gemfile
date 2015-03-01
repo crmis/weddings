@@ -67,9 +67,11 @@ gem 'newrelic_rpm', '~> 3.10.0.279'
 # CLI gem for atom-beautify package. (Ctrl+Alt+B)
 gem 'ruby-beautify'
 
-# Bundle on OSX and Linux only. (including deplyment)
+# Bundle on OSX and Linux only. (including deployment)
+platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
 	# => should now only bundle on OSX & Linux. And hopefully deploy!
-	# gem 'unicorn', '~> 4.8.3'
+	# gem 'unicorn', '~> 4.8.3', :platforms => :ruby
 	# Trialling Puma
-	gem 'puma'
+	gem 'puma', :platforms => :ruby
+end
