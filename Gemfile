@@ -68,10 +68,8 @@ gem 'newrelic_rpm', '~> 3.10.0.279'
 gem 'ruby-beautify'
 
 # Bundle on OSX and Linux only. (including deplyment)
-platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
 	# => should now only bundle on OSX & Linux. And hopefully deploy!
-	gem 'unicorn', '~> 4.8.3'
+	# gem 'unicorn', '~> 4.8.3'
 	# Trialling Puma
 	gem 'puma'
-end

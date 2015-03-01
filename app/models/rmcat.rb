@@ -1,6 +1,7 @@
+# @author Tom Cox <tom.jcox@icloud.com>
+# @author Richard Mitchell <https://github.com/mr-mitch>
+
 class Rmcat < ActiveRecord::Base
-	# @author Tom Cox <tom.jcox@icloud.com>
-	# @author Richard Mitchell <https://github.com/mr-mitch>
 
 	has_many :rooms
 

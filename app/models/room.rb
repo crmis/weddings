@@ -1,5 +1,6 @@
+# @author Richard Mitchell <https://github.com/mr-mitch>
 class Room < ActiveRecord::Base
-	# @author Richard Mitchell <https://github.com/mr-mitch>
+
 	belongs_to :rmcat
 
 	has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
