@@ -20,6 +20,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# Use Postgresql with Heroku, optimises unicorn concurrency.
 production:
-  <<: *default
-  database: db/production.sqlite3
+  url:  <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>
