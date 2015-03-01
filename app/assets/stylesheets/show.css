@@ -19,7 +19,7 @@
 	padding: 0em 0em 0em 0em;
 	/*  takes the width of the image */
 	font-familys: serif;
-	border: 0.1em solid blue;
+	borders: 0.1em solid blue;
 }
 
 #description {
