@@ -35,6 +35,8 @@ group :development do
 	gem 'spring', '~> 1.3.2'
 	# Access an IRB console on exception pages or by using <%= console %> in views
 	gem 'web-console', '~> 2.0.0'
+	# CLI gem for atom-beautify package. (Ctrl+Alt+B)
+	gem 'ruby-beautify'
 	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
 	# gem 'byebug', '~> 3.5.1'
 end
@@ -63,9 +65,6 @@ gem 'tzinfo-data', '~> 1.2015.1'
 
 # New Relic for application metrics
 gem 'newrelic_rpm', '~> 3.10.0.279'
-
-# CLI gem for atom-beautify package. (Ctrl+Alt+B)
-gem 'ruby-beautify'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
