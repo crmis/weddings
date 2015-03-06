@@ -36,7 +36,7 @@ group :development do
 	# Access an IRB console on exception pages or by using <%= console %> in views
 	gem 'web-console', '~> 2.0.0'
 	# CLI gem for atom-beautify package. (Ctrl+Alt+B)
-	gem 'ruby-beautify'
+	gem 'ruby-beautify', :platforms => :ruby
 	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
 	# gem 'byebug', '~> 3.5.1'
 end
