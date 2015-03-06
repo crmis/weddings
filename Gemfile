@@ -35,8 +35,6 @@ group :development do
 	gem 'spring', '~> 1.3.2'
 	# Access an IRB console on exception pages or by using <%= console %> in views
 	gem 'web-console', '~> 2.0.0'
-	# CLI gem for atom-beautify package. (Ctrl+Alt+B)
-	gem 'ruby-beautify', :platforms => :ruby
 	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
 	# gem 'byebug', '~> 3.5.1'
 end
@@ -70,5 +68,7 @@ gem 'newrelic_rpm', '~> 3.10.0.279'
 platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
 	# => should now only bundle on OSX & Linux. And hopefully deploy!
-	gem 'unicorn', '~> 4.8.3', :platforms => :ruby
+	gem 'unicorn', '~> 4.8.3'
+	# CLI gem for atom-beautify package. (Ctrl+Alt+B)
+	gem 'ruby-beautify', '~> 0.97.2'
 end
