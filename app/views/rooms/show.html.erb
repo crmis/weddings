@@ -62,5 +62,7 @@
         <%= link_to "Edit", edit_room_path(@room) %>
       <% end %>
       <%= link_to 'Back', rooms_path %>
+      <%= link_to 'Add viewing', new_room_viewing_path(@room) %>
+      <%= link_to 'Show viewings', room_viewings_path(@room) %>
     </div>
 </div>
