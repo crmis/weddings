@@ -1,0 +1,41 @@
+// Place all the styles related to the Extras controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#extras-details {
+  width: 35em;
+  /* left right margins set to auto to centre div */
+  /* margins top right bottom left */
+  margin: 0em 0em 0em 17em;
+  padding: 1em 0em 1em 1em;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  borders: 0.1em solid red;
+}
+
+#extras-img {
+  width: 12em;
+  /*float: left;*/
+  /* margins top right bottom left */
+  margin: 1em 0em 0em 20em;
+  padding: 0em 0em 0em 0em;
+  /*  takes the width of the image */
+  font-familys: serif;
+  borders: 0.1em solid blue;
+}
+
+.extras-show{
+  font-weight:bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  borders: 0.1em solid red;
+  padding: 0.8em;
+
+}
+.extras-title {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 48%;
+}
