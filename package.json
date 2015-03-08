@@ -1,16 +1,17 @@
 {
 	"name": "weddings",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Wedding organiser website built with Ruby on Rails",
 	"main": "Gruntfile.js",
-	"dependencies": {
+	"devDependencies": {
 		"grunt-contrib-jshint": "^0.10.0",
 		"grunt-contrib-nodeunit": "^0.4.1",
 		"grunt-contrib-uglify": "^0.5.1",
+		"grunt-contrib-cssmin": "^0.12.2",
 		"grunt-csscomb": "^3.0.0",
 		"grunt": "^0.4.5",
 		"csscomb": "^3.0.4",
-		"grunt-check-gems": "0.0.2"
+		"grunt-check-gems": "^0.0.2"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
