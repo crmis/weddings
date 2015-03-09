@@ -59,7 +59,7 @@ gem 'cancancan', '~> 1.10.1'
 gem 'paperclip', '~> 4.2.1'
 
 # Viewable to make rooms viewable.
-gem 'viewable', '~> 0.5.15'
+gem 'viewable', '~> 0.5.16'
 
 # New Relic for application metrics.
 gem 'newrelic_rpm', '~> 3.10.0.279'

@@ -205,7 +205,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    viewable (0.5.15)
+    viewable (0.5.16)
       jbuilder (~> 2.0)
       rails_12factor (~> 0.0.3)
       responders (~> 2.0)
@@ -246,6 +246,6 @@ DEPENDENCIES
   tzinfo-data (~> 1.2015.1)
   uglifier (~> 2.7.1)
   unicorn (~> 4.8.3)
-  viewable (~> 0.5.15)
+  viewable (~> 0.5.16)
   web-console (~> 2.1.1)
   yard (~> 0.8.7.6)
