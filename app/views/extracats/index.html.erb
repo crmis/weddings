@@ -1,0 +1,28 @@
+<div class="main-form">
+<h1>Listing Extracats</h1>
+<filedset>
+<table>
+  <thead>
+    <tr>
+      <th>Extratype</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @extracats.each do |extracat| %>
+      <tr>
+        <td><%= extracat.extratype %></td>
+        <td><%= link_to 'Show', extracat %></td>
+        <td><%= link_to 'Edit', edit_extracat_path(extracat) %></td>
+        <td><%= link_to 'Destroy', extracat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Extracat', new_extracat_path %>
+</fieldset>
+</div>

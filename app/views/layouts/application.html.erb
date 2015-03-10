@@ -30,7 +30,14 @@
             <li><a class="navbar-brand" href="/rmcats/new">New Room Type</a></li>
           </ul>
         </li>
-        <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
+        <ul><li><a class="navbar-brand" href="/extras">Extras</a></li>
+          <li>
+            <a class="navbar-brand" href="/rmcats">Extra Types</a>
+            <ul>
+              <li><a class="navbar-brand" href="/extracats">View Extra Types</a></li>
+              <li><a class="navbar-brand" href="/extracats/new">New Extra Type</a></li>
+            </ul>
+          </li>
         <li>
         Account
         <ul>
@@ -38,6 +45,7 @@
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-brand'  %></li>
         </ul>
         </li>
+        <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
       </ul>
     <% end %>
     <!-- if a customer is signed in display navbar with sufficient privilidges -->
@@ -46,6 +54,7 @@
         <li>
           <a class="navbar-brand" href="/rooms">Rooms</a>
         </li>
+        <li><a class="navbar-brand" href="/extras">Extras</a></li>
         <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
         <li>
         Account
@@ -62,6 +71,7 @@
         <li>
           <a class="navbar-brand" href="/rooms">Rooms</a>
         </li>
+        <li><a class="navbar-brand" href="/extras">Extras</a></li>
         <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
         <li>
         Account
