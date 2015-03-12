@@ -6,6 +6,7 @@
 /log
 /tmp
 /db/*.sqlite3
+/db/migrate
 /spec/tmp
 
 ## Need public system because lab machines.
