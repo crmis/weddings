@@ -13,7 +13,10 @@ class ViewingsController < ApplicationController
   end
 
   def create
-    @viewing =  Viewing.new(params[:viewing].permit(:room_id, :start_time, :length))
+    @viewing =  Viewing.new(params[:viewing].permit(:room_id, :start_time, :user_id, :length))
+      if current_user.customer?
+        @viewing.user_id = current_user.id
+      end
     @viewing.room = @room
     if @viewing.save
       redirect_to room_viewings_path(@room, method: :get)
@@ -44,7 +47,7 @@ class ViewingsController < ApplicationController
     @viewing = Viewing.find(params[:id])
     # @viewing.room = @room
 
-    if @viewing.update(params[:viewing].permit(:room_id, :start_time, :length))
+    if @viewing.update(params[:viewing].permit(:room_id, :start_time, :user_id, :length))
       flash[:notice] = 'Your viewing was updated succesfully'
 
       if request.xhr?
@@ -73,5 +76,9 @@ class ViewingsController < ApplicationController
       @room = Room.find_by_id(params[:room_id])
     end
   end
+
+  # def viewing_params
+  #   params.require(:viewing).permit(:user_ID)
+  # end
 
 end

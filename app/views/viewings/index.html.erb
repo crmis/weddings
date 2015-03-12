@@ -3,6 +3,7 @@
   <tr>
     <th>Start</th>
     <th>End</th>
+    <th>User</th>
   </tr>
 
   <% @viewings.each do |viewing| %>
@@ -12,6 +13,10 @@
     </td>
     <td>
       <%= (viewing.calculate_end_time + 60).strftime('%e %b %Y %H:%M%p') %>
+    </td>
+    <td>
+      <%#= viewing.user_id %>
+      <%= viewing.user.customer_name %>
     </td>
     <td><%= link_to "Delete", room_viewing_path(@room, viewing), data: { confirm: 'Are you sure?' }, method: :delete %>
     </td>

@@ -1571,9 +1571,9 @@ $.widget("ui.draggable", $.ui.mouse, {
 		}
 
 		/*
-		 * - Position generation -
-		 * This block generates everything position related - it's the core of draggables.
-		 */
+		* - Position generation -
+		* This block generates everything position related - it's the core of draggables.
+		*/
 
 		//Cache the margins of the original element
 		this._cacheMargins();
@@ -1937,9 +1937,9 @@ $.widget("ui.draggable", $.ui.mouse, {
 		}
 
 		/*
-		 * - Position constraining -
-		 * Constrain the position to a mix of grid, containment.
-		 */
+		* - Position constraining -
+		* Constrain the position to a mix of grid, containment.
+		*/
 
 		// If we are not dragging yet, we won't check for options
 		if ( this.originalPosition ) {
@@ -3398,8 +3398,8 @@ $.widget("ui.resizable", $.ui.mouse, {
 });
 
 /*
- * Resizable Extensions
- */
+* Resizable Extensions
+*/
 
 $.ui.plugin.add("resizable", "animate", {
 
@@ -4145,9 +4145,9 @@ $.widget("ui.sortable", $.ui.mouse, {
 		this._cacheHelperProportions();
 
 		/*
-		 * - Position generation -
-		 * This block generates everything position related - it's the core of draggables.
-		 */
+		* - Position generation -
+		* This block generates everything position related - it's the core of draggables.
+		*/
 
 		//Cache the margins of the original element
 		this._cacheMargins();
@@ -5054,9 +5054,9 @@ $.widget("ui.sortable", $.ui.mouse, {
 		}
 
 		/*
-		 * - Position constraining -
-		 * Constrain the position to a mix of grid, containment.
-		 */
+		* - Position constraining -
+		* Constrain the position to a mix of grid, containment.
+		*/
 
 		if(this.originalPosition) { //If we are not dragging yet, we won't check for options
 
@@ -5260,15 +5260,15 @@ $.effects = {
 };
 
 /*!
- * jQuery Color Animations v2.1.2
- * https://github.com/jquery/jquery-color
- *
- * Copyright 2013 jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- *
- * Date: Wed Jan 16 08:47:09 2013 -0600
- */
+* jQuery Color Animations v2.1.2
+* https://github.com/jquery/jquery-color
+*
+* Copyright 2013 jQuery Foundation and other contributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+* Date: Wed Jan 16 08:47:09 2013 -0600
+*/
 (function( jQuery, undefined ) {
 
 	var stepHooks = "backgroundColor borderBottomColor borderLeftColor borderRightColor borderTopColor color columnRuleColor outlineColor textDecorationColor textEmphasisColor",

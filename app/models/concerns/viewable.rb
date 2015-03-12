@@ -3,13 +3,15 @@ module Viewable
 
   included do
     belongs_to :room
+    belongs_to :user
 
     validates :start_time, presence: true
     validates :length, presence: true, numericality: { greater_than: 0 }
     validate :start_date_cannot_be_in_the_past
     validate :overlaps
 
-    before_validation :calculate_end_time
+
+    before_validation
 
 
     scope :time_constraint, ->(c1, f1, c2, f2) do
@@ -57,7 +59,7 @@ module Viewable
 
   def as_json(options = {})
    {
-    :id => self.id,
+    :title => "Viewing",
     :start => self.start_time,
     :end => self.end_time + 60,
     :recurring => false,
