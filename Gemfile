@@ -15,9 +15,11 @@ gem 'turbolinks', '~> 2.5.3'
 
 group :production do
 	# Postgres for production Active Record database.
-	gem 'pg'
+	gem 'pg', '~> 0.18.1'
 	# 12 Factor App Gem for Heroku.
-	gem 'rails_12factor'
+	gem 'rails_12factor', '~> 0.0.3'
+	# New Relic for application metrics.
+	gem 'newrelic_rpm', '~> 3.10.0.279'
 end
 
 group :development do
@@ -60,9 +62,6 @@ gem 'paperclip', '~> 4.2.1'
 
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.16'
-
-# New Relic for application metrics.
-gem 'newrelic_rpm', '~> 3.10.0.279'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
