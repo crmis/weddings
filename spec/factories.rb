@@ -14,7 +14,7 @@ FactoryGirl.define do
 
 	factory :rmcat do
 		rmtype "The New Roomcat"
-		association :rooms, factory: :room
+		# association :rooms, factory: :room
 	end
 
 	factory :extra do
@@ -29,7 +29,7 @@ FactoryGirl.define do
 
 	factory :extracat do
 		extratype "Beautiful"
-		association :extras, factory: :extra
+		# association :extras, factory: :extra
 	end
 
 	factory :user do

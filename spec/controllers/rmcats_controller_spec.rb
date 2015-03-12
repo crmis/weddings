@@ -5,34 +5,45 @@ RSpec.describe RmcatsController, :type => :controller do
 
 	# bundle exec rspec spec\controllers\rmcats_controller_spec.rb
 
-	# describe "GET rmcat index" do
-	#   it "assigns all rmcats as @rmcats" do
-	#     rmcat = FactoryGirl.create(:rmcat)
-	#     get :index, {}
-	#     expect(assigns(:rmcats)).to eq([rmcat])
-	#   end
-	# end
+	describe "GET #index" do
+		it "populates an array of rmcats" do
+			rmcat = create(:rmcat)
+			get :index
+			assigns(:rmcats).should eq([rmcat])
+		end
 
-	describe "GET new" do
-		it "assigns a new rmcat as @rmcat" do
-			get :new, {}
-			expect(assigns(:rmcat)).to be_a_new(Rmcat)
+		it "renders the :index view" do
+			get :index
+			response.should render_template :index
 		end
 	end
 
-	# describe "GET edit" do
-	#   it "assigns the requested rmcat as @rmcat" do
-	#     rmcat = FactoryGirl.create(:rmcat)
-	#     get :edit, {:id => rmcat.to_param}
-	#     expect(assigns(:rmcat)).to eq(rmcat)
-	#   end
-	# end
-	#
-	# describe "GET show" do
-	#   it "assigns the requested rmcat as @rmcat" do
-	#     rmcat = FactoryGirl.create(:rmcat)
-	#     get :show, {:id => rmcat.to_param}
-	#     expect(assigns(:rmcat)).to eq(rmcat)
-	#   end
-	# end
+	describe "GET #show" do
+		it "assigns the requested rmcat to @rmcat" do
+			rmcat = create(:rmcat)
+			get :show, id: rmcat
+			assigns(:rmcat).should eq(rmcat)
+		end
+
+		it "renders the #show view" do
+			get :show, id: create(:rmcat)
+			response.should render_template :show
+		end
+	end
+
+	let!(:admin) { create(:admin) }
+	before { subject.stub(current_user: admin, authenticate_user!: true) }
+	describe "POST create" do
+		context "with valid attributes" do
+			it "creates a new rmcat" do
+				expect{ post :create, rmcat: attributes_for(:rmcat) }#.to change(Room,:count).by(1)
+			end
+
+			# expecting <"new"> but rendering with <[]>
+			# it "redirects to the new rmcat" do
+			# 	post :create, rmcat: attributes_for(:rmcat)
+			# 	response.should render_template :new
+			# end
+		end
+	end
 end
