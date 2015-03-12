@@ -1,3 +1,5 @@
+# @author Stacey Rees
+# @author Richard Mitchell
 class ExtracatsController < ApplicationController
   before_action :set_extracat, only: [:show, :edit, :update, :destroy]
 

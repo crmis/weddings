@@ -1,3 +1,5 @@
+# @author Tom Cox <tom.jcox@icloud.com>
+# @author Richard Mitchell <https://github.com/mr-mitch>
 require_relative './concerns/viewable'
 class Viewing < ActiveRecord::Base
 

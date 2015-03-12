@@ -1,3 +1,4 @@
+# @author Tom Cox <tom.jcox@icloud.com>
 class RoomsController < ApplicationController
 	# @see def resource_not_found
 	around_filter :resource_not_found

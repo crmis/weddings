@@ -1,4 +1,6 @@
+# @author Stacey Rees
 class ExtrasController < ApplicationController
+
   before_action :set_extra, only: [:show, :edit, :update, :destroy]
 
   # GET /extras

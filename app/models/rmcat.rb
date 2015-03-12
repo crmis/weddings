@@ -1,6 +1,5 @@
 # @author Tom Cox <tom.jcox@icloud.com>
 # @author Richard Mitchell <https://github.com/mr-mitch>
-
 class Rmcat < ActiveRecord::Base
 
 	has_many :rooms

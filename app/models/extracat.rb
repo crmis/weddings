@@ -1,3 +1,5 @@
+# @author Richard Mitchell
+# @author Stacey Rees
 class Extracat < ActiveRecord::Base
   has_many :extras#
   def extracat_info

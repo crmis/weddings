@@ -1,3 +1,4 @@
+# @author Tom Cox <tom.jcox@icloud.com>
 module Viewable
   extend ActiveSupport::Concern
 
