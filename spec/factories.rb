@@ -17,6 +17,21 @@ FactoryGirl.define do
 		association :rooms, factory: :room
 	end
 
+	factory :extra do
+		extraimg_file_name 'extra-controller-valid.jpg'
+		extraimg_content_type 'image/jpeg'
+		extraimg_file_size 1.megabyte
+		name "The New Extra"
+		description "The brilliant new extra"
+		quantity "1"
+		price "100"
+	end
+
+	factory :extracat do
+		extratype "Beautiful"
+		association :extras, factory: :extra
+	end
+
 	factory :user do
 		email "basicuser@mvmanor.co.uk"
 		password "u"
