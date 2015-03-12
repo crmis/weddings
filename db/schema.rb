@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208193906) do
+ActiveRecord::Schema.define(version: 20150302125341) do
+
+  create_table "extras", force: :cascade do |t|
+    t.string   "extraimg"
+    t.string   "name"
+    t.text     "description"
+    t.integer  "quantity"
+    t.decimal  "price"
+    t.integer  "extracat_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.string   "extraimg_file_name"
+    t.string   "extraimg_content_type"
+    t.integer  "extraimg_file_size"
+    t.datetime "extraimg_updated_at"
+  end
 
   create_table "rmcats", force: :cascade do |t|
     t.string   "rmtype"

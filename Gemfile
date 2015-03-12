@@ -40,12 +40,12 @@ group :development do
 end
 
 group :test do
-	# Codeclimate Test Reporting
+	# Codeclimate Test Reporting.
 	gem 'codeclimate-test-reporter', '~> 0.4.6', require: nil
 end
 
 group :doc do
-	# Yard for documentation, replaces sdoc
+	# Yard for documentation, replaces sdoc/rdoc.
 	gem 'yard', '~> 0.8.7.6'
 end
 
@@ -58,10 +58,10 @@ gem 'cancancan', '~> 1.10.1'
 # Paperclip for better image uploads.
 gem 'paperclip', '~> 4.2.1'
 
-# tz-info for windows timezone data.
-gem 'tzinfo-data', '~> 1.2015.1'
+# Viewable to make rooms viewable.
+gem 'viewable', '~> 0.5.15'
 
-# New Relic for application metrics
+# New Relic for application metrics.
 gem 'newrelic_rpm', '~> 3.10.0.279'
 
 # Bundle on OSX and Linux only. (including deployment)
@@ -71,4 +71,11 @@ platforms :ruby do
 	gem 'unicorn', '~> 4.8.3'
 	# CLI gem for atom-beautify package. (Ctrl+Alt+B)
 	gem 'ruby-beautify', '~> 0.97.2'
+end
+
+platforms :mingw, :mswin, :x64_mingw, :jruby do
+	# tz-info for windows timezone data.
+	gem 'tzinfo-data', '~> 1.2015.1'
+	# Responders gem, required on windows for viewable
+	gem 'responders', '2.0'
 end

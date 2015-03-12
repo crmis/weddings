@@ -47,3 +47,8 @@ bower.json
 /node_modules/
 # Gruntfile.js
 # package.json
+build/
+npm-debug.log
+
+## Ignore RubyMine folders
+.idea/
