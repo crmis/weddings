@@ -1,5 +1,5 @@
-# @author Tom Cox <tom.jcox@icloud.com>
-# @author Richard Mitchell
+# @author Tom Cox <https://github.com/koxzi95>
+# @author Richard Mitchell <https://github.com/mr-mitch>
 class ViewingsController < ApplicationController
   respond_to :html, :xml, :json
 

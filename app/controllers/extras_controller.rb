@@ -1,6 +1,7 @@
-# @author Stacey Rees
+# @author Stacey Rees <https://github.com/staceysmells>
 class ExtrasController < ApplicationController
-
+ # @see def resource_not_found
+  around_filter :resource_not_found
   before_action :set_extra, only: [:show, :edit, :update, :destroy]
 
   # GET /extras
@@ -51,6 +52,13 @@ class ExtrasController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_extra
       @extra = Extra.find(params[:id])
+    end
+
+    # If resource not found redirect to root and flash error.
+    def resource_not_found
+     yield
+    rescue ActiveRecord::RecordNotFound
+     redirect_to root_url, :notice => "Room Category not found."
     end
 
     # Only allow a trusted parameter "white list" through.

@@ -1,4 +1,5 @@
-# @author Richard Mitchell
+# @author Richard Mitchell <https://github.com/mr-mitch>
+# @author Tom Cox <https://github.com/koxzi95>
 class RmcatsController < ApplicationController
 	# @see def resource_not_found
 	around_filter :resource_not_found

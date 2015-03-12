@@ -1,4 +1,4 @@
-# @author Tom Cox <tom.jcox@icloud.com>
+# @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
 
 RSpec.describe Room, :type => :model do

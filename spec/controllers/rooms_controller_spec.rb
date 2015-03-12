@@ -1,4 +1,4 @@
-# @author Tom Cox <tom.jcox@icloud.com>
+# @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
 
 # General note for all tests, because I added 'config.include FactoryGirl::Syntax::Methods'

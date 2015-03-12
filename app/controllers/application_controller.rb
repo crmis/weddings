@@ -1,14 +1,11 @@
-# @author Tom Cox <tom.jcox@icloud.com>
-# @author Richard Mitchell
+# @author Tom Cox <https://github.com/koxzi95>
+# @author Richard Mitchell <https://github.com/mr-mitch>
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
   protect_from_forgery with: :exception
   # before_action :authenticate_user!
-
-
-
 
   # This is the rescue for CanCan, if a user cannot access a resouce then it
   # will throw them back to the root.
@@ -31,5 +28,4 @@ class ApplicationController < ActionController::Base
       }
     end
   end
-
 end

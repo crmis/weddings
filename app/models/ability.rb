@@ -1,4 +1,4 @@
-# @author Tom Cox <tom.jcox@icloud.com>
+# @author Tom Cox <https://github.com/koxzi95>
 class Ability
   include CanCan::Ability
   def initialize(user)

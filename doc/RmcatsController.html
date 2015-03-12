@@ -121,7 +121,20 @@
       
         
         <div class='inline'>
-<p>Richard Mitchell</p>
+<p>Richard Mitchell &lt;<a
+href="https://github.com/mr-mitch">github.com/mr-mitch</a>&gt;</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Tom Cox &lt;<a href="https://github.com/koxzi95">github.com/koxzi95</a>&gt;</p>
 </div>
       
     </li>
@@ -353,7 +366,6 @@
       <pre class="lines">
 
 
-27
 28
 29
 30
@@ -361,10 +373,11 @@
 32
 33
 34
-35</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 28</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
 	<span class='ivar'>@rmcat</span> <span class='op'>=</span> <span class='const'>Rmcat</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_rmcat_params'>rmcat_params</span><span class='rparen'>)</span>
@@ -406,7 +419,6 @@
       <pre class="lines">
 
 
-47
 48
 49
 50
@@ -414,10 +426,11 @@
 52
 53
 54
-55</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
 	<span class='ivar'>@rmcat</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
@@ -459,11 +472,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_edit'>edit</span>
 <span class='kw'>end</span></pre>
@@ -498,12 +511,12 @@
       <pre class="lines">
 
 
-9
 10
-11</pre>
+11
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
 	<span class='ivar'>@rmcats</span> <span class='op'>=</span> <span class='const'>Rmcat</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span>
@@ -539,12 +552,12 @@
       <pre class="lines">
 
 
-18
 19
-20</pre>
+20
+21</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 19</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span>
 	<span class='ivar'>@rmcat</span> <span class='op'>=</span> <span class='const'>Rmcat</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -580,11 +593,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+15
+16</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
 <span class='kw'>end</span></pre>
@@ -619,16 +632,16 @@
       <pre class="lines">
 
 
-38
 39
 40
 41
 42
 43
-44</pre>
+44
+45</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/rmcats_controller.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
 	<span class='kw'>if</span> <span class='ivar'>@rmcat</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_rmcat_params'>rmcat_params</span><span class='rparen'>)</span>
@@ -647,7 +660,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Mar 12 19:16:55 2015 by
+  Generated on Thu Mar 12 21:03:18 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.5).
 </div>

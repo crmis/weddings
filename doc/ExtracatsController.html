@@ -121,7 +121,8 @@
       
         
         <div class='inline'>
-<p>Stacey Rees</p>
+<p>Stacey Rees &lt;<a
+href="https://github.com/staceysmells">github.com/staceysmells</a>&gt;</p>
 </div>
       
     </li>
@@ -133,7 +134,8 @@
       
         
         <div class='inline'>
-<p>Richard Mitchell</p>
+<p>Richard Mitchell &lt;<a
+href="https://github.com/mr-mitch">github.com/mr-mitch</a>&gt;</p>
 </div>
       
     </li>
@@ -365,18 +367,18 @@
       <pre class="lines">
 
 
-25
-26
 27
 28
 29
 30
 31
 32
-33</pre>
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
   <span class='ivar'>@extracat</span> <span class='op'>=</span> <span class='const'>Extracat</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_extracat_params'>extracat_params</span><span class='rparen'>)</span>
@@ -418,13 +420,13 @@
       <pre class="lines">
 
 
-45
-46
 47
-48</pre>
+48
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
   <span class='ivar'>@extracat</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
@@ -461,11 +463,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_edit'>edit</span>
 <span class='kw'>end</span></pre>
@@ -500,12 +502,12 @@
       <pre class="lines">
 
 
-7
-8
-9</pre>
+9
+10
+11</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 9</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
   <span class='ivar'>@extracats</span> <span class='op'>=</span> <span class='const'>Extracat</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span>
@@ -541,12 +543,12 @@
       <pre class="lines">
 
 
-16
-17
-18</pre>
+18
+19
+20</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span>
   <span class='ivar'>@extracat</span> <span class='op'>=</span> <span class='const'>Extracat</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -582,11 +584,11 @@
       <pre class="lines">
 
 
-12
-13</pre>
+14
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 14</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
 <span class='kw'>end</span></pre>
@@ -621,16 +623,16 @@
       <pre class="lines">
 
 
-36
-37
 38
 39
 40
 41
-42</pre>
+42
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/extracats_controller.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
   <span class='kw'>if</span> <span class='ivar'>@extracat</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_extracat_params'>extracat_params</span><span class='rparen'>)</span>
@@ -649,7 +651,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Mar 12 19:16:55 2015 by
+  Generated on Thu Mar 12 21:03:18 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.5).
 </div>

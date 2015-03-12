@@ -1,4 +1,4 @@
-# @author Stacey Rees
+# @author Stacey Rees <https://github.com/staceysmells>
 class Extra < ActiveRecord::Base
   belongs_to :extracat
   has_attached_file :extraimg, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
