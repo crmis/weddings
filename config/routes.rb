@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
 	resources :rmcats
 	resources :extras
+ resources :extracats
 
 	root :to => redirect('/pages/home')
 
