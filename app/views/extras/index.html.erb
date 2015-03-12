@@ -1,20 +1,29 @@
-
-<nav class="roomnavbar navbar-default" role="navigation">
-<div class="roomcontainer">
-  <div class="rooomnavbar-header">
+<nav class="extranavbar navbar-default" role="navigation">
+<div class="extracontainer">
+  <div class="extranavbar-header">
       <!-- <div class="roomheader"><a class="roomnavbar-brand" href="/rooms">Rooms</a></div> -->
-          <ul class="roomliststyle">
-
-            <li><a class="roomnavbar-brand" href="/rooms/1">Maple Room</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/2">Castle Room</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/3">Regal Room</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/4">The Grand Hall</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/5">The Beaumant</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/6">Belverdere</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/7">Winter Wonderland</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/8">Ambleside</a></li>
-            <li><a class="roomnavbar-brand" href="/rooms/9">The Lakeside</a></li>
-          </ul>
+<ul class="extraliststyle">
+  <li>
+  Flowers
+  <ul>
+    <li><a class="extranavbar-brand" href="/extras/1">Roses</a></li>
+  </ul>
+  </li>
+  <li>
+  Cars
+  <ul>
+    <li><a class="extranavbar-brand" href="/extras/2">Rolls Royce</a></li>
+  </ul>
+  </li>
+    <li><a class="extranavbar-brand" href="/extras/3">Professional Photography</a></li>
+  <li>
+  Live Music
+  <ul>
+    <li><a class="extranavbar-brand" href="/extras/4">Balineasy</a></li>
+  </ul>
+  </li>
+  <li><a class="extranavbar-brand" href="/extras/5">Professional Invitations</a></li>
+  </ul>
 
   </div>
 </div>
@@ -41,39 +50,3 @@ $(document).ready(function() {
   });
 });
 </script>
-
-<h1>Listing Extras</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Extraimg</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Quantity</th>
-      <th>Price</th>
-      <th>Extracat</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @extras.each do |extra| %>
-      <tr>
-        <td><%= extra.extraimg %></td>
-        <td><%= extra.name %></td>
-        <td><%= extra.description %></td>
-        <td><%= extra.quantity %></td>
-        <td><%= extra.price %></td>
-        <td><%= extra.extracat_id %></td>
-        <td><%= link_to 'Show', extra %></td>
-        <td><%= link_to 'Edit', edit_extra_path(extra) %></td>
-        <td><%= link_to 'Destroy', extra, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Extra', new_extra_path %>
