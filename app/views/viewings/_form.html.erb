@@ -1,0 +1,20 @@
+<%= form_for([@room, @viewing]) do |f| %>
+  <p>
+    <%= f.label 'start_time', 'Start time' %>
+    <%= f.datetime_select :start_time, { minute_step: 15 } %>
+  </p>
+  <p>
+    <%= f.label 'length', 'Length of viewing in hours' %>
+    <%= f.number_field 'length', min: 1 %>
+  </p>
+  <p>
+  <br />
+  <% if not current_user.customer? %>
+      <p> Select Customer </P>
+    	<%= f.collection_select :user_id, User.all,
+      :id,:user_info %>
+  <% end %>
+
+  </p>
+  <%= f.submit 'Submit' %>
+<% end %>

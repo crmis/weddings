@@ -19,42 +19,42 @@
   </div>
 </div>
 </nav>
-<div id="all-details">
-    <div class="main-title"> <%= @room.name %> </div>
-    <div id="show-img">
+
+    <div class="room-title"> <%= @room.name %> </div>
+    <div id="room-img">
       <% if not @room.picture.blank? %>
         <%= link_to (image_tag @room.picture, size: "650x500"), rooms_path, :title => 'return to rooms.' %>
       <% else %>
         <%= image_tag "no-image.jpg", :size => "200x250" %>
       <% end %>
     </div>
-
-    <div class="sub-title">
+<div id="room-details">
+    <div class="room-show">
       <% if not @room.rmcat.rmtype.blank? %>
         Room Type: <%= @room.rmcat.rmtype %>
       <% end %>
     </div>
 
-    <div class="sub-title">
+    <div class="room-show">
       <% if not @room.description.blank? %>
         Description: <%= @room.description %>
       <% end %>
     </div>
 
-    <div class="sub-title">
+    <div class="room-show">
       <% if not @room.size.blank? %>
         Room Size: <%= @room.size %> Square feet
       <% end %>
     </div>
 
-    <div class="sub-title">
+    <div class="room-show">
       <% if not @room.capacity.blank? %>
         Room Capacity: <%= @room.capacity %> People
       <% end %>
     </div>
 
 
-    <div class="sub-title">
+    <div class="room-show">
       <% if not @room.price.blank? %>
         Room Price: <%=number_to_currency @room.price, unit: "£" %>
       <% end %><br/>
@@ -62,5 +62,7 @@
         <%= link_to "Edit", edit_room_path(@room) %>
       <% end %>
       <%= link_to 'Back', rooms_path %>
+      <%= link_to 'Add viewing', new_room_viewing_path(@room) %>
+      <%= link_to 'Show viewings', room_viewings_path(@room) %>
     </div>
 </div>

@@ -1,0 +1,2 @@
+module ExtracatsHelper
+end

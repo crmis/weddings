@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-  resources :rmcats
-  resources :rooms
-  
-  resources :extras
+ devise_for :users
 
-  root :to => redirect('/pages/home')
+	resources :rooms do
+		resources :viewings
+	end
 
-  get 'pages/home'
-  get 'pages/contactus'
+	resources :rmcats
+	resources :extras
+
+	root :to => redirect('/pages/home')
+
+	get 'pages/home'
+	get 'pages/contactus'
 
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150302125341) do
+ActiveRecord::Schema.define(version: 20150310154834) do
 
   create_table "extras", force: :cascade do |t|
     t.string   "extraimg"
@@ -65,9 +65,21 @@ ActiveRecord::Schema.define(version: 20150302125341) do
     t.datetime "updated_at"
     t.boolean  "admin",                  default: false, null: false
     t.boolean  "customer",               default: true,  null: false
+    t.string   "FullName"
+    t.string   "customer_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "viewings", force: :cascade do |t|
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "length"
+    t.integer  "room_id"
+    t.integer  "user_ID"
+  end
+
+  add_index "viewings", ["room_id"], name: "index_viewings_on_room_id"
 
 end
