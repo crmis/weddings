@@ -49,13 +49,13 @@ module Viewable
     end
   end
 
-  def calculate_end_time
-    start_time = validate_start_time
-    length = validate_length
-    if start_time && length
-      self.end_time = start_time + (length.hours - 60)
-    end
-  end
+	def calculate_end_time
+		start_time = validate_start_time
+		length = validate_length
+		if start_time && length
+			self.end_time = start_time + (length.hours - 60)
+		end
+	end
 
 
   def as_json(options = {})
