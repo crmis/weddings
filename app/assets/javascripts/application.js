@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require owl.carousel.min.js
+//= require viewable_fullcalendar.js
+//= require viewable_calendar-editable.js
+//= require viewable_custom.js
