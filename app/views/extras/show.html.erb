@@ -56,11 +56,11 @@
     <%= @extra.price %>
   </div>
 
-  <!--<div class="extras-show">-->
-		<!-- Not really needed because navbar -->
-    <!--<strong>Extracat:</strong> -->
+  <!-- <div class="extras-show">
+		Not really needed because navbar
+    <strong>Extracat:</strong>
     <%#= @extra.extracat.extratype %>
-  <!--</div>-->
+  </div> -->
   <% if can? :update, @extra %>
   <%= link_to 'Edit', edit_extra_path(@extra) %> |
   <% end %>
