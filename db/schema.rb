@@ -71,7 +71,6 @@ ActiveRecord::Schema.define(version: 20150310154834) do
 		t.datetime "updated_at"
 		t.boolean  "admin",                  default: false, null: false
 		t.boolean  "customer",               default: true,  null: false
-		t.string   "FullName"
 		t.string   "customer_name"
 	end
 
@@ -83,7 +82,7 @@ ActiveRecord::Schema.define(version: 20150310154834) do
 		t.datetime "end_time"
 		t.integer  "length"
 		t.integer  "room_id"
-		t.integer  "user_ID"
+		t.integer  "user_id"
 	end
 
 	add_index "viewings", ["room_id"], name: "index_viewings_on_room_id"
