@@ -2,9 +2,7 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 require_relative './concerns/viewable'
 class Viewing < ActiveRecord::Base
-
+	include Viewable
 	belongs_to :user
 	belongs_to :room
-
-	include Viewable
 end
