@@ -12,7 +12,7 @@ module Viewable
     validate :overlaps
 
 
-    before_validation
+    before_validation :calculate_end_time
 
 
     scope :time_constraint, ->(c1, f1, c2, f2) do
