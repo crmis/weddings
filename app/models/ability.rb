@@ -7,7 +7,7 @@ class Ability
 		# if administrator
 		if user.admin?
 			can [:manage], [Room, Rmcat, Extra, Extracat, Viewing]
-			# if user, or not logged in
+			# if not logged in
 		else
 			can [:read], [Room, Extra]
 			cannot [:read], [Rmcat, Extracat, Viewing]
@@ -20,5 +20,13 @@ class Ability
 			# Yes is really is cannot
 			cannot [:read], [Rmcat, Extracat]
 		end
+
+		if user
+			can [:manage], [Viewing]
+		end
 	end
 end
+
+# if user.has_role?(:admin)
+# 	can :manage, User
+# end
