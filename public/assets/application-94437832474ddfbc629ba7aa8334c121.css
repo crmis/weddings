@@ -1,0 +1,1514 @@
+/* line 4, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+#extras-details {
+  width: 35em;
+  /* left right margins set to auto to centre div */
+  /* margins top right bottom left */
+  margin: 0em 0em 0em 17em;
+  padding: 1em 0em 1em 1em;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  borders: 0.1em solid red;
+}
+
+/* line 15, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extras-img {
+  width: 12em;
+  /*float: left;*/
+  /* margins top right bottom left */
+  margin: 1em 0em 0em 20em;
+  padding: 0em 0em 0em 0em;
+  /*  takes the width of the image */
+  font-familys: serif;
+  borders: 0.1em solid blue;
+}
+
+/* line 26, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extras-show {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  borders: 0.1em solid red;
+  padding: 0.8em;
+}
+
+/* line 36, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extras-title {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 48%;
+}
+
+/* line 43, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar {
+  min-height: 45px;
+  background-colors: #FEFF00;
+  width: 100%;
+  font-size: 17.5px;
+  padding-top: 9px;
+  padding-bottom: 30px;
+  padding-left: 12%;
+}
+
+/* line 44, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-header {
+  /*background-color: #FFF499;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  width: auto;
+}
+
+/* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
+/* line 46, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 47, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 48, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:active {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 49, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 51, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  z-index: 2;
+  /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+  background-color: #FFF499;
+}
+
+/*.roomheader {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  background-colors: #FEFF00;
+  cursor: pointer;
+  margin-left: 45%;
+  font-size: 2em;
+  }*/
+/* line 70, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle li {
+  background-color: #FFF9A6;
+  margin-right: 0.3px;
+}
+
+/* line 71, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  /*background-color: #FEFF00;*/
+  cursor: pointer;
+}
+
+/* line 81, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li:hover {
+  xbackground: #FEFF00;
+  cxolor: #FEFF00;
+}
+
+/* line 85, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  /*-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;*/
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  /*background-color: #FEFF00;*/
+}
+
+/* line 99, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li ul li {
+  /*background-color: #FEFF00;*/
+  display: block;
+  color: #fff;
+}
+
+/* line 105, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li ul li:hover {
+  background-color: #FEFF00;
+}
+
+/* line 106, C:/Sites/koxzi95/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li:hover ul {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  background-color: #FEFF00;
+}
+.main-form{
+	width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+	/* effects all font body, header, title and label text sizes ...*/
+	font-sizes: 0.8em;
+	borders: 0.1em solid green;
+}
+
+.main-title{
+	font-weight:bold;
+	font-size: 1.2em;
+	line-height: 1.1em;
+  margin-left: 40%;
+	borders: 0.1em solid green;
+}
+
+label{
+	/* labels appear on line above fields */
+	display: block;
+	font-weight:bold;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.field {
+	margin-bottom: 0.5em;
+}
+
+div.ui-datepicker{
+	 font-size: 0.7em;
+}
+
+.actions {
+    margin-bottom: 0.5em;
+}
+
+#notice { color: green; }
+
+#alert { color: red; }
+
+.field_with_errors {
+	padding: 0.1em;
+	background-color: pink;
+	display: table;
+ }
+
+#error_explanation {
+	width: 15em;
+	float: right;
+	font-size: 1em;
+	padding: 1em;
+	/* margins top right bottom left */
+	margin: 4em 2em 0em 0em;
+	background-colors: #f0f0f0;
+}
+
+#error_explanation ul li {
+    font-size: 0.8em;
+	font-style: italic;
+    list-style: circle ;
+	color: black;
+}
+/* 'borders' can be displayed if the 's' is removed to make a valid CSS selector
+	styles used on main product page 'products/index.html.erb'
+*/
+
+#all-content {
+	widths: 80em;
+	margin-left: 4.5%;
+	margin-rights: auto;
+	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+	font-size: 0.8em;
+	borders: 0.1em solid black;
+}
+
+#product-box {
+	width: 29em;
+	height: 15em;
+	padding-top: 1em;
+	padding-left: 1em;
+	float: left;
+	borders: 0.1em solid brown;
+}
+
+#img-box {
+	width: 7.5em;
+	height: 9em;
+	float: left;
+	borders: 0.2em solid purple;
+  padding-top: 1.5em;
+}
+
+#details-box {
+	width: 12em;
+	height: 12em;
+	padding-left:  1em;
+	padding-top: 1em;
+	float: left;
+	borders: 0.2em solid crimson;
+}
+
+#title-box {
+	padding-top: 0.3em;
+  padding-bottom: 0.2em;
+	font-size: 1.5em;
+	font-weight:bold;
+	borders: 0.1em solid DarkGray;
+}
+
+#rmtype {
+	padding-top: 0.4em;
+	font-size: 1.1em;
+	borders: 0.1em solid DarkGray;
+}
+
+#admin-box {
+	padding-top: 0.3em;
+	font-size: 1em;
+	borders: 0.1em solid orange;
+}
+
+
+#capacity {
+  padding-top: 0.3em;
+  font-size: 1.1em;
+  borders: 0.1em solid orange;
+}
+
+#size-box {
+	padding-top: 0.4em;
+	font-size: 1.1em;
+	xborder: 0.1em solid DarkGray;
+  width: 20em;
+}
+
+#price-box {
+  padding-top: 0.3em;
+  font-size: 1.1em;
+  borders: 0.1em solid orange;
+ }
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing {
+    cursor:url(images/grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.3.3
+*/
+
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	margin-left: 35%;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(images/AjaxLoader.gif) no-repeat center center
+}
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+
+
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {opacity: 1}
+}
+@-moz-keyframes empty {
+  0% {opacity: 1}
+}
+@keyframes empty {
+  0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes backSlideOut {
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+@-moz-keyframes backSlideOut {
+  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+}
+@keyframes backSlideOut {
+  25% { opacity: .5; transform: translateZ(-500px); }
+  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+}
+@keyframes backSlideIn {
+  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+@-webkit-keyframes scaleToFade {
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleToFade {
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes goDown {
+  from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes goDown {
+  from { -moz-transform: translateY(-100%); }
+}
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+  from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+  to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}
+/* line 11, C:/Sites/koxzi95/weddings/app/assets/stylesheets/pages.scss */
+body {
+  padding-top: 0px;
+}
+
+/* line 13, C:/Sites/koxzi95/weddings/app/assets/stylesheets/pages.scss */
+.title {
+  margin-left: 35%;
+  /*border: solid;*/
+  margin-top: 4px;
+}
+
+/* line 19, C:/Sites/koxzi95/weddings/app/assets/stylesheets/pages.scss */
+#main-div {
+  min-height: 100%;
+  /* the combined width of three divs, margins and padding ...
+  	use this value to display all three divs beside each other */
+  width: 79em;
+  /* to center the div use the commands below ...
+  	a margin of half the combined width, position set to 'absolute'
+  	and left: 50% */
+  margin-left: -40em;
+  position: absolute;
+  left: 50%;
+  background-color: #E6E6D0;
+  /*border: solid blue;*/
+}
+.roomnavbar {min-height: 45px; background-colors: #FEFF00;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 30px; padding-left: 1%;}
+.roomnavbar-header {background-color: #FEFF00; padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
+/* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
+.roomnavbar-brand:link {text-decoration: none; color: black;}
+.roomnavbar-brand:visited {text-decoration: none; color: black;}
+.roomnavbar-brand:active {text-decoration: none; color: black;}
+.roomnavbar-brand:hover {text-decoration: none; color: black;}
+
+.roomliststyle ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+  background-color: #FFF499;
+}
+/*.roomheader {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  background-colors: #FEFF00;
+  cursor: pointer;
+  margin-left: 45%;
+  font-size: 2em;
+  }*/
+.roomliststyle li {background-color: #FFF9A6; margin-right: 0.3px;}
+.roomliststyle ul li {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  /*background-color: #FEFF00;*/
+  cursor: pointer;
+
+}
+.roomliststyle ul li:hover {
+  xbackground: #FEFF00;
+  cxolor: #FEFF00;
+}
+.roomliststyle ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  /*-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;*/
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  /*background-color: #FEFF00;*/
+}
+.roomliststyle ul li ul li {
+  /*background-color: #FEFF00;*/
+  display: block;
+  color: #fff;
+
+}
+.roomliststyle ul li ul li:hover { background-color: #FEFF00; }
+.roomliststyle ul li:hover ul {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  background-color: #FEFF00;
+}
+
+#room-details {
+  width: 35em;
+  /* left right margins set to auto to centre div */
+  /* margins top right bottom left */
+  margin: 0em 0em 0em 17em;
+  padding: 1em 0em 1em 1em;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  borders: 0.1em solid red;
+}
+
+#room-img {
+  width: 12em;
+  /*float: left;*/
+  /* margins top right bottom left */
+  margin: 1em 0em 0em 20em;
+  padding: 0em 0em 0em 0em;
+  /*  takes the width of the image */
+  font-familys: serif;
+  borders: 0.1em solid blue;
+}
+
+.room-show{
+  font-weight:bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  borders: 0.1em solid red;
+  padding: 0.8em;
+
+}
+.room-title {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 45%;
+}
+/* for usage see 'products/show.html.erb' */
+
+#all-details {
+	width: 35em;
+	/* left right margins set to auto to centre div */
+	/* margins top right bottom left */
+	margin: 0.5em 0em 0em 20em;
+	padding: 1em 0em 1em 1em;
+	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+	font-weight: normal;
+	borders: 0.1em solid red;
+}
+
+#show-img {
+	width: 12em;
+	float: left;
+	/* margins top right bottom left */
+	margin: 0em 0em 0em 2em;
+	padding: 0em 0em 0em 0em;
+	/*  takes the width of the image */
+	font-familys: serif;
+	borders: 0.1em solid blue;
+}
+
+#description {
+	width: 14.5em;
+	max-height:20em;
+	overflow: auto;
+	float: left;
+	margin: 1em 0em 0em 0em;
+	padding: 0em 0em 0em 1em;
+	font-style: italic;
+	line-height: 1.1em;
+	word-wrap: break-word;
+	color: black;
+	borders: 0.1em solid black;
+}
+
+.sub-title{
+	font-weight:bold;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-left: 1.5em;
+	margin-bottom: 0.2em;
+	borders: 0.1em solid red;
+  padding: 0.8em;
+
+}
+.wrapper {
+	width: 60%;
+	border: 1px solid gray;
+	border-radius: 8px;
+	margin: 20px auto;
+	padding: 10px;
+}
+.viewings_table input[type="number"] {
+	width: 30px;
+}
+.viewings_table {
+	font-size: 14px;
+	color: gray;
+}
+.errors {
+	color: #c00;
+}
+.calendar_container {
+	margin: auto;
+	width: 80%;
+}
+/*!
+ * FullCalendar v1.6.4 Stylesheet
+ * Docs & License: http://arshaw.com/fullcalendar/
+ * (c) 2013 Adam Shaw
+ */
+
+
+
+.fc {
+	direction: ltr;
+	text-align: left;
+	}
+
+.fc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+html .fc,
+.fc table {
+	font-size: 1em;
+	}
+
+.fc td,
+.fc th {
+	padding: 0;
+	vertical-align: top;
+	}
+
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+	white-space: nowrap;
+	}
+
+.fc-header-left {
+	width: 25%;
+	text-align: left;
+	}
+
+.fc-header-center {
+	text-align: center;
+	}
+
+.fc-header-right {
+	width: 25%;
+	text-align: right;
+	}
+
+.fc-header-title {
+	display: inline-block;
+	vertical-align: top;
+	}
+
+.fc-header-title h2 {
+	margin-top: 0;
+	white-space: nowrap;
+	}
+
+.fc .fc-header-space {
+	padding-left: 10px;
+	}
+
+.fc-header .fc-button {
+	margin-bottom: 1em;
+	vertical-align: top;
+	}
+
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+	margin-right: -1px;
+	}
+
+.fc-header .fc-corner-right,  /* non-theme */
+.fc-header .ui-corner-right { /* theme */
+	margin-right: 0; /* back to normal */
+	}
+
+/* button layering (for border precedence) */
+
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+	z-index: 2;
+	}
+
+.fc-header .fc-state-down {
+	z-index: 3;
+	}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+	z-index: 4;
+	}
+
+
+
+/* Content
+------------------------------------------------------------------------*/
+
+.fc-content {
+	clear: both;
+	zoom: 1; /* for IE7, gives accurate coordinates for [un]freezeContentHeight */
+	}
+
+.fc-view {
+	width: 100%;
+	overflow: hidden;
+	}
+
+
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,    /* <th>, usually */
+.fc-widget-content {  /* <td>, usually */
+	border: 1px solid #ddd;
+	}
+
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	background: #fcf8e3;
+	}
+
+.fc-cell-overlay { /* semi-transparent rectangle while dragging */
+	background: #bce8f1;
+	opacity: .3;
+	filter: alpha(opacity=30); /* for IE */
+	}
+
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+	position: relative;
+	display: inline-block;
+	padding: 0 .6em;
+	overflow: hidden;
+	height: 1.9em;
+	line-height: 1.9em;
+	white-space: nowrap;
+	cursor: pointer;
+	}
+
+.fc-state-default { /* non-theme */
+	border: 1px solid;
+	}
+
+.fc-state-default.fc-corner-left { /* non-theme */
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	}
+
+.fc-state-default.fc-corner-right { /* non-theme */
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	}
+
+/*
+	Our default prev/next buttons use HTML entities like &lsaquo; &rsaquo; &laquo; &raquo;
+	and we'll try to make them look good cross-browser.
+*/
+
+.fc-text-arrow {
+	margin: 0 .1em;
+	font-size: 2em;
+	font-family: "Courier New", Courier, monospace;
+	vertical-align: baseline; /* for IE7 */
+	}
+
+.fc-button-prev .fc-text-arrow,
+.fc-button-next .fc-text-arrow { /* for &lsaquo; &rsaquo; */
+	font-weight: bold;
+	}
+
+/* icon (for jquery ui) */
+
+.fc-button .fc-icon-wrap {
+	position: relative;
+	float: left;
+	top: 50%;
+	}
+
+.fc-button .ui-icon {
+	position: relative;
+	float: left;
+	margin-top: -50%;
+	*margin-top: 0;
+	*top: -50%;
+	}
+
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+
+.fc-state-default {
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #333;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+.fc-state-hover,
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled {
+	color: #333333;
+	background-color: #e6e6e6;
+	}
+
+.fc-state-hover {
+	color: #333333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	   -moz-transition: background-position 0.1s linear;
+	     -o-transition: background-position 0.1s linear;
+	        transition: background-position 0.1s linear;
+	}
+
+.fc-state-down,
+.fc-state-active {
+	background-color: #cccccc;
+	background-image: none;
+	outline: 0;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+.fc-state-disabled {
+	cursor: default;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+	}
+
+
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+
+.fc-event-container > * {
+	z-index: 8;
+	}
+
+.fc-event-container > .ui-draggable-dragging,
+.fc-event-container > .ui-resizable-resizing {
+	z-index: 9;
+	}
+
+.fc-event {
+	border: 1px solid #3a87ad; /* default BORDER color */
+	background-color: #3a87ad; /* default BACKGROUND color */
+	color: #fff;               /* default TEXT color */
+	font-size: .85em;
+	cursor: default;
+	}
+
+a.fc-event {
+	text-decoration: none;
+	}
+
+a.fc-event,
+.fc-event-draggable {
+	cursor: pointer;
+	}
+
+.fc-rtl .fc-event {
+	text-align: right;
+	}
+
+.fc-event-inner {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	}
+
+.fc-event-time,
+.fc-event-title {
+	padding: 0 1px;
+	}
+
+.fc .ui-resizable-handle {
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	overflow: hidden; /* hacky spaces (IE6/7) */
+	font-size: 300%;  /* */
+	line-height: 50%; /* */
+	}
+
+
+
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+	border-width: 1px 0;
+	margin-bottom: 1px;
+	}
+
+.fc-ltr .fc-event-hori.fc-event-start,
+.fc-rtl .fc-event-hori.fc-event-end {
+	border-left-width: 1px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	}
+
+.fc-ltr .fc-event-hori.fc-event-end,
+.fc-rtl .fc-event-hori.fc-event-start {
+	border-right-width: 1px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	}
+
+/* resizable */
+
+.fc-event-hori .ui-resizable-e {
+	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px      !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: e-resize;
+	}
+
+.fc-event-hori .ui-resizable-w {
+	top: 0           !important;
+	left: -3px       !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: w-resize;
+	}
+
+.fc-event-hori .ui-resizable-handle {
+	_padding-bottom: 14px; /* IE6 had 0 height */
+	}
+
+
+
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+	border-collapse: separate;
+	}
+
+.fc-border-separate th,
+.fc-border-separate td {
+	border-width: 1px 0 0 1px;
+	}
+
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+	border-right-width: 1px;
+	}
+
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+	border-bottom-width: 1px;
+	}
+
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+	border-top-width: 0;
+	}
+
+
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+	text-align: center;
+	}
+
+.fc .fc-week-number {
+	width: 22px;
+	text-align: center;
+	}
+
+.fc .fc-week-number div {
+	padding: 0 2px;
+	}
+
+.fc-grid .fc-day-number {
+	float: right;
+	padding: 0 2px;
+	}
+
+.fc-grid .fc-other-month .fc-day-number {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* for IE */
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+	}
+
+.fc-grid .fc-day-content {
+	clear: both;
+	padding: 2px 2px 1px; /* distance between events and day edges */
+	}
+
+/* event styles */
+
+.fc-grid .fc-event-time {
+	font-weight: bold;
+	}
+
+/* right-to-left */
+
+.fc-rtl .fc-grid .fc-day-number {
+	float: left;
+	}
+
+.fc-rtl .fc-grid .fc-event-time {
+	float: right;
+	}
+
+
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+	border-collapse: separate;
+	}
+
+.fc-agenda-days th {
+	text-align: center;
+	}
+
+.fc-agenda .fc-agenda-axis {
+	width: 50px;
+	padding: 0 4px;
+	vertical-align: middle;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+	}
+
+.fc-agenda .fc-week-number {
+	font-weight: bold;
+	}
+
+.fc-agenda .fc-day-content {
+	padding: 2px 2px 1px;
+	}
+
+/* make axis border take precedence */
+
+.fc-agenda-days .fc-agenda-axis {
+	border-right-width: 1px;
+	}
+
+.fc-agenda-days .fc-col0 {
+	border-left-width: 0;
+	}
+
+/* all-day area */
+
+.fc-agenda-allday th {
+	border-width: 0 1px;
+	}
+
+.fc-agenda-allday .fc-day-content {
+	min-height: 34px; /* TODO: doesnt work well in quirksmode */
+	_height: 34px;
+	}
+
+/* divider (between all-day and slots) */
+
+.fc-agenda-divider-inner {
+	height: 2px;
+	overflow: hidden;
+	}
+
+.fc-widget-header .fc-agenda-divider-inner {
+	background: #eee;
+	}
+
+/* slot rows */
+
+.fc-agenda-slots th {
+	border-width: 1px 1px 0;
+	}
+
+.fc-agenda-slots td {
+	border-width: 1px 0 0;
+	background: none;
+	}
+
+.fc-agenda-slots td div {
+	height: 20px;
+	}
+
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+	border-top-width: 0;
+	}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+	border-top-style: dotted;
+	}
+
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+	*border-top-style: solid; /* doesn't work with background in IE6/7 */
+	}
+
+
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+	border-width: 0 1px;
+	}
+
+.fc-event-vert.fc-event-start {
+	border-top-width: 1px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	}
+
+.fc-event-vert.fc-event-end {
+	border-bottom-width: 1px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	}
+
+.fc-event-vert .fc-event-time {
+	white-space: nowrap;
+	font-size: 10px;
+	}
+
+.fc-event-vert .fc-event-inner {
+	position: relative;
+	z-index: 2;
+	}
+
+.fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: .25;
+	filter: alpha(opacity=25);
+	}
+
+.fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+	display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+	}
+
+/* resizable */
+
+.fc-event-vert .ui-resizable-s {
+	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%      !important;
+	height: 8px      !important;
+	overflow: hidden !important;
+	line-height: 8px !important;
+	font-size: 11px  !important;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+	}
+
+.fc-agenda .ui-resizable-resizing { /* TODO: better selector */
+	_overflow: hidden;
+	}
+/*
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ body {padding-top: 0px; background: #833ad1;}
+
+/* Navbar */
+  .navbar {height:65px;min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 5px;}
+  .navbar-header {padding-left: 5%; padding-right:10%; padding-top: 5px; width: auto;}
+  /* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
+  .navbar-brand:link {text-decoration: none; color: black;}
+  .navbar-brand:visited {text-decoration: none; color: black;}
+  .navbar-brand:active {text-decoration: none; color: black;}
+  .navbar-brand:hover {text-decoration: none; color: black;}
+  /* Currently not in use:
+      .navbar a.brand { font-size: 10px; }
+      . a.brand:hover {color: #833ad1; background-color: transparent; text-decoration: none;}
+      navbar navbar-default navbar-fixed-top
+  */
+   ul {
+     text-align: left;
+     display: inline;
+     margin: 0;
+     padding: 15px 4px 17px 0;
+     list-style: none;
+     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+   }
+   ul li {
+     font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+     display: inline-block;
+     margin-right: -4px;
+     position: relative;
+     padding: 15px 20px;
+     background: #DBB8FF;
+     cursor: pointer;
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+   }
+   ul li:hover {
+     xbackground: #DBB8FF;
+     cxolor: #DBB8FF;
+   }
+   ul li ul {
+     padding: 0;
+     position: absolute;
+     top: 48px;
+     left: 0;
+     width: 150px;
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow: none;
+     display: none;
+     opacity: 0;
+     visibility: hidden;
+     -webkit-transiton: opacity 0.2s;
+     -moz-transition: opacity 0.2s;
+     -ms-transition: opacity 0.2s;
+     -o-transition: opacity 0.2s;
+     -transition: opacity 0.2s;
+   }
+   ul li ul li {
+     background: #DBB8FF;
+     display: block;
+     color: #fff;
+
+   }
+   ul li ul li:hover { background: #DBB8FF; }
+   ul li:hover ul {
+     display: block;
+     opacity: 1;
+     visibility: visible;
+   }
+/* End Navbar */
+
+ .landing-image { padding-left: 14.5%; border: 2em; }
+
+ .center-content {margin-left: 20%;}
+
+ .contact-details {font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; margin-left: 18%;}
+
+ .notice-alert {margin-left:42.5%;}
+
+ .login{float:right;margin-left:70px;margin-top:-35px;}
