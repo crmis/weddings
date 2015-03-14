@@ -8,6 +8,7 @@
 /db/*.sqlite3
 /db/migrate
 /spec/tmp
+coverage/
 
 ## Need public system because lab machines.
 # /public/system
@@ -26,7 +27,7 @@ config/initializers/secret_token.rb
 /vendor/bundle
 
 # these should all be checked in to normalise the environment:
-Gemfile.lock
+# Gemfile.lock
 # .ruby-version, .ruby-gemset
 
 ## Node/Grunt ignores:
