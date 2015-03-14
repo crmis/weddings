@@ -14,8 +14,8 @@
  body {padding-top: 0px; background: #833ad1;}
 
 /* Navbar */
-  .navbar {min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 5px;}
-  .navbar-header {padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
+  .navbar {height:65px;min-height: 45px; background-color: #DBB8FF;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 5px;}
+  .navbar-header {padding-left: 5%; padding-right:10%; padding-top: 5px; width: auto;}
   /* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
   .navbar-brand:link {text-decoration: none; color: black;}
   .navbar-brand:visited {text-decoration: none; color: black;}
@@ -93,3 +93,5 @@
  .contact-details {font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; margin-left: 18%;}
 
  .notice-alert {margin-left:42.5%;}
+
+ .login{float:right;margin-left:70px;margin-top:-35px;}

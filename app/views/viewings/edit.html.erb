@@ -1,0 +1,13 @@
+<h3>Edit viewing for <%= @room.name %></h3>
+
+<%= render 'errors' %>
+<%= render 'form' %>
+
+<div class="calendar_container">
+  <div id="calendar">
+  </div>
+	<form>
+		<input type="button" onClick="history.go(0)" value="Save Changes">
+	</form>
+	<br>
+</div>

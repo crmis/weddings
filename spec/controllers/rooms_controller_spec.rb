@@ -1,4 +1,4 @@
-# @author Tom Cox <tom.jcox@icloud.com>
+# @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
 
 # General note for all tests, because I added 'config.include FactoryGirl::Syntax::Methods'
@@ -7,8 +7,7 @@ require 'rails_helper'
 RSpec.describe RoomsController, :type => :controller do
 
 	# bundle exec rspec spec\controllers\rooms_controller_spec.rb
-
-	# Sort this out: http://everydayrails.com/2012/04/07/testing-series-rspec-controllers.html
+	
 	# def valid_session
 	#   sign_in :user, @admin
 	# end

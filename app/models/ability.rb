@@ -1,17 +1,32 @@
-# @author Tom Cox <tom.jcox@icloud.com>
+# @author Tom Cox <https://github.com/koxzi95>
 class Ability
 	include CanCan::Ability
 	def initialize(user)
 		user ||= User.new # guest user (not logged in)
+
+		# if administrator
 		if user.admin?
-			can [:manage], [Room, Rmcat]
+			can [:manage], [Room, Rmcat, Extra, Extracat, Viewing]
+			# if not logged in
 		else
-			can [:read], [Room, Rmcat]
+			can [:read], [Room, Extra]
+			cannot [:read], [Rmcat, Extracat, Viewing]
+			cannot [:create], [Viewing]
 		end
-		if user.customer?
-			can [:read], [Room]
+
+		# if customer
+		if user.customer
+			can [:create], [Viewing]
 			# Yes is really is cannot
-			cannot [:read], [Rmcat]
+			cannot [:read], [Rmcat, Extracat]
+		end
+
+		if user
+			can [:manage], [Viewing]
 		end
 	end
 end
+
+# if user.has_role?(:admin)
+# 	can :manage, User
+# end

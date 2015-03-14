@@ -13,6 +13,34 @@
 <div class="navbar-header">
   <!-- if there is a user signed in -->
   <% if user_signed_in? %>
+  <!-- if user is admin display navigation bar with all privilidges -->
+  <% if not current_user.customer? %>
+  <% if not current_user.admin? %>
+  <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
+    <li>
+      <a class="navbar-brand" href="/rooms">Rooms</a>
+      <ul>
+        <li><a class="navbar-brand" href="/rooms">View Rooms</a></li>
+      </ul>
+    </li>
+    <li>
+     <a class="navbar-brand" href="/rmcats">Room Types</a>
+     <ul>
+      <li><a class="navbar-brand" href="/rmcats">View Room Types</a></li>
+      <li><a class="navbar-brand" href="/rmcats/new">New Room Type</a></li>
+     </ul>
+    </li>
+    <ul><li><a class="navbar-brand" href="/extras">Extras</a></li>
+    <li>
+    Account
+    <ul>
+      <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-brand' %></li>
+      <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-brand'  %></li>
+    </ul>
+    </li>
+  </ul>
+  <% end %>
+  <% end %>
       <!-- if user is admin display navigation bar with all privilidges -->
     <% if current_user.admin? %>
       <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
@@ -31,6 +59,13 @@
           </ul>
         </li>
         <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
+        <ul><li><a class="navbar-brand" href="/extras">Extras</a></li>
+         <li>
+          <a class="navbar-brand" href="/extracats">Extra Types</a>
+          <ul>
+           <li><a class="navbar-brand" href="/extracats">View Extra Types</a></li>
+           <li><a class="navbar-brand" href="/extracats/new">New Extra Type</a></li>
+          </ul>
         <li>
         Account
         <ul>
@@ -40,9 +75,11 @@
         </li>
       </ul>
     <% end %>
+
     <!-- if a customer is signed in display navbar with sufficient privilidges -->
     <% if current_user.customer? %>
       <ul><li><a class="navbar-brand" href="/pages/home">Home</a></li>
+        <li><a class="navbar-brand" href="/extras">Extras</a></li>
         <li>
           <a class="navbar-brand" href="/rooms">Rooms</a>
         </li>
@@ -63,6 +100,7 @@
           <a class="navbar-brand" href="/rooms">Rooms</a>
         </li>
         <li><a class="navbar-brand" href="/pages/contactus">Contact us</a></li>
+        <li><a class="navbar-brand" href="/extras">Extras</a></li>
         <li>
         Account
         <ul>
@@ -74,7 +112,7 @@
   <% end %>
   <div class="login">
     <% if user_signed_in? %>
-      Logged in as <%= current_user.email %>.
+      Logged in as <%= current_user.customer_name %>.
       <% if current_user.admin? %>
         Signed in as Admin.
       <% end %>
