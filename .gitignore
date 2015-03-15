@@ -2,6 +2,7 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+## Basic Rails.
 .rspec
 /log
 /tmp
@@ -13,7 +14,7 @@ coverage/
 ## Need public system because lab machines.
 # /public/system
 
-## Ignore docs for now (Need them now)
+## Documentation ignore.
 # /doc/
 .yardoc
 # .yardopts
