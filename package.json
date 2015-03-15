@@ -1,6 +1,6 @@
 {
 	"name": "weddings",
-	"version": "0.5.0",
+	"version": "0.7.0",
 	"description": "Wedding organiser website built with Ruby on Rails",
 	"main": "Gruntfile.js",
 	"devDependencies": {
@@ -10,8 +10,11 @@
 		"grunt-contrib-cssmin": "0.12.2",
 		"grunt-csscomb": "3.0.0",
 		"grunt": "0.4.5",
-		"csscomb": "3.0.4",
+		"csscomb": "3.0.0-1",
 		"grunt-check-gems": "0.0.2"
+	},
+	"scripts": {
+		"test": "grunt test"
 	},
 	"repository": {
 		"type": "git",
