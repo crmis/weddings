@@ -6,7 +6,6 @@ cache:
   directories:
   - vendor/bundle
 rvm:
-- 2.2.0
 - 2.0.0
 before_install:
 - sudo apt-get update
