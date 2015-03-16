@@ -235,7 +235,7 @@ DEPENDENCIES
   pg (~> 0.18.1)
   rails (= 4.2.0)
   rails_12factor (~> 0.0.3)
-  responders (= 2.0)
+  responders (~> 2.0)
   rspec-rails (~> 3.2.1)
   ruby-beautify (~> 0.97.2)
   sass-rails (~> 5.0)
