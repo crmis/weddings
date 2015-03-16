@@ -1,5 +1,5 @@
 os:
-	- linux
+- linux
 language: ruby
 
 install: bundle install --without development --deployment --jobs=3 --retry=3
@@ -8,18 +8,18 @@ cache:
   - vendor/bundle
 
 rvm:
-	- 2.2.0
-	- 2.0.0
+- 2.2.0
+- 2.0.0
 
 before_install:
-	- sudo apt-get update
-	- gem update --system
-	- gem --version
-	- npm install -g grunt-cli
+- sudo apt-get update
+- gem update --system
+- gem --version
+- npm install -g grunt-cli
 
 before_script:
-	- grunt
-	- bundle exec rake
+- grunt
+- bundle exec rake
 
 addons:
   code_climate:
