@@ -59,7 +59,7 @@ class ExtracatsController < ApplicationController
     def resource_not_found
      yield
     rescue ActiveRecord::RecordNotFound
-     redirect_to root_url, :notice => "Room Category not found."
+     redirect_to root_url, :notice => "Extra Category not found."
     end
 
     # Only allow a trusted parameter "white list" through.

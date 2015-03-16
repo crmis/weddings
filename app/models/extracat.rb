@@ -16,6 +16,6 @@ class Extracat < ActiveRecord::Base
   private
   def extracat_deletable?
     # the rmcat is deletable if it has no rooms assigned to it
-    self.rooms.empty?
+    self.extras.empty?
   end
 end
