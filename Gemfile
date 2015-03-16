@@ -76,5 +76,5 @@ platforms :mingw, :mswin, :x64_mingw, :jruby do
 	# tz-info for windows timezone data.
 	gem 'tzinfo-data', '~> 1.2015.1'
 	# Responders gem, required on windows for viewable
-	gem 'responders', '2.0'
+	gem 'responders', '~> 2.0'
 end
