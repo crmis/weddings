@@ -28,7 +28,6 @@ deploy:
 addons:
   code_climate:
     repo_token: 812d48041b7faafd2a04d75ecc3d59ab6e9c9586c628c9272e80cf51f56a9c62
-
 notifications:
   slack:
     secure: VGmXOyt+ppjalfrAbHKXuMtzXMm3Yb+B9KK/+sBYnoKTDLAo6kY1mkahK7k5jRWMdpdrYwdIOC0in8j8OSj9VxeImZ+uv2v2h+QxTSCxju2kUc2sgMBez7tvLfk3K1/pXLYXlAvJS01rrH2fU7HAtIaJ8cXzc/+usr2/K9GQoXA=
