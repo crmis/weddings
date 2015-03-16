@@ -1,9 +1,9 @@
-// $(document).ready(function() {
-// 	calendar();
-// });
-// $(document).on('page:load', function() {
-// 	calendar();
-// });
+$(document).ready(function() {
+	calendar();
+});
+$(document).on('page:load', function() {
+	calendar();
+});
 var calendar = function() {
 	// page is now ready, initialize the calendar...
 	var current_room = function() {

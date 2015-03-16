@@ -64,8 +64,10 @@
         <%= link_to "Edit", edit_room_path(@room) %>
       <% end %>
 			<%# if can? :create, @viewing %>
+      <% if user_signed_in? %>
 	      <%= link_to 'Add viewing', new_room_viewing_path(@room) %>
 	      <%= link_to 'Show viewings', room_viewings_path(@room) %>
+      <% end %>
 			<%# end %>
     </div>
 </div>

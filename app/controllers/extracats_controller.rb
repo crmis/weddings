@@ -46,7 +46,11 @@ class ExtracatsController < ApplicationController
   # DELETE /extracats/1
   def destroy
     @extracat.destroy
-    redirect_to extracats_url, notice: 'Extracat was successfully destroyed.'
+    if @extracat.destroy
+      redirect_to extracats_url, notice: 'Extracat was successfully destroyed.'
+    else
+      redirect_to extracats_url, notice: 'Cannot delete assigned Extra Category.'
+    end
   end
 
   private
@@ -59,7 +63,7 @@ class ExtracatsController < ApplicationController
     def resource_not_found
      yield
     rescue ActiveRecord::RecordNotFound
-     redirect_to root_url, :notice => "Room Category not found."
+     redirect_to root_url, :notice => "Extra Category not found."
     end
 
     # Only allow a trusted parameter "white list" through.
