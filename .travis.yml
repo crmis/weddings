@@ -16,7 +16,7 @@ before_install:
 - npm update
 before_script:
 - grunt
-- bundle exec rake
+- bundle exec rake db:test:prepare
 deploy:
   provider: heroku
   api_key:
