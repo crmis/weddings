@@ -63,9 +63,6 @@ gem 'paperclip', '~> 4.2.1'
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.16'
 
-# Iron Cache for caching.
-gem 'iron_cache', '~> 1.4.2'
-
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
