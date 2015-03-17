@@ -6,7 +6,6 @@
 [![Code Climate](https://codeclimate.com/github/crmis/weddings/badges/gpa.svg)](https://codeclimate.com/github/crmis/weddings)
 [![Test Coverage](https://codeclimate.com/github/crmis/weddings/badges/coverage.svg)](https://codeclimate.com/github/crmis/weddings)
 
-
 * Ruby version: 2.1.5p273 (2014-11-13 revision 48405)
 
 * Rails version: 4.2.0
