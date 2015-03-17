@@ -2,6 +2,10 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 class ViewingsController < ApplicationController
   respond_to :html, :xml, :json
+
+	# @see def resource_not_found
+	around_filter :resource_not_found
+
   before_action :find_room
 	load_and_authorize_resource
   def index
@@ -77,6 +81,13 @@ class ViewingsController < ApplicationController
       @room = Room.find_by_id(params[:room_id])
     end
   end
+
+	# If resource not found redirect to root and flash error.
+	def resource_not_found
+		yield
+	rescue ActiveRecord::RecordNotFound
+		redirect_to root_url, :notice => "Viewing not found."
+	end
 
   def viewing_params
      params.require(:viewing).permit(:user_id)
