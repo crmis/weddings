@@ -5,8 +5,6 @@
 [![Build Status](https://travis-ci.org/crmis/weddings.svg?branch=master)](https://travis-ci.org/crmis/weddings)
 [![Code Climate](https://codeclimate.com/github/crmis/weddings/badges/gpa.svg)](https://codeclimate.com/github/crmis/weddings)
 [![Test Coverage](https://codeclimate.com/github/crmis/weddings/badges/coverage.svg)](https://codeclimate.com/github/crmis/weddings)
-[![Dependency Status](https://gemnasium.com/crmis/weddings.svg)](https://gemnasium.com/crmis/weddings)
-
 
 * Ruby version: 2.1.5p273 (2014-11-13 revision 48405)
 

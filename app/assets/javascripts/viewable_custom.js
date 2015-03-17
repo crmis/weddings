@@ -1,6 +1,6 @@
-$(document).ready(function() {
-	calendar();
-});
+// $(document).ready(function() {
+// 	calendar();
+// });
 $(document).on('page:load', function() {
 	calendar();
 });

@@ -3,7 +3,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 ## Basic Rails.
-.rspec
+# .rspec
 /log
 /tmp
 /db/*.sqlite3
