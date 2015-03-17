@@ -1,0 +1,24 @@
+<%= form_for @rmcat, :html => { :multipart => true } do |f| %>
+  <% if @rmcat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rmcat.errors.count, "error") %> prohibited this rmcat from being saved:</h2>
+
+      <ul>
+      <% @rmcat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="main-form">
+  <fieldset>
+    <div class="field">
+      <%= f.label :rmtype, "Room Type:" %><br>
+      <%= f.text_field :rmtype %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </fieldset>
+  </div>
+<% end %>

@@ -1,0 +1,69 @@
+<nav class="extranavbar navbar-default" role="navigation">
+<div class="extracontainer">
+  <div class="extranavbar-header">
+      <!-- <div class="roomheader"><a class="roomnavbar-brand" href="/rooms">Rooms</a></div> -->
+<ul class="extraliststyle">
+  <li>
+  Flowers
+  <ul>
+    <li><a class="extranavbar-brand" href="/extras/1">Roses</a></li>
+  </ul>
+  </li>
+  <li>
+  Cars
+  <ul>
+    <li><a class="extranavbar-brand" href="/extras/2">Rolls Royce</a></li>
+  </ul>
+  </li>
+    <li><a class="extranavbar-brand" href="/extras/3">Professional Photography</a></li>
+  <li>
+  Live Music
+  <ul>
+    <li><a class="extranavbar-brand" href="/extras/4">Balineasy</a></li>
+  </ul>
+  </li>
+  <li><a class="extranavbar-brand" href="/extras/5">Professional Invitations</a></li>
+  </ul>
+
+  </div>
+</div>
+</nav>
+
+<div class="extras-title">
+  <%= @extra.name %>
+</div>
+<div class="extras-img">
+  <% if not @extra.extraimg.blank? %>
+    <%= link_to (image_tag @extra.extraimg, size: "650x500"), extras_path, :title => 'return to extras.' %>
+  <% else %>
+    <%= image_tag "no-image.jpg", :size => "200x250" %>
+  <% end %>
+</div>
+
+<div id="extras-details">
+  <div class="extras-show">
+    <strong>Description:</strong>
+    <%= @extra.description %>
+  </div>
+
+  <div class="extras-show">
+    <strong>Quantity:</strong>
+    <%= @extra.quantity %>
+  </div>
+
+  <div class="extras-show">
+    <strong>Price:</strong>
+    <%= @extra.price %>
+  </div>
+
+  <!-- <div class="extras-show">
+		Not really needed because navbar
+    <strong>Extracat:</strong>
+    <%#= @extra.extracat.extratype %>
+  </div> -->
+  <% if can? :update, @extra %>
+  <%= link_to 'Edit', edit_extra_path(@extra) %> |
+  <% end %>
+  <%= link_to 'Back', extras_path %>
+
+</div>

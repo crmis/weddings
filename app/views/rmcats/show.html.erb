@@ -1,0 +1,11 @@
+<div class="main-form">
+  <fieldset>
+    <p>
+      <strong>Room Type:</strong>
+      <%= @rmcat.rmtype %>
+    </p>
+
+    <%= link_to 'Edit', edit_rmcat_path(@rmcat) %> |
+    <%= link_to 'Back', rmcats_path %>
+  </fieldset>
+</div>

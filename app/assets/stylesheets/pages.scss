@@ -1,0 +1,32 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// @import 'reset';
+//
+// body {
+//   font: 100% Helvetica, sans-serif;
+//   background-color: #efefef;
+// }
+
+body { padding-top: 0px; }
+
+.title {
+   margin-left: 35%;
+   /*border: solid;*/
+   margin-top: 4px;
+
+}
+#main-div{
+	min-height: 100%;
+	/* the combined width of three divs, margins and padding ...
+		use this value to display all three divs beside each other */
+	width: 79em;
+	/* to center the div use the commands below ...
+		a margin of half the combined width, position set to 'absolute'
+		and left: 50% */
+	margin-left: -40em;
+	position: absolute;
+	left: 50%;
+	background-color: #E6E6D0;
+	/*border: solid blue;*/
+}
