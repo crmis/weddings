@@ -11,11 +11,7 @@ before_install:
 - sudo apt-get update
 - gem update --system
 - gem --version
-- npm install -g grunt-cli
-- npm install
-- npm update
 before_script:
-- grunt
 - bundle exec rake db:test:prepare
 deploy:
   provider: heroku
