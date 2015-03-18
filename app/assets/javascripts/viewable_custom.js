@@ -18,6 +18,7 @@ var calendar = function() {
 			return true;
 		};
 	};
+	// Various inline settings for fullCalendar.
 	$('#calendar').fullCalendar({
 		header: {
 			left: 'prev,next today',
@@ -34,6 +35,8 @@ var calendar = function() {
 		editable: true,
 		eventStartEditable: true,
 		eventDurationEditable: true,
+
+		// Drop viewing
 		eventDrop: function(viewing) {
 			var length = (viewing.end - viewing.start) / (3600000);
 
@@ -52,6 +55,7 @@ var calendar = function() {
 			};
 			updateEvent(viewing);
 		},
+		// Update viewing
 		eventResize: function(viewing) {
 			var length = (viewing.end - viewing.start) / (3600000);
 
