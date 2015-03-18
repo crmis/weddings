@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
   protect_from_forgery with: :exception
-  # before_action :authenticate_user!
+  # before_action :authenticate_user! (catches whole application for login, not ideal)
 
   # This is the rescue for CanCan, if a user cannot access a resouce then it
   # will throw them back to the root.
@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
 	      request.path != "/users/password/edit" &&
 	      request.path != "/users/confirmation" &&
 	      request.path != "/users/sign_out" &&
-	      !request.xhr?) # don't store ajax calls
+	      !request.xhr?) # don't store ajax calls (calendar)
 			if request.format == "text/html" || request.content_type == "text/html"
 		    session[:previous_url] = request.fullpath
 				# Ensure that session is not 'trapped', needed because of the partial ajax for the calendar.
