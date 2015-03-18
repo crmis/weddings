@@ -28,15 +28,15 @@ config/initializers/secret_token.rb
 /vendor/bundle
 
 # these should all be checked in to normalise the environment:
-# Gemfile.lock
+Gemfile.lock
 # .ruby-version, .ruby-gemset
 
 ## Node/Grunt ignores:
-/node_modules/
+# /node_modules/
 # Gruntfile.js
 # package.json
-build/
-npm-debug.log
+# build/
+# npm-debug.log
 
 ## Ignore RubyMine/IDE folders
 .idea/
