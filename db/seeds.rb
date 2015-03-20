@@ -3,6 +3,9 @@ User.create!([
   {email: "testuser@mvmanor.co.uk", password: "u", password_confirmation: "u", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-02-06 14:03:01", last_sign_in_at: "2015-02-06 14:03:01", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", admin: false, customer: false, customer_name: "Mr User"},
   {email: "testcustomer@customer.co.uk", password: "c", password_confirmation: "c", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 3, current_sign_in_at: "2015-03-09 12:19:43", last_sign_in_at: "2015-03-09 12:12:05", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", admin: false, customer: true, customer_name: "Mr Customer"}
 ])
+Enquiry.create!([
+  {subject: "Wedding", e_description: "I'd like a wedding."}
+])
 Extra.create!([
   {extraimg: nil, name: "Roses", description: "Red Rose bouquets.", quantity: 500, price: "350.0", extracat_id: 1, extraimg_file_name: "Red_Roses_Background.jpg", extraimg_content_type: "image/jpeg", extraimg_file_size: 4582604, extraimg_updated_at: "2015-03-02 12:55:23"},
   {extraimg: nil, name: "Rolls Royce", description: "Available in black or silver", quantity: 4, price: "600.0", extracat_id: 2, extraimg_file_name: "car_landing.jpg", extraimg_content_type: "image/jpeg", extraimg_file_size: 101949, extraimg_updated_at: "2015-03-06 11:45:15"},
