@@ -7,7 +7,8 @@ require 'rails_helper'
 RSpec.describe RoomsController, :type => :controller do
 
 	# bundle exec rspec spec\controllers\rooms_controller_spec.rb
-	
+
+	# see let!(:admin) { create(:admin) } alternative?
 	# def valid_session
 	#   sign_in :user, @admin
 	# end
