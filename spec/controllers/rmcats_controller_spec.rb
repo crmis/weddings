@@ -14,7 +14,7 @@ RSpec.describe RmcatsController, :type => :controller do
 
 		it "renders the :index view" do
 			get :index
-			response.should render_template :index
+			expect(response).to render_template :index
 		end
 	end
 
@@ -27,7 +27,7 @@ RSpec.describe RmcatsController, :type => :controller do
 
 		it "renders the #show view" do
 			get :show, id: create(:rmcat)
-			response.should render_template :show
+			expect(response).to render_template :show
 		end
 	end
 
@@ -40,10 +40,11 @@ RSpec.describe RmcatsController, :type => :controller do
 			end
 
 			# expecting <"new"> but rendering with <[]>
-			# it "redirects to the new rmcat" do
-			# 	post :create, rmcat: attributes_for(:rmcat)
-			# 	response.should render_template :new
-			# end
+			it "redirects to the new rmcat" do
+				post :create, rmcat: attributes_for(:rmcat)
+				get :index
+				expect(response).to render_template :index
+			end
 		end
 	end
 end
