@@ -75,7 +75,7 @@
   padding: 1em 0em 1em 1em;
   font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
   font-weight: normal;
-  borders: 0.1em solid red;
+  /* border: 0.1em solid red; */
 }
 
 #room-img {
@@ -85,8 +85,8 @@
   margin: 1em 0em 0em 20em;
   padding: 0em 0em 0em 0em;
   /*  takes the width of the image */
-  font-familys: serif;
-  borders: 0.1em solid blue;
+  /* font-family: serif; */
+  /* border: 0.1em solid blue; */
 }
 
 .room-show{
@@ -95,9 +95,8 @@
   line-height: 1.2em;
   margin-left: 1em;
   margin-bottom: 0.2em;
-  borders: 0.1em solid red;
   padding: 0.8em;
-
+	/* border: 0.1em solid red; */
 }
 .room-title {
   font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
