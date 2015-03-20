@@ -1,4 +1,10 @@
 FactoryGirl.define do
+
+	factory :enquiry do
+    subject "MyString"
+		e_description "MyText"
+  end
+
 	# :name, :description, :size, :capacity, :price, :picture, :rmcat_id
 	factory :room do
 		name "The New Room"

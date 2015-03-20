@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+
+
  devise_for :users
 
 	resources :rooms do
@@ -8,8 +10,9 @@ Rails.application.routes.draw do
 
 	resources :rmcats
 	resources :extras
- resources :extracats
-
+	resources :extracats
+	resources :enquiries
+	
 	root :to => redirect('/pages/home')
 
 	get 'pages/home'
