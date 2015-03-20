@@ -22,7 +22,7 @@ RSpec.describe RoomsController, :type => :controller do
 
 		it "renders the :index view" do
 			get :index
-			expect(response).to render_template :index
+			response.should render_template :index
 		end
 	end
 
@@ -35,7 +35,7 @@ RSpec.describe RoomsController, :type => :controller do
 
 		it "renders the #show view" do
 			get :show, id: create(:room)
-			expect(response).to render_template :show
+			response.should render_template :show
 		end
 	end
 
@@ -44,12 +44,12 @@ RSpec.describe RoomsController, :type => :controller do
 	describe "POST create" do
 		context "with valid attributes" do
 			it "creates a new room" do
-				expect{ post :create, room: attributes_for(:room) } # .to change(Room,:count).by(1)
+				expect{ post :create, room: attributes_for(:room) }#.to change(Room,:count).by(1)
 			end
 
 			it "redirects to the new room" do
 				post :create, room: attributes_for(:room)
-				expect(response).to render_template :new
+				response.should render_template :new
 			end
 		end
 	end
