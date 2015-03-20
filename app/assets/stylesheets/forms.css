@@ -5,8 +5,8 @@
 	margin-top: 2em;
 	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
 	/* effects all font body, header, title and label text sizes ...*/
-	font-sizes: 0.8em;
-	borders: 0.1em solid green;
+	/* font-size: 0.8em; */
+	/* border: 0.1em solid green; */
 }
 
 .main-title{
@@ -14,7 +14,7 @@
 	font-size: 1.2em;
 	line-height: 1.1em;
   margin-left: 40%;
-	borders: 0.1em solid green;
+	/* border: 0.1em solid green; */
 }
 
 label{
@@ -54,12 +54,12 @@ div.ui-datepicker{
 	padding: 1em;
 	/* margins top right bottom left */
 	margin: 4em 2em 0em 0em;
-	background-colors: #f0f0f0;
+	/* background-color: #f0f0f0;*/
 }
 
 #error_explanation ul li {
-    font-size: 0.8em;
+  font-size: 0.8em;
 	font-style: italic;
-    list-style: circle ;
+  list-style: circle ;
 	color: black;
 }
