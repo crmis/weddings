@@ -36,7 +36,7 @@ RSpec.describe RmcatsController, :type => :controller do
 	describe "POST create" do
 		context "with valid attributes" do
 			it "creates a new rmcat" do
-				expect{ post :create, rmcat: attributes_for(:rmcat) }#.to change(Room,:count).by(1)
+				expect{ post :create, rmcat: attributes_for(:rmcat) }.to change(Rmcat,:count).by(1)
 			end
 
 			# expecting <"new"> but rendering with <[]>
