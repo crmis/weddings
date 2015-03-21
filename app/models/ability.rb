@@ -6,7 +6,7 @@ class Ability
 
 		# if administrator
 		if user.admin?
-			can [:manage], [Room, Rmcat, Extra, Extracat, Viewing]
+			can [:manage], [Room, Rmcat, Extra, Extracat, Viewing, Enquiry]
 			# if not logged in
 		else
 			can [:read], [Room, Extra]
@@ -23,6 +23,7 @@ class Ability
 
 		if user
 			can [:manage], [Viewing]
+			can [:create], [Enquiry]
 		end
 	end
 end
