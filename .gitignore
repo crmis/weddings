@@ -41,3 +41,7 @@ config/initializers/secret_token.rb
 ## Ignore RubyMine/IDE folders
 .idea/
 .c9/
+
+## Ignore CI configs
+# .travis.yml
+.codeship.yml
