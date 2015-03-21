@@ -9,7 +9,7 @@
 		<br><br>
 		If you have an account you can make an enquiry using our form system, if not sign up or send us an email:
 		<br><br>
-		
+
 		<% if not user_signed_in? %>
 			<%= link_to "Sign up", new_user_registration_path %>
 		<% end %>
@@ -24,3 +24,11 @@
   </p>
 </div>
 </body>
+
+<!--
+might look at refactoring eventually.
+Since it is a user that is signed in,
+you could have a User has-many :inquiries and an Inquiry belongs_to a user.
+This is where accepts_nested_attributes comes into play,
+then you are using resourced routes, nested forms, etc
+-->
