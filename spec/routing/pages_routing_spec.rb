@@ -9,12 +9,4 @@ RSpec.describe PagesController, :type => :controller do
 			expect(response).to have_http_status(200)
 		end
 	end
-
-	describe "GET #contactus" do
-		it "responds successfully with an HTTP 200 status code" do
-			get :contactus
-			expect(response).to be_success
-			expect(response).to have_http_status(200)
-		end
-	end
 end
