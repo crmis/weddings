@@ -5,7 +5,19 @@
     <br>
     If you have any queries, or are interested in any of our rooms, please get in touch with us on <strong> 0116 555 54321 </strong>
     <br><br>
-    We can also be contacted by email at <strong> enquiries@meadowview.com </strong>
+    We can also be contacted by email at <strong> enquiries@meadowview.co.uk </strong>
+		<br><br>
+		If you have an account you can make an enquiry using our form system:
+		<br><br>
+		<% if not user_signed_in? %>
+			<%= link_to "Sign up", new_user_registration_path %>
+		<% end %>
+		<% if user_signed_in? %>
+		<%= render 'enquiries/form', enquiry: @enquiry %>
+		<% end %>
+		<% if current_user && current_user.admin? %>
+			<%= link_to 'Show all enquiries', enquiries_path %>
+		<% end %>
   </p>
 </div>
 </body>

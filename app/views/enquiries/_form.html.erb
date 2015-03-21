@@ -1,10 +1,10 @@
-<%= form_for(@enquiry) do |f| %>
-  <% if @enquiry.errors.any? %>
+<%= form_for(enquiry) do |f| %>
+  <% if enquiry.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
+      <h2><%= pluralize(enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
 
       <ul>
-      <% @enquiry.errors.full_messages.each do |message| %>
+      <% enquiry.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -12,14 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :subject %><br>
+    <%= f.label :subject, "Subject:" %><br>
     <%= f.text_field :subject %>
   </div>
   <div class="field">
-    <%= f.label :e_description %><br>
+    <%= f.label :e_description, "Description:" %><br>
     <%= f.text_area :e_description %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+
+
 <% end %>

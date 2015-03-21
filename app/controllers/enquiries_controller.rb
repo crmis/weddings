@@ -13,6 +13,7 @@ class EnquiriesController < ApplicationController
   # GET /enquiries/new
   def new
     @enquiry = Enquiry.new
+		render 'pages/contactus'
   end
 
   # GET /enquiries/1/edit
