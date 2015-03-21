@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20150320225227) do
   create_table "enquiries", force: :cascade do |t|
     t.string   "subject"
     t.text     "e_description"
+		t.integer  "user_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

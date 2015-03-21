@@ -4,7 +4,14 @@
   <strong>Subject:</strong>
   <%= @enquiry.subject %>
 </p>
-
+<p>
+  <strong>Customer Name:</strong>
+  <%= @enquiry.user.customer_name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @enquiry.user.email %>
+</p>
 <p>
   <strong>Description:</strong>
   <%= @enquiry.e_description %>

@@ -30,7 +30,9 @@ class EnquiriesController < ApplicationController
   # POST /enquiries
   def create
     @enquiry = Enquiry.new(enquiry_params)
-
+			if current_user.customer?
+				@enquiry.user_id = current_user.id
+			end
     if @enquiry.save
       redirect_to '/pages/contactus', notice: 'Enquiry was successfully sent.'
     else
@@ -68,6 +70,6 @@ class EnquiriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def enquiry_params
-      params.require(:enquiry).permit(:subject, :e_description)
+      params.require(:enquiry).permit(:subject, :e_description, :user_id)
     end
 end
