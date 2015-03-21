@@ -7,14 +7,17 @@
     <br><br>
     We can also be contacted by email at <strong> enquiries@meadowview.co.uk </strong>
 		<br><br>
-		If you have an account you can make an enquiry using our form system:
+		If you have an account you can make an enquiry using our form system, if not sign up or send us an email:
 		<br><br>
+		
 		<% if not user_signed_in? %>
 			<%= link_to "Sign up", new_user_registration_path %>
 		<% end %>
-		<% if user_signed_in? %>
-		<%= render 'enquiries/form', enquiry: @enquiry %>
+
+		<% if current_user %>
+			<%= render 'enquiries/form', enquiry: @enquiry %>
 		<% end %>
+
 		<% if current_user && current_user.admin? %>
 			<%= link_to 'Show all enquiries', enquiries_path %>
 		<% end %>

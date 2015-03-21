@@ -25,7 +25,7 @@ class EnquiriesController < ApplicationController
     @enquiry = Enquiry.new(enquiry_params)
 
     if @enquiry.save
-      redirect_to @enquiry, notice: 'Enquiry was successfully created.'
+      redirect_to '/pages/contactus', notice: 'Enquiry was successfully sent.'
     else
       render :new
     end
