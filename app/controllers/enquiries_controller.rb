@@ -1,6 +1,13 @@
+# @author Tom Cox <https://github.com/koxzi95>
 class EnquiriesController < ApplicationController
-  before_action :set_enquiry, only: [:show, :edit, :update, :destroy]
+	# @see def resource_not_found
+	around_filter :resource_not_found
+	before_action :set_enquiry, only: [:show, :edit, :update, :destroy]
+
+	# This is the CanCan helper for auth.
+	# The skip is so users can view the rooms but nothing else.
 	load_and_authorize_resource
+
   # GET /enquiries
   def index
     @enquiries = Enquiry.all
@@ -51,6 +58,13 @@ class EnquiriesController < ApplicationController
     def set_enquiry
       @enquiry = Enquiry.find(params[:id])
     end
+
+		# If resource not found redirect to root and flash error.
+		def resource_not_found
+			yield
+		rescue ActiveRecord::RecordNotFound
+			redirect_to root_url, :notice => "Room not found."
+		end
 
     # Only allow a trusted parameter "white list" through.
     def enquiry_params
