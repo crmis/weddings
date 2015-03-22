@@ -10,6 +10,8 @@ class Extracat < ActiveRecord::Base
     super s.titleize
   end
 
+	validates :extratype, :presence => { :message => "cannot be blank."}
+
   # before I am destroyed, check if rmcat is deletable
   before_destroy :extracat_deletable?
 
