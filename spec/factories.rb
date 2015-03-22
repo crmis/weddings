@@ -42,6 +42,7 @@ FactoryGirl.define do
 		email "basicuser@mvmanor.co.uk"
 		password "u"
 		password_confirmation "u"
+		customer_name "Mr Customer"
 		admin false
 		customer false
 	end
