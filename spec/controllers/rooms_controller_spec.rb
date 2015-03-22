@@ -1,17 +1,9 @@
 # @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
-
-# General note for all tests, because I added 'config.include FactoryGirl::Syntax::Methods'
-# => to spec/rails_helper.rb, you no longer have to call FactoryGirl before commands such as 'create'
-
+# rspec spec\controllers\rooms_controller_spec.rb
 RSpec.describe RoomsController, :type => :controller do
-
-	# bundle exec rspec spec\controllers\rooms_controller_spec.rb
-
-	# see let!(:admin) { create(:admin) } alternative?
-	# def valid_session
-	#   sign_in :user, @admin
-	# end
+	# General note for all tests, because I added 'config.include FactoryGirl::Syntax::Methods'
+	# => to spec/rails_helper.rb, you no longer have to call FactoryGirl before commands such as 'create'
 
 	describe "GET #index" do
 		it "populates an array of rooms" do

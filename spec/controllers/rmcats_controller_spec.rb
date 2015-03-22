@@ -1,9 +1,7 @@
 # @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
-
+# rspec spec\controllers\rmcats_controller_spec.rb
 RSpec.describe RmcatsController, :type => :controller do
-
-	# bundle exec rspec spec\controllers\rmcats_controller_spec.rb
 
 	describe "GET #index" do
 		it "populates an array of rmcats" do
@@ -42,8 +40,8 @@ RSpec.describe RmcatsController, :type => :controller do
 			# expecting <"new"> but rendering with <[]>
 			it "redirects to the new rmcat" do
 				post :create, rmcat: attributes_for(:rmcat)
-				get :index
-				expect(response).to render_template :index
+				get :new
+				expect(response).to render_template :new
 			end
 		end
 	end
