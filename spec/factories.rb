@@ -1,10 +1,5 @@
 FactoryGirl.define do
 
-	factory :enquiry do
-    subject "MyString"
-		e_description "MyText"
-  end
-
 	# :name, :description, :size, :capacity, :price, :picture, :rmcat_id
 	factory :room do
 		name "The New Room"
@@ -35,7 +30,11 @@ FactoryGirl.define do
 
 	factory :extracat do
 		extratype "Beautiful"
-		# association :extras, factory: :extra
+	end
+
+	factory :enquiry do
+		subject "Wedding"
+		e_description "I'd like a wedding."
 	end
 
 	factory :user do
