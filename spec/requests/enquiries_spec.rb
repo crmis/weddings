@@ -1,5 +1,6 @@
+# @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
-
+# rspec spec\requests\enquiries_spec.rb
 RSpec.describe "Enquiries", type: :request do
 	describe "GET /enquiries" do
 		context "with no user" do
