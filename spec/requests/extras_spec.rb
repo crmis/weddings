@@ -2,7 +2,7 @@
 require 'rails_helper'
 # rspec spec\requests\extras_spec.rb
 RSpec.describe "Extras", type: :request do
-	describe "GET /enquiries" do
+	describe "GET /extras" do
 		context "with normal browsing" do
 			it "gets index for extras" do
 				get extras_path
