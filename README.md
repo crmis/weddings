@@ -2,7 +2,6 @@
 
 :octocat:
 
-![Image of Yaktocat](https://s3.amazonaws.com/codeship.io/badges/images/codeship-badge-weshipcode-black.png)
 [![Build Status](https://travis-ci.org/crmis/weddings.svg?branch=master)](https://travis-ci.org/crmis/weddings)
 [![Code Climate](https://codeclimate.com/github/crmis/weddings/badges/gpa.svg)](https://codeclimate.com/github/crmis/weddings)
 [![Test Coverage](https://codeclimate.com/github/crmis/weddings/badges/coverage.svg)](https://codeclimate.com/github/crmis/weddings)
