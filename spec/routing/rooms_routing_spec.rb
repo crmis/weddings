@@ -1,5 +1,6 @@
 # @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
+# rspec spec\routing\rooms_routing_spec.rb
 RSpec.describe RoomsController, :type => :routing do
 	describe "rooms routing" do
 		it "routes to #index" do

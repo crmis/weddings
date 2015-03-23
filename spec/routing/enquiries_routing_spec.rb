@@ -1,8 +1,8 @@
-require "rails_helper"
-
+# @author Tom Cox <https://github.com/koxzi95>
+require 'rails_helper'
+# rspec spec\routing\enquiries_routing_spec.rb
 RSpec.describe EnquiriesController, type: :routing do
-  describe "routing" do
-
+  describe "enquiries routing" do
     it "routes to #index" do
       expect(:get => "/enquiries").to route_to("enquiries#index")
     end
