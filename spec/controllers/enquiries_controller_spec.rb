@@ -12,7 +12,7 @@ RSpec.describe EnquiriesController, :type => :controller do
 
 		it "renders the :index view" do
 			get :index
-			response.should render_template :index
+			expect(response).to render_template :index
 		end
 	end
 
@@ -25,7 +25,7 @@ RSpec.describe EnquiriesController, :type => :controller do
 
 		it "renders the #show view" do
 			get :show, id: create(:enquiry)
-			response.should render_template :show
+			expect(response).to render_template :show
 		end
 	end
 
@@ -40,7 +40,7 @@ RSpec.describe EnquiriesController, :type => :controller do
 			it "redirects to the new enquiry" do
 				post :create, enquiry: attributes_for(:enquiry)
 				get :new
-				response.should render_template "pages/contactus"
+				expect(response).to render_template "pages/contactus"
 			end
 		end
 	end
