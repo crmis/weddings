@@ -4,22 +4,22 @@ require 'rails_helper'
 RSpec.describe Enquiry, :type => :model do
 
 	it "has a valid factory" do
-		create(:enquiry).should be_valid
+		expect(create(:enquiry)).to be_valid
 	end
 
 	it "is valid with a subject" do
-		build(:enquiry, subject: "Enquiry Subject").should be_valid
+		expect(build(:enquiry, subject: "Enquiry Subject")).to be_valid
 	end
 
 	it "is valid with a subject" do
-		build(:enquiry, e_description: "Enquiry Description").should be_valid
+		expect(build(:enquiry, e_description: "Enquiry Description")).to be_valid
 	end
 
 	it "is invalid without a subject" do
-		build(:enquiry, subject: nil).should_not be_valid
+		expect(build(:enquiry, subject: nil)).not_to be_valid
 	end
 
 	it "is invalid without a description" do
-		build(:enquiry, e_description: nil).should_not be_valid
+		expect(build(:enquiry, e_description: nil)).not_to be_valid
 	end
 end

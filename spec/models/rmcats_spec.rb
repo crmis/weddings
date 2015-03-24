@@ -4,11 +4,11 @@ require 'rails_helper'
 RSpec.describe Rmcat, :type => :model do
 
 	it "has a valid factory" do
-		create(:rmcat).should be_valid
+		expect(create(:rmcat)).to be_valid
 	end
 
 	it "is valid with a rmtype" do
-		build(:rmcat, rmtype: "rmtype").should be_valid
+		expect(build(:rmcat, rmtype: "rmtype")).to be_valid
 	end
 
 	# titleize error?

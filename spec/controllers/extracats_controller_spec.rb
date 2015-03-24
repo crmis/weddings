@@ -7,12 +7,12 @@ RSpec.describe ExtracatsController, :type => :controller do
 		it "populates an array of extracats" do
 			extracat = create(:extracat)
 			get :index
-			assigns(:extracats).should eq([extracat])
+			expect(assigns(:extracats)).to eq([extracat])
 		end
 
 		it "renders the :index view" do
 			get :index
-			response.should render_template :index
+			expect(response).to render_template :index
 		end
 	end
 
@@ -20,17 +20,17 @@ RSpec.describe ExtracatsController, :type => :controller do
 		it "assigns the requested extracat to @extracat" do
 			extracat = create(:extracat)
 			get :show, id: extracat
-			assigns(:extracat).should eq(extracat)
+			expect(assigns(:extracat)).to eq(extracat)
 		end
 
 		it "renders the #show view" do
 			get :show, id: create(:extracat)
-			response.should render_template :show
+			expect(response).to render_template :show
 		end
 	end
 
 	let!(:admin) { create(:admin) }
-	before { subject.stub(current_user: admin, authenticate_user!: true) }
+	before { allow(subject).to receive_messages(current_user: admin, authenticate_user!: true) }
 	describe "POST create" do
 		context "with valid attributes" do
 			it "creates a new extracat" do
@@ -42,7 +42,7 @@ RSpec.describe ExtracatsController, :type => :controller do
 				# Need to get page or tries to render <[]>
 				# => error: expecting <"new"> but rendering with <[]>
 				get :new
-				response.should render_template :new
+				expect(response).to render_template :new
 			end
 		end
 	end

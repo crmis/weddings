@@ -7,7 +7,7 @@ RSpec.describe RmcatsController, :type => :controller do
 		it "populates an array of rmcats" do
 			rmcat = create(:rmcat)
 			get :index
-			assigns(:rmcats).should eq([rmcat])
+			expect(assigns(:rmcats)).to eq([rmcat])
 		end
 
 		it "renders the :index view" do
@@ -20,7 +20,7 @@ RSpec.describe RmcatsController, :type => :controller do
 		it "assigns the requested rmcat to @rmcat" do
 			rmcat = create(:rmcat)
 			get :show, id: rmcat
-			assigns(:rmcat).should eq(rmcat)
+			expect(assigns(:rmcat)).to eq(rmcat)
 		end
 
 		it "renders the #show view" do
@@ -30,7 +30,7 @@ RSpec.describe RmcatsController, :type => :controller do
 	end
 
 	let!(:admin) { create(:admin) }
-	before { subject.stub(current_user: admin, authenticate_user!: true) }
+	before { allow(subject).to receive_messages(current_user: admin, authenticate_user!: true) }
 	describe "POST create" do
 		context "with valid attributes" do
 			it "creates a new rmcat" do
