@@ -12,7 +12,7 @@ RSpec.describe ExtracatsController, :type => :controller do
 
 		it "renders the :index view" do
 			get :index
-			response.should render_template :index
+			expect(response).to render_template :index
 		end
 	end
 
@@ -25,7 +25,7 @@ RSpec.describe ExtracatsController, :type => :controller do
 
 		it "renders the #show view" do
 			get :show, id: create(:extracat)
-			response.should render_template :show
+			expect(response).to render_template :show
 		end
 	end
 
@@ -42,7 +42,7 @@ RSpec.describe ExtracatsController, :type => :controller do
 				# Need to get page or tries to render <[]>
 				# => error: expecting <"new"> but rendering with <[]>
 				get :new
-				response.should render_template :new
+				expect(response).to render_template :new
 			end
 		end
 	end
