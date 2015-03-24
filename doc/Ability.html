@@ -225,7 +225,8 @@
 24
 25
 26
-27</pre>
+27
+28</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/models/ability.rb', line 4</span>
@@ -235,7 +236,7 @@
 </span>
 	<span class='comment'># if administrator
 </span>	<span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_admin?'>admin?</span>
-		<span class='id identifier rubyid_can'>can</span> <span class='lbracket'>[</span><span class='symbol'>:manage</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='const'>Room</span><span class='comma'>,</span> <span class='const'>Rmcat</span><span class='comma'>,</span> <span class='const'>Extra</span><span class='comma'>,</span> <span class='const'>Extracat</span><span class='comma'>,</span> <span class='const'>Viewing</span><span class='rbracket'>]</span>
+		<span class='id identifier rubyid_can'>can</span> <span class='lbracket'>[</span><span class='symbol'>:manage</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='const'>Room</span><span class='comma'>,</span> <span class='const'>Rmcat</span><span class='comma'>,</span> <span class='const'>Extra</span><span class='comma'>,</span> <span class='const'>Extracat</span><span class='comma'>,</span> <span class='const'>Viewing</span><span class='comma'>,</span> <span class='const'>Enquiry</span><span class='rbracket'>]</span>
 		<span class='comment'># if not logged in
 </span>	<span class='kw'>else</span>
 		<span class='id identifier rubyid_can'>can</span> <span class='lbracket'>[</span><span class='symbol'>:read</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='const'>Room</span><span class='comma'>,</span> <span class='const'>Extra</span><span class='rbracket'>]</span>
@@ -252,6 +253,7 @@
 
 	<span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span>
 		<span class='id identifier rubyid_can'>can</span> <span class='lbracket'>[</span><span class='symbol'>:manage</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='const'>Viewing</span><span class='rbracket'>]</span>
+		<span class='id identifier rubyid_can'>can</span> <span class='lbracket'>[</span><span class='symbol'>:create</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='const'>Enquiry</span><span class='rbracket'>]</span>
 	<span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -265,7 +267,7 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Mar 17 01:02:34 2015 by
+  Generated on Tue Mar 24 21:34:11 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.5).
 </div>

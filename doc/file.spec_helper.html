@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: spec_helper
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!file.spec_helper.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: spec_helper</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><pre class="code ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>codeclimate-test-reporter</span><span class='tstring_end'>&quot;</span></span>
+<span class='const'>CodeClimate</span><span class='op'>::</span><span class='const'>TestReporter</span><span class='period'>.</span><span class='id identifier rubyid_start'>start</span>
+<span class='comment'># See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+</span><span class='const'>RSpec</span><span class='period'>.</span><span class='id identifier rubyid_configure'>configure</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_config'>config</span><span class='op'>|</span>
+	<span class='comment'># rspec-expectations config goes here. You can use an alternate
+</span>	<span class='comment'># assertion/expectation library such as wrong or the stdlib/minitest
+</span>	<span class='comment'># assertions if you prefer.
+</span>	<span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_expect_with'>expect_with</span> <span class='symbol'>:rspec</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_expectations'>expectations</span><span class='op'>|</span>
+		<span class='comment'># This option will default to `true` in RSpec 4. It makes the `description`
+</span>		<span class='comment'># and `failure_message` of custom matchers include text for helper methods
+</span>		<span class='comment'># defined using `chain`, e.g.:
+</span>		<span class='comment'># be_bigger_than(2).and_smaller_than(4).description
+</span>		<span class='comment'>#   # =&gt; &quot;be bigger than 2 and smaller than 4&quot;
+</span>		<span class='comment'># ...rather than:
+</span>		<span class='comment'>#   # =&gt; &quot;be bigger than 2&quot;
+</span>		<span class='id identifier rubyid_expectations'>expectations</span><span class='period'>.</span><span class='id identifier rubyid_include_chain_clauses_in_custom_matcher_descriptions'>include_chain_clauses_in_custom_matcher_descriptions</span> <span class='op'>=</span> <span class='kw'>true</span>
+	<span class='kw'>end</span>
+
+	<span class='comment'># Use color in STDOUT
+</span>  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_color'>color</span> <span class='op'>=</span> <span class='kw'>true</span>
+
+	<span class='comment'># rspec-mocks config goes here. You can use an alternate test double
+</span>	<span class='comment'># library (such as bogus or mocha) by changing the `mock_with` option here.
+</span>	<span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_mock_with'>mock_with</span> <span class='symbol'>:rspec</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_mocks'>mocks</span><span class='op'>|</span>
+		<span class='comment'># Prevents you from mocking or stubbing a method that does not exist on
+</span>		<span class='comment'># a real object. This is generally recommended, and will default to
+</span>		<span class='comment'># `true` in RSpec 4.
+</span>		<span class='id identifier rubyid_mocks'>mocks</span><span class='period'>.</span><span class='id identifier rubyid_verify_partial_doubles'>verify_partial_doubles</span> <span class='op'>=</span> <span class='kw'>true</span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre></div></div>
+
+    <div id="footer">
+  Generated on Tue Mar 24 21:34:11 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.5).
+</div>
+
+  </body>
+</html>
