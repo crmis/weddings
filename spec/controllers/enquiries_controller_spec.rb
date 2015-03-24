@@ -7,7 +7,7 @@ RSpec.describe EnquiriesController, :type => :controller do
 		it "populates an array of enquiries" do
 			enquiry = create(:enquiry)
 			get :index
-			assigns(:enquiries).should eq([enquiry])
+			expect(assigns(:enquiries)).to eq([enquiry])
 		end
 
 		it "renders the :index view" do
@@ -20,7 +20,7 @@ RSpec.describe EnquiriesController, :type => :controller do
 		it "assigns the requested enquiry to @enquiry" do
 			enquiry = create(:enquiry)
 			get :show, id: enquiry
-			assigns(:enquiry).should eq(enquiry)
+			expect(assigns(:enquiry)).to eq(enquiry)
 		end
 
 		it "renders the #show view" do
@@ -30,7 +30,7 @@ RSpec.describe EnquiriesController, :type => :controller do
 	end
 
 	let!(:admin) { create(:admin) }
-	before { subject.stub(current_user: admin, authenticate_user!: true) }
+	before { allow(subject).to receive_messages(current_user: admin, authenticate_user!: true) }
 	describe "POST create" do
 		context "with valid attributes" do
 			it "creates a new enquiry" do

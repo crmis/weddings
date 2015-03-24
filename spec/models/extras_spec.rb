@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe Extra, :type => :model do
 
 	it "has a valid factory" do
-		create(:extra).should be_valid
+		expect(create(:extra)).to be_valid
 	end
 
 	# it "is valid with a extraimg" do
@@ -12,38 +12,38 @@ RSpec.describe Extra, :type => :model do
 	# end
 
 	it "is valid with a name" do
-		build(:extra, name: "Extra Name").should be_valid
+		expect(build(:extra, name: "Extra Name")).to be_valid
 	end
 
 	it "is valid with a description" do
-		build(:extra, description: "Extra Description").should be_valid
+		expect(build(:extra, description: "Extra Description")).to be_valid
 	end
 
 	it "is valid with a price" do
-		build(:extra, price: "100.50").should be_valid
+		expect(build(:extra, price: "100.50")).to be_valid
 	end
 
 	it "is valid with a quantity" do
-		build(:extra, quantity: "20").should be_valid
+		expect(build(:extra, quantity: "20")).to be_valid
 	end
 
 	it "is invalid without a extraimg" do
-		build(:extra, extraimg: nil).should_not be_valid
+		expect(build(:extra, extraimg: nil)).not_to be_valid
 	end
 
 	it "is invalid without a name" do
-		build(:extra, name: nil).should_not be_valid
+		expect(build(:extra, name: nil)).not_to be_valid
 	end
 
 	it "is invalid without a description" do
-		build(:extra, description: nil).should_not be_valid
+		expect(build(:extra, description: nil)).not_to be_valid
 	end
 
 	it "is invalid without a price" do
-		build(:extra, price: nil).should_not be_valid
+		expect(build(:extra, price: nil)).not_to be_valid
 	end
 
 	it "is invalid without a quantity" do
-		build(:extra, quantity: nil).should_not be_valid
+		expect(build(:extra, quantity: nil)).not_to be_valid
 	end
 end

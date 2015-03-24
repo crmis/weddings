@@ -9,7 +9,7 @@ RSpec.describe RoomsController, :type => :controller do
 		it "populates an array of rooms" do
 			room = create(:room)
 			get :index
-			assigns(:rooms).should eq([room])
+			expect(assigns(:rooms)).to eq([room])
 		end
 
 		it "renders the :index view" do
@@ -22,7 +22,7 @@ RSpec.describe RoomsController, :type => :controller do
 		it "assigns the requested room to @room" do
 			room = create(:room)
 			get :show, id: room
-			assigns(:room).should eq(room)
+			expect(assigns(:room)).to eq(room)
 		end
 
 		it "renders the #show view" do
@@ -32,7 +32,7 @@ RSpec.describe RoomsController, :type => :controller do
 	end
 
 	let!(:admin) { create(:admin) }
-	before { subject.stub(current_user: admin, authenticate_user!: true) }
+	before { allow(subject).to receive_messages(current_user: admin, authenticate_user!: true) }
 	describe "POST create" do
 		context "with valid attributes" do
 			it "creates a new room" do

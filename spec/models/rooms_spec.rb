@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe Room, :type => :model do
 
 	it "has a valid factory" do
-		create(:room).should be_valid
+		expect(create(:room)).to be_valid
 	end
 
 	# it "is valid with a picture" do
@@ -12,46 +12,46 @@ RSpec.describe Room, :type => :model do
 	# end
 
 	it "is valid with a name" do
-		build(:room, name: "Room Name").should be_valid
+		expect(build(:room, name: "Room Name")).to be_valid
 	end
 
 	it "is valid with a description" do
-		build(:room, description: "Room Description").should be_valid
+		expect(build(:room, description: "Room Description")).to be_valid
 	end
 
 	it "is valid with a size" do
-		build(:room, size: "500").should be_valid
+		expect(build(:room, size: "500")).to be_valid
 	end
 
 	it "is valid with a capacity" do
-		build(:room, capacity: "450").should be_valid
+		expect(build(:room, capacity: "450")).to be_valid
 	end
 
 	it "is valid with a price" do
-		build(:room, price: "350").should be_valid
+		expect(build(:room, price: "350")).to be_valid
 	end
 
 	it "is invalid without a picture" do
-		build(:room, picture: nil).should_not be_valid
+		expect(build(:room, picture: nil)).not_to be_valid
 	end
 
 	it "is invalid without a name" do
-		build(:room, name: nil).should_not be_valid
+		expect(build(:room, name: nil)).not_to be_valid
 	end
 
 	it "is invalid without a description" do
-		build(:room, description: nil).should_not be_valid
+		expect(build(:room, description: nil)).not_to be_valid
 	end
 
 	it "is invalid without a size" do
-		build(:room, size: nil).should_not be_valid
+		expect(build(:room, size: nil)).not_to be_valid
 	end
 
 	it "is invalid without a capacity" do
-		build(:room, capacity: nil).should_not be_valid
+		expect(build(:room, capacity: nil)).not_to be_valid
 	end
 
 	it "is invalid without a price" do
-		build(:room, price: nil).should_not be_valid
+		expect(build(:room, price: nil)).not_to be_valid
 	end
 end
