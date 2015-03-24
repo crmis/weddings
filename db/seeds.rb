@@ -4,7 +4,7 @@ User.create!([
   {email: "testcustomer@customer.co.uk", password: "c", password_confirmation: "c", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 3, current_sign_in_at: "2015-03-09 12:19:43", last_sign_in_at: "2015-03-09 12:12:05", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", admin: false, customer: true, customer_name: "Mr Customer"}
 ])
 Enquiry.create!([
-  {subject: "Hello", e_description: "Hello there.", user_id: 3}
+  {subject: "Hello", e_description: "Hello there.", user_id: 3},
 	{subject: "Wedding", e_description: "I want a wedding!", user_id: 3}
 ])
 Extra.create!([
