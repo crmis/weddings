@@ -1,7 +1,8 @@
 <div class="main-form">
 <h1>Listing Enquiries</h1>
 <fieldset>
-<table>
+  <!-- TODO Needs styling so table elements are spaced -->
+<table class="e-table">
   <thead>
     <tr>
 			<!-- Want name or email instead -->
@@ -17,6 +18,7 @@
     <% @enquiries.each do |enquiry| %>
       <tr>
 				<td><%= enquiry.user.customer_name %></td>
+        <th><%= enquiry.user.email %></th>
         <td><%= enquiry.subject %></td>
         <td><%#= enquiry.e_description %></td>
         <td><%= link_to 'Show', enquiry %></td>
