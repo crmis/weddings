@@ -1,7 +1,7 @@
-# @author Tom Cox <https://github.com/koxzi95>
-require 'rails_helper'
-# rspec spec\views\enquiries\index.html.erb_spec.rb
-# TODO Fix the 'customer_name' error
+# # @author Tom Cox <https://github.com/koxzi95>
+# require 'rails_helper'
+# # rspec spec\views\enquiries\index.html.erb_spec.rb
+# # TODO Fix the 'customer_name' error
 # RSpec.describe "enquiries/index", type: :view do
 # 	before(:each) do
 # 		assign(:enquiries, [
