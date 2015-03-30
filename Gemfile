@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 # Generated with rails 4.2.0 on ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin14.0]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.1'
 # Use SCSS for stylesheets.
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0.2'
 # Use Uglifier as compressor for JavaScript assets.
 gem 'uglifier', '~> 2.7.1'
 # Use CoffeeScript for .coffee assets and views.
@@ -19,7 +19,7 @@ group :production do
 	# 12 Factor App Gem for Heroku.
 	gem 'rails_12factor', '~> 0.0.3'
 	# New Relic for application metrics.
-	gem 'newrelic_rpm', '~> 3.10.0.279'
+	gem 'newrelic_rpm', '~> 3.11.1.284'
 end
 
 group :development do
