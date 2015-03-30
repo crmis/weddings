@@ -14,6 +14,6 @@ RSpec.describe "extracats/index", type: :view do
 	end
 	it "renders a list of extracats" do
 		render
-		assert_select "tr>td", :text => "MyString".to_s, :count => 2
+		assert_select "tr>td", :text => "My String".to_s, :count => 2
 	end
 end
