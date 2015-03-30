@@ -5,15 +5,15 @@ RSpec.describe "extracats/index", type: :view do
 	before(:each) do
 		assign(:extracats, [
 			Extracat.create!(
-				:extratype => "Flowers",
+				:extratype => "MyString",
 			),
 			Extracat.create!(
-				:extratype => "Flowers",
+				:extratype => "MyString",
 			)
 		])
 	end
 	it "renders a list of extracats" do
 		render
-		assert_select "tr>td", :text => "Flowers".to_s, :count => 2
+		assert_select "tr>td", :text => "MyString".to_s, :count => 2
 	end
 end
