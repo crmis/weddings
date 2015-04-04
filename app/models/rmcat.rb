@@ -12,6 +12,8 @@ class Rmcat < ActiveRecord::Base
 		super s.titleize
 	end
 
+	validates :rmtype, :presence => { :message => "cannot be blank."}
+
 	# before I am destroyed, check if rmcat is deletable
 	before_destroy :rmcat_deletable?
 

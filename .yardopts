@@ -1,3 +1,4 @@
 - AUTHORS.md
 - CONTRIBUTING.md
 - LICENSE.md
+spec/**/*.rb

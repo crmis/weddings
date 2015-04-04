@@ -1,5 +1,6 @@
 # @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
+# rspec spec\routing\rmcats_routing_spec.rb
 RSpec.describe RmcatsController, :type => :routing do
 	describe "rmcats routing" do
 		it "routes to #index" do

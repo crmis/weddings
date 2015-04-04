@@ -1,5 +1,6 @@
 # @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
+# rspec spec\routing\extras_routing_spec.rb
 RSpec.describe ExtrasController, :type => :routing do
 	describe "extras routing" do
 		it "routes to #index" do

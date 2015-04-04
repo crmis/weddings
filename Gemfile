@@ -27,6 +27,8 @@ group :development do
 	gem 'sqlite3', '~> 1.3.10'
 	# seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
 	gem 'seed_dump', '3.2.2'
+	# rspec for dependency
+	gem 'rspec', '~> 3.2.0'
 	# rspec for BDD tests (Behaviour Driven Development)
 	gem 'rspec-rails', '~> 3.2.1'
 	# Factory Girl for testing setup
