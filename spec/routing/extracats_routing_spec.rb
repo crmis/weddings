@@ -1,5 +1,6 @@
 # @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
+# rspec spec\routing\extracats_routing_spec.rb
 RSpec.describe ExtracatsController, :type => :routing do
 	describe "extracats routing" do
 		it "routes to #index" do

@@ -1,0 +1,33 @@
+<div class="main-form">
+<h1>Listing Enquiries</h1>
+<fieldset>
+  <!-- TODO Needs styling so table elements are spaced -->
+<table class="e-table">
+  <thead>
+    <tr>
+			<!-- Want name or email instead -->
+			<th>Name</th>
+			<th>Email</th>
+      <th>Subject</th>
+      <!--<th>Description</th>-->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enquiries.each do |enquiry| %>
+      <tr>
+				<td><%= enquiry.user.customer_name %></td>
+        <th><%= enquiry.user.email %></th>
+        <td><%= enquiry.subject %></td>
+        <td><%#= enquiry.e_description %></td>
+        <td><%= link_to 'Show', enquiry %></td>
+        <td><%= link_to 'Edit', edit_enquiry_path(enquiry) %></td>
+        <td><%= link_to 'Destroy', enquiry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Enquiry', new_enquiry_path %>
+</fieldset>

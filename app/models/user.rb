@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
 	:recoverable, :rememberable, :trackable, :validatable
 
 	has_many :viewings
+	has_many :enquiries
 	def user_info
 		"#{id} #{customer_name}"
 	end

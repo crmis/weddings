@@ -13,3 +13,5 @@
 * To use the test suite run 'rspec'. Check the spec/ folder for examples and Factory Girl Configuration
 
 * Documentation is in [YARD](https://github.com/lsegal/yard) format at: [RubyDoc crmis/weddings](http://www.rubydoc.info/github/crmis/weddings)
+
+###### Perhaps add more to this?
