@@ -6,25 +6,20 @@ class RmcatsController < ApplicationController
 	before_action :set_rmcat, only: [:show, :edit, :update, :destroy]
 	load_and_authorize_resource
 
-	# GET /rmcats
 	def index
 		@rmcats = Rmcat.all
 	end
 
-	# GET /rmcats/1
 	def show
 	end
 
-	# GET /rmcats/new
 	def new
 		@rmcat = Rmcat.new
 	end
 
-	# GET /rmcats/1/edit
 	def edit
 	end
 
-	# POST /rmcats
 	def create
 		@rmcat = Rmcat.new(rmcat_params)
 
@@ -35,7 +30,6 @@ class RmcatsController < ApplicationController
 		end
 	end
 
-	# PATCH/PUT /rmcats/1
 	def update
 		if @rmcat.update(rmcat_params)
 			redirect_to @rmcat, notice: 'Room Category was successfully updated.'
@@ -44,7 +38,6 @@ class RmcatsController < ApplicationController
 		end
 	end
 
-	# DELETE /rmcats/1
 	def destroy
 		@rmcat.destroy
 		# If the Rmcat has been sucessfully destroyed

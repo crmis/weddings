@@ -13,7 +13,6 @@ class ApplicationController < ActionController::Base
 		redirect_to main_app.root_url, :alert => exception.message
 	end
 
-
 	after_filter :store_location
 
 	def store_location
@@ -39,7 +38,6 @@ def after_sign_in_path_for(resource)
 end
 
 protected
-
 	def configure_devise_permitted_parameters
 		registration_params = [:customer_name, :email, :password, :password_confirmation]
 

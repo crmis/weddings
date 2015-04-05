@@ -2,7 +2,6 @@
   <% if @rmcat.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@rmcat.errors.count, "error") %> prohibited this rmcat from being saved:</h2>
-
       <ul>
       <% @rmcat.errors.full_messages.each do |message| %>
         <li><%= message %></li>

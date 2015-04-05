@@ -1,7 +1,7 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 # @author Stacey Rees <https://github.com/staceysmells>
 class Extracat < ActiveRecord::Base
-	has_many :extras#
+	has_many :extras
 	def extracat_info
 		"#{id} #{extratype}"
 	end

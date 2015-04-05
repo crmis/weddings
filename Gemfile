@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
 gem 'rails', '4.2.1'
 # Use SCSS for stylesheets.
-gem 'sass-rails', '~> 5.0.2'
+gem 'sass-rails', '~> 5.0.3'
 # Use Uglifier as compressor for JavaScript assets.
 gem 'uglifier', '~> 2.7.1'
 # Use CoffeeScript for .coffee assets and views.
@@ -39,14 +39,14 @@ group :development do
 	gem 'spring', '~> 1.3.3'
 end
 
+group :doc, :development do
+	# Yard for documentation, replaces sdoc/rdoc.
+	gem 'yard', '~> 0.8.7.6'
+end
+
 group :test do
 	# Codeclimate Test Reporting.
 	gem 'codeclimate-test-reporter', '~> 0.4.7', require: nil
-end
-
-group :doc do
-	# Yard for documentation, replaces sdoc/rdoc.
-	gem 'yard', '~> 0.8.7.6'
 end
 
 # Devise for authentication.
@@ -60,6 +60,9 @@ gem 'paperclip', '~> 4.2.1'
 
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.16'
+
+# Mail Form gem for sending mail directly from a form.
+gem 'mail_form', '~> 1.5.0'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do

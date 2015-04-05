@@ -2,7 +2,6 @@
   <% if @extra.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@extra.errors.count, "error") %> prohibited this extra from being saved:</h2>
-
       <ul>
       <% @extra.errors.full_messages.each do |message| %>
         <li><%= message %></li>

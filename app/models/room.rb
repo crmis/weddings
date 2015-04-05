@@ -1,6 +1,5 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 class Room < ActiveRecord::Base
-
 	belongs_to :rmcat
 	has_many :viewings
 
