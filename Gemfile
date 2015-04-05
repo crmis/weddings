@@ -39,14 +39,14 @@ group :development do
 	gem 'spring', '~> 1.3.3'
 end
 
+group :doc, :development do
+	# Yard for documentation, replaces sdoc/rdoc.
+	gem 'yard', '~> 0.8.7.6'
+end
+
 group :test do
 	# Codeclimate Test Reporting.
 	gem 'codeclimate-test-reporter', '~> 0.4.7', require: nil
-end
-
-group :doc do
-	# Yard for documentation, replaces sdoc/rdoc.
-	gem 'yard', '~> 0.8.7.6'
 end
 
 # Devise for authentication.
@@ -62,7 +62,7 @@ gem 'paperclip', '~> 4.2.1'
 gem 'viewable', '~> 0.5.16'
 
 # Mail Form gem for sending mail directly from a form.
-gem 'mail_form'
+gem 'mail_form', '~> 1.5.0'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do

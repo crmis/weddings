@@ -229,7 +229,7 @@ DEPENDENCIES
   devise (~> 3.4.1)
   factory_girl_rails (~> 4.5.0)
   jquery-rails (~> 4.0.3)
-  mail_form
+  mail_form (~> 1.5.0)
   newrelic_rpm (~> 3.11.1.284)
   paperclip (~> 4.2.1)
   pg (~> 0.18.1)
