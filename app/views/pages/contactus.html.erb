@@ -9,11 +9,9 @@
 		<br><br>
 		If you have an account you can make an enquiry using our form system, if not sign up or send us an email:
 		<br><br>
-
 		<% if not user_signed_in? %>
 			<%= link_to "Sign up", new_user_registration_path %>
 		<% end %>
-
 		<% if current_user %>
 			<%= render 'enquiries/form', enquiry: @enquiry %>
 		<% end %>
@@ -24,7 +22,6 @@
   </p>
 </div>
 </body>
-
 <!--
 might look at refactoring eventually.
 Since it is a user that is signed in,

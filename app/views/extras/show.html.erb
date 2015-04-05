@@ -28,7 +28,6 @@
   </div>
 </div>
 </nav>
-
 <div class="extras-title">
   <%= @extra.name %>
 </div>
@@ -39,31 +38,21 @@
     <%= image_tag "no-image.jpg", :size => "200x250" %>
   <% end %>
 </div>
-
 <div id="extras-details">
   <div class="extras-show">
     <strong>Description:</strong>
     <%= @extra.description %>
   </div>
-
   <div class="extras-show">
     <strong>Quantity:</strong>
     <%= @extra.quantity %>
   </div>
-
   <div class="extras-show">
     <strong>Price:</strong>
     <%= @extra.price %>
   </div>
-
-  <!-- <div class="extras-show">
-		Not really needed because navbar
-    <strong>Extracat:</strong>
-    <%#= @extra.extracat.extratype %>
-  </div> -->
   <% if can? :update, @extra %>
   <%= link_to 'Edit', edit_extra_path(@extra) %> |
   <% end %>
   <%= link_to 'Back', extras_path %>
-
 </div>
