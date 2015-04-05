@@ -61,6 +61,9 @@ gem 'paperclip', '~> 4.2.1'
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.16'
 
+# Mail Form gem for sending mail directly from a form.
+gem 'mail_form'
+
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
