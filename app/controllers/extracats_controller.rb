@@ -5,25 +5,21 @@ class ExtracatsController < ApplicationController
 	around_filter :resource_not_found
 	before_action :set_extracat, only: [:show, :edit, :update, :destroy]
 	load_and_authorize_resource
-	# GET /extracats
+
 	def index
 		@extracats = Extracat.all
 	end
 
-	# GET /extracats/1
 	def show
 	end
 
-	# GET /extracats/new
 	def new
 		@extracat = Extracat.new
 	end
 
-	# GET /extracats/1/edit
 	def edit
 	end
 
-	# POST /extracats
 	def create
 		@extracat = Extracat.new(extracat_params)
 
@@ -34,7 +30,6 @@ class ExtracatsController < ApplicationController
 		end
 	end
 
-	# PATCH/PUT /extracats/1
 	def update
 		if @extracat.update(extracat_params)
 			redirect_to @extracat, notice: 'Extracat was successfully updated.'
@@ -43,7 +38,6 @@ class ExtracatsController < ApplicationController
 		end
 	end
 
-	# DELETE /extracats/1
 	def destroy
 		@extracat.destroy
 		if @extracat.destroy

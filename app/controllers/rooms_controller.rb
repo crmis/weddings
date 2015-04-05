@@ -3,18 +3,15 @@ class RoomsController < ApplicationController
 	# @see def resource_not_found
 	around_filter :resource_not_found
 	before_action :set_room, only: [:show, :edit, :update, :destroy]
-
 	# This is the CanCan helper for auth.
 	# The skip is so users can view the rooms but nothing else.
 	load_and_authorize_resource
 	skip_authorize_resource :only => :show
 
-	# GET /rooms
 	def index
 		@rooms = Room.all
 	end
 
-	# GET /rooms/1
 	def show
 	end
 

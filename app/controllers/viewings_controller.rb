@@ -2,7 +2,6 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 class ViewingsController < ApplicationController
   respond_to :html, :xml, :json
-
 	# @see def resource_not_found
 	around_filter :resource_not_found
 

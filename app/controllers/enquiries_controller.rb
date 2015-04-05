@@ -3,31 +3,25 @@ class EnquiriesController < ApplicationController
 	# @see def resource_not_found
 	around_filter :resource_not_found
 	before_action :set_enquiry, only: [:show, :edit, :update, :destroy]
-
 	# This is the CanCan helper for auth.
 	# The skip is so users can view the rooms but nothing else.
 	load_and_authorize_resource
 
-	# GET /enquiries
 	def index
 		@enquiries = Enquiry.all
 	end
 
-	# GET /enquiries/1
 	def show
 	end
 
-	# GET /enquiries/new
 	def new
 		@enquiry = Enquiry.new
 		render 'pages/contactus'
 	end
 
-	# GET /enquiries/1/edit
 	def edit
 	end
 
-	# POST /enquiries
 	def create
 		@enquiry = Enquiry.new(enquiry_params)
 		if current_user.customer?
@@ -40,7 +34,6 @@ class EnquiriesController < ApplicationController
 		end
 	end
 
-	# PATCH/PUT /enquiries/1
 	def update
 		if @enquiry.update(enquiry_params)
 			redirect_to @enquiry, notice: 'Enquiry was successfully updated.'
@@ -49,7 +42,6 @@ class EnquiriesController < ApplicationController
 		end
 	end
 
-	# DELETE /enquiries/1
 	def destroy
 		@enquiry.destroy
 		redirect_to enquiries_url, notice: 'Enquiry was successfully destroyed.'
