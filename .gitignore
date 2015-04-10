@@ -15,7 +15,7 @@ coverage/
 # /public/system
 
 ## Documentation ignore.
-/doc/
+# /doc/
 .yardoc
 # .yardopts
 
