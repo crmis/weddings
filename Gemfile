@@ -1,7 +1,5 @@
 source 'http://rubygems.org'
 # Generated with rails 4.2.0 on ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin14.0]
-# The ruby version should be active in the production repo. Heroku
-# ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
 gem 'rails', '4.2.1'
 # Use SCSS for stylesheets.
