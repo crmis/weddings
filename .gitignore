@@ -42,6 +42,5 @@ config/initializers/secret_token.rb
 .idea/
 .c9/
 
-## Ignore CI configs
+## Ignore CI config
 # .travis.yml
-.codeship.yml
