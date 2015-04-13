@@ -61,6 +61,9 @@ gem 'paperclip', '~> 4.2.1'
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.16'
 
+#my-bookable
+gem 'my-bookable', :git => 'git://github.com/staceysmells/bookable.git'
+
 # Mail Form gem for sending mail directly from a form.
 gem 'mail_form', '~> 1.5.0'
 

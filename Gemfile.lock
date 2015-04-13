@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/staceysmells/bookable.git
+  revision: b1cd779bb8d1cd59d23747cad19767f6f90d947c
+  specs:
+    my-bookable (0.0.53)
+      jbuilder (~> 2.0)
+      rails_12factor
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -230,6 +238,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.5.0)
   jquery-rails (~> 4.0.3)
   mail_form (~> 1.5.0)
+  my-bookable!
   newrelic_rpm (~> 3.11.1.284)
   paperclip (~> 4.2.1)
   pg (~> 0.18.1)
