@@ -18,3 +18,6 @@
 //= require viewable_fullcalendar.js
 //= require viewable_calendar-editable.js
 //= require viewable_custom.js
+//= require bookable-fullcalendar.js
+//= require bookable-calendar-editable.js
+//= require bookable-custom.js
