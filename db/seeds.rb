@@ -37,8 +37,10 @@ Room.create!([
   {name: "The Lakeside", description: "Really impress your guests this summer and hold your ceremony beside our beautiful lake", size: "445", capacity: 300, price: "350.0", picture: nil, picture_file_name: "lakeside-wedding.jpg", picture_content_type: "image/jpeg", picture_file_size: 49628, picture_updated_at: "2015-01-30 23:00:09", rmcat_id: 1}
 ])
 Viewing.create!([
-  {start_time: "2015-08-01 10:00:00", end_time: "2015-08-01 11:59:00", length: 2, room_id: 1, user_id: 3}
+  {start_time: "2015-08-01 10:00:00", end_time: "2015-08-01 11:59:00", length: 2, room_id: 1, user_id: 3},
+  {start_time: "2015-09-02 11:00:00", end_time: "2015-09-02 12:59:00", length: 2, room_id: 2, user_id: 3}
 ])
 Booking.create!([
-  {start_time: "2015-08-01 10:00:00", end_time: "2015-08-01 11:59:00", length: 2, room_id: 1, user_id: 3}
+  {start_time: "2015-08-01 10:00:00", end_time: "2015-08-01 11:59:00", length: 2, room_id: 1, user_id: 3},
+  {start_time: "2015-09-02 11:00:00", end_time: "2015-09-02 12:59:00", length: 2, room_id: 2, user_id: 3}
 ])
