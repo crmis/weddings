@@ -1,6 +1,6 @@
 <%= form_for([@room, @booking]) do |f| %>
 <p> Select Customer </p>
-<%= f.collection_select :user_id, User.all, :id, :user_info %>
+<%= f.collection_select :user_id, User.all, :id, :customer_name %>
 
   <p>
     <%= f.label 'start_time', 'Start Date and Time' %>
