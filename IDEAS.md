@@ -1,23 +1,27 @@
-Name of User that booking is being made with.
+# Ideas for Weddings Project
 
-Customer Name
 
-Room Name
+#### app/bookings/new.html.erb
+* Name of User that booking is being made with.
 
-Time
+* Customer Name
 
-Date
+* Room Name
 
-Price (room)
+* Time
 
-Extras
+* Date
 
-Checkbox for extras cat
+* Price (room)
 
-Select from dropdown  extra
+* Extras
 
-Price of extra
+* Checkbox for extras cat
 
-Total price
+* Select from dropdown  extra
 
-Payment type (checkbox)
+* Price of extra
+
+* Total price
+
+* Payment type (checkbox or dropdown)
