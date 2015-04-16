@@ -5,7 +5,7 @@ User.create!([
 ])
 Enquiry.create!([
   {subject: "Hello", e_description: "Hello there.", user_id: 3},
-	{subject: "Wedding", e_description: "I want a wedding!", user_id: 3}
+  {subject: "Wedding", e_description: "I want a wedding!", user_id: 3}
 ])
 Extra.create!([
   {extraimg: nil, name: "Roses", description: "Red Rose bouquets.", quantity: 500, price: "350.0", extracat_id: 1, extraimg_file_name: "Red_Roses_Background.jpg", extraimg_content_type: "image/jpeg", extraimg_file_size: 4582604, extraimg_updated_at: "2015-03-02 12:55:23"},
@@ -35,4 +35,10 @@ Room.create!([
   {name: "Winter Wonderland", description: "Looking for something different? This one has to be seen to be believed! ", size: "310", capacity: 100, price: "500.0", picture: nil, picture_file_name: "Winter-Wedding-Venue.jpg", picture_content_type: "image/jpeg", picture_file_size: 190953, picture_updated_at: "2015-01-30 22:54:28", rmcat_id: 1},
   {name: "Ambleside", description: "Give your guests a night to remember and party the night away in our Ambleside room!", size: "222", capacity: 140, price: "330.0", picture: nil, picture_file_name: "7688666.jpg", picture_content_type: "image/jpeg", picture_file_size: 93269, picture_updated_at: "2015-01-30 22:57:43", rmcat_id: 2},
   {name: "The Lakeside", description: "Really impress your guests this summer and hold your ceremony beside our beautiful lake", size: "445", capacity: 300, price: "350.0", picture: nil, picture_file_name: "lakeside-wedding.jpg", picture_content_type: "image/jpeg", picture_file_size: 49628, picture_updated_at: "2015-01-30 23:00:09", rmcat_id: 1}
+])
+Viewing.create!([
+  {start_time: "2015-08-01 10:00:00", end_time: "2015-08-01 11:59:00", length: 2, room_id: 1, user_id: 3}
+])
+Booking.create!([
+  {start_time: "2015-08-01 10:00:00", end_time: "2015-08-01 11:59:00", length: 2, room_id: 1, user_id: 3}
 ])

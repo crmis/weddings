@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
 	resources :rooms do
 		resources :viewings
+    resources :bookings
 	end
 
 	resources :rmcats
