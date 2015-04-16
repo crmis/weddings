@@ -55,10 +55,13 @@
       <% if can? :update, @room %>
         <%= link_to "Edit", edit_room_path(@room) %>
       <% end %>
+      <br>
 			<%# if can? :create, @viewing %>
       <% if user_signed_in? %>
 	      <%= link_to 'Add viewing', new_room_viewing_path(@room) %>
-	      <%= link_to 'Show viewings', room_viewings_path(@room) %>
+	      <%= link_to 'Show viewings', room_viewings_path(@room) %> <br>
+        <%= link_to 'Add booking', new_room_booking_path(@room) %>
+        <%= link_to 'Show bookings', room_bookings_path(@room) %>
       <% end %>
 			<%# end %>
     </div>

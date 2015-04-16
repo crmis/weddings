@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
 
-
 	devise_for :users
 
 	resources :rooms do
 		resources :viewings
-	end
-
-  resources :rooms do
     resources :bookings
-  end
+	end
 
 	resources :rmcats
 	resources :extras

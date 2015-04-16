@@ -1,28 +1,277 @@
-
-.wrapper {
-  width:60%;
-  border:1px solid gray;
-  border-radius: 8px;
-  margin: 20px auto;
-  padding: 10px;
+/* line 4, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/enquiries.scss */
+#enquiry-details {
+  width: 35em;
+  /* left right margins set to auto to centre div */
+  /* margins top right bottom left */
+  margin: 0em 0em 0em 17em;
+  padding: 1em 0em 1em 1em;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  /* border: 0.1em solid red; */
 }
 
-.bookings_table input[type="number"] {
-  width:30px;
+/* line 15, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/enquiries.scss */
+#enquiry-img {
+  width: 12em;
+  /*float: left;*/
+  /* margins top right bottom left */
+  margin: 1em 0em 0em 20em;
+  padding: 0em 0em 0em 0em;
+  /*  takes the width of the image */
+  /* font-family: serif; */
+  /* border: 0.1em solid blue; */
 }
 
-.bookings_table{
-  font-size: 14px;
-  color: gray;
+/* line 26, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/enquiries.scss */
+.enquiry-show {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  padding: 0.8em;
+  /* border: 0.1em solid red; */
 }
 
-.errors {
-  color:#c00;
+/* line 36, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/enquiries.scss */
+.enquiry-title {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 45%;
+}
+/* line 4, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+#extras-details {
+  width: 35em;
+  /* left right margins set to auto to centre div */
+  /* margins top right bottom left */
+  margin: 0em 0em 0em 17em;
+  padding: 1em 0em 1em 1em;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  /* border: 0.1em solid red; */
 }
 
-.calendar_booking_container {
-	margin: auto;
-	width: 80%;
+/* line 15, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extras-img {
+  width: 12em;
+  /*float: left;*/
+  /* margins top right bottom left */
+  margin: 1em 0em 0em 20em;
+  padding: 0em 0em 0em 0em;
+  /*  takes the width of the image */
+  font-familys: serif;
+  /* border: 0.1em solid blue; */
+}
+
+/* line 26, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extras-show {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  /* border: 0.1em solid red; */
+  padding: 0.8em;
+}
+
+/* line 36, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extras-title {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 48%;
+}
+
+/* line 43, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar {
+  min-height: 45px;
+  background-colors: #FEFF00;
+  width: 100%;
+  font-size: 17.5px;
+  padding-top: 9px;
+  padding-bottom: 30px;
+  padding-left: 12%;
+}
+
+/* line 44, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-header {
+  /*background-color: #FFF499;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  width: auto;
+}
+
+/* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
+/* line 46, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 47, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 48, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:active {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 49, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extranavbar-brand:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 51, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  z-index: 2;
+  /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+  background-color: #FFF499;
+}
+
+/*.roomheader {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  background-colors: #FEFF00;
+  cursor: pointer;
+  margin-left: 45%;
+  font-size: 2em;
+  }*/
+/* line 70, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle li {
+  background-color: #FFF9A6;
+  margin-right: 0.3px;
+}
+
+/* line 71, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  /*background-color: #FEFF00;*/
+  cursor: pointer;
+}
+
+/* line 81, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li:hover {
+  xbackground: #FEFF00;
+  cxolor: #FEFF00;
+}
+
+/* line 85, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  /*-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;*/
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  /*background-color: #FEFF00;*/
+}
+
+/* line 99, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li ul li {
+  /*background-color: #FEFF00;*/
+  display: block;
+  color: #fff;
+}
+
+/* line 105, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li ul li:hover {
+  background-color: #FEFF00;
+}
+
+/* line 106, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/extras.scss */
+.extraliststyle ul li:hover ul {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  background-color: #FEFF00;
+}
+.main-form{
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+	/* effects all font body, header, title and label text sizes ...*/
+	/* font-size: 0.8em; */
+	/* border: 0.1em solid green; */
+}
+
+.main-title{
+	font-weight:bold;
+	font-size: 1.2em;
+	line-height: 1.1em;
+  margin-left: 40%;
+	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+	/* border: 0.1em solid green; */
+}
+
+label{
+	/* labels appear on line above fields */
+	display: block;
+	font-weight:bold;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.field {
+	margin-bottom: 0.5em;
+}
+
+div.ui-datepicker{
+	 font-size: 0.7em;
+}
+
+.actions {
+    margin-bottom: 0.5em;
+}
+
+#notice { color: green; }
+
+#alert { color: red; }
+
+.field_with_errors {
+	padding: 0.1em;
+	background-color: pink;
+	display: table;
+ }
+
+#error_explanation {
+	width: 15em;
+	float: right;
+	font-size: 1em;
+	padding: 1em;
+	/* margins top right bottom left */
+	margin: 4em 2em 0em 0em;
+	/* background-color: #f0f0f0;*/
+}
+
+#error_explanation ul li {
+  font-size: 0.8em;
+	font-style: italic;
+  list-style: circle ;
+	color: black;
 }
 /*!
  * FullCalendar v1.6.4 Stylesheet
@@ -614,281 +863,6 @@ table.fc-border-separate {
 	}
 	
 	
-/* line 4, H:/Sites/weddings/app/assets/stylesheets/enquiries.scss */
-#enquiry-details {
-  width: 35em;
-  /* left right margins set to auto to centre div */
-  /* margins top right bottom left */
-  margin: 0em 0em 0em 17em;
-  padding: 1em 0em 1em 1em;
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-  font-weight: normal;
-  /* border: 0.1em solid red; */
-}
-
-/* line 15, H:/Sites/weddings/app/assets/stylesheets/enquiries.scss */
-#enquiry-img {
-  width: 12em;
-  /*float: left;*/
-  /* margins top right bottom left */
-  margin: 1em 0em 0em 20em;
-  padding: 0em 0em 0em 0em;
-  /*  takes the width of the image */
-  /* font-family: serif; */
-  /* border: 0.1em solid blue; */
-}
-
-/* line 26, H:/Sites/weddings/app/assets/stylesheets/enquiries.scss */
-.enquiry-show {
-  font-weight: bold;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  margin-left: 1em;
-  margin-bottom: 0.2em;
-  padding: 0.8em;
-  /* border: 0.1em solid red; */
-}
-
-/* line 36, H:/Sites/weddings/app/assets/stylesheets/enquiries.scss */
-.enquiry-title {
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-  font-weight: normal;
-  font-size: 2em;
-  margin-left: 45%;
-}
-/* line 4, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-#extras-details {
-  width: 35em;
-  /* left right margins set to auto to centre div */
-  /* margins top right bottom left */
-  margin: 0em 0em 0em 17em;
-  padding: 1em 0em 1em 1em;
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-  font-weight: normal;
-  /* border: 0.1em solid red; */
-}
-
-/* line 15, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extras-img {
-  width: 12em;
-  /*float: left;*/
-  /* margins top right bottom left */
-  margin: 1em 0em 0em 20em;
-  padding: 0em 0em 0em 0em;
-  /*  takes the width of the image */
-  font-familys: serif;
-  /* border: 0.1em solid blue; */
-}
-
-/* line 26, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extras-show {
-  font-weight: bold;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  margin-left: 1em;
-  margin-bottom: 0.2em;
-  /* border: 0.1em solid red; */
-  padding: 0.8em;
-}
-
-/* line 36, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extras-title {
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-  font-weight: normal;
-  font-size: 2em;
-  margin-left: 48%;
-}
-
-/* line 43, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extranavbar {
-  min-height: 45px;
-  background-colors: #FEFF00;
-  width: 100%;
-  font-size: 17.5px;
-  padding-top: 9px;
-  padding-bottom: 30px;
-  padding-left: 12%;
-}
-
-/* line 44, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extranavbar-header {
-  /*background-color: #FFF499;*/
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5px;
-  width: auto;
-}
-
-/* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
-/* line 46, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extranavbar-brand:link {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 47, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extranavbar-brand:visited {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 48, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extranavbar-brand:active {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 49, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extranavbar-brand:hover {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 51, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-  z-index: 2;
-  /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
-  background-color: #FFF499;
-}
-
-/*.roomheader {
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-  background-colors: #FEFF00;
-  cursor: pointer;
-  margin-left: 45%;
-  font-size: 2em;
-  }*/
-/* line 70, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle li {
-  background-color: #FFF9A6;
-  margin-right: 0.3px;
-}
-
-/* line 71, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul li {
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 15px 20px;
-  /*background-color: #FEFF00;*/
-  cursor: pointer;
-}
-
-/* line 81, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul li:hover {
-  xbackground: #FEFF00;
-  cxolor: #FEFF00;
-}
-
-/* line 85, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 150px;
-  /*-webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;*/
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  /*background-color: #FEFF00;*/
-}
-
-/* line 99, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul li ul li {
-  /*background-color: #FEFF00;*/
-  display: block;
-  color: #fff;
-}
-
-/* line 105, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul li ul li:hover {
-  background-color: #FEFF00;
-}
-
-/* line 106, H:/Sites/weddings/app/assets/stylesheets/extras.scss */
-.extraliststyle ul li:hover ul {
-  display: block;
-  opacity: 0;
-  visibility: visible;
-  background-color: #FEFF00;
-}
-.main-form{
-	width: 50em;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2em;
-	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-	/* effects all font body, header, title and label text sizes ...*/
-	/* font-size: 0.8em; */
-	/* border: 0.1em solid green; */
-}
-
-.main-title{
-	font-weight:bold;
-	font-size: 1.2em;
-	line-height: 1.1em;
-  margin-left: 40%;
-	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-	/* border: 0.1em solid green; */
-}
-
-label{
-	/* labels appear on line above fields */
-	display: block;
-	font-weight:bold;
-	font-size: 1em;
-	line-height: 1.2em;
-}
-
-.field {
-	margin-bottom: 0.5em;
-}
-
-div.ui-datepicker{
-	 font-size: 0.7em;
-}
-
-.actions {
-    margin-bottom: 0.5em;
-}
-
-#notice { color: green; }
-
-#alert { color: red; }
-
-.field_with_errors {
-	padding: 0.1em;
-	background-color: pink;
-	display: table;
- }
-
-#error_explanation {
-	width: 15em;
-	float: right;
-	font-size: 1em;
-	padding: 1em;
-	/* margins top right bottom left */
-	margin: 4em 2em 0em 0em;
-	/* background-color: #f0f0f0;*/
-}
-
-#error_explanation ul li {
-  font-size: 0.8em;
-	font-style: italic;
-  list-style: circle ;
-	color: black;
-}
 /* 'borders' can be displayed if the 's' is removed to make a valid CSS selector
 	styles used on main product page 'products/index.html.erb'
 */
@@ -1282,19 +1256,19 @@ div.ui-datepicker{
 @keyframes scaleUpTo {
   to { opacity: 0; transform: scale(1.5); }
 }
-/* line 11, H:/Sites/weddings/app/assets/stylesheets/pages.scss */
+/* line 11, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/pages.scss */
 body {
   padding-top: 0px;
 }
 
-/* line 13, H:/Sites/weddings/app/assets/stylesheets/pages.scss */
+/* line 13, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/pages.scss */
 .title {
   margin-left: 35%;
   /*border: solid;*/
   margin-top: 4px;
 }
 
-/* line 19, H:/Sites/weddings/app/assets/stylesheets/pages.scss */
+/* line 19, /Users/tomcox/development/projects/staceysmells/weddings/app/assets/stylesheets/pages.scss */
 #main-div {
   min-height: 100%;
   /* the combined width of three divs, margins and padding ...

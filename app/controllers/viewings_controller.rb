@@ -90,6 +90,6 @@ class ViewingsController < ApplicationController
 
   def viewing_params
      params.require(:viewing).permit(:user_id)
-   end
+  end
 
 end

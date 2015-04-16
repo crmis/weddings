@@ -1,9 +1,18 @@
 // $(document).ready(function() {
 // 	calendar();
 // });
-$(document).on('page:load', function() {
+// $(document).on('page:load', function() {
+// 	calendar();
+// });
+// $(document).on('ready page:load', function () {
+// 	calendar();
+// });
+$(document).on('page:change', function () {
 	calendar();
 });
+// onLoad(function() {
+// 	calendar();
+// });
 var calendar = function() {
 	// page is now ready, initialize the calendar...
 	var current_room = function() {

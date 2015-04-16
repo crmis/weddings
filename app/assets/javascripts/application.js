@@ -18,6 +18,11 @@
 //= require viewable_fullcalendar.js
 //= require viewable_calendar-editable.js
 //= require viewable_custom.js
-//= require bookable-fullcalendar.js
-//= require bookable-calendar-editable.js
 //= require bookable-custom.js
+
+// Trial for custom vars. See viewable-custom line 13-15.
+// window.onLoad = function(callback) {
+//   // binds ready event and turbolink page:load event
+//   $(document).ready(callback);
+//   $(document).on('page:load',callback);
+// };

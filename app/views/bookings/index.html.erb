@@ -3,8 +3,8 @@
   <tr>
     <th>Start</th>
     <th>End</th>
+    <th>User</th>
   </tr>
-
   <% @bookings.each do |booking| %>
   <tr>
     <td>
@@ -12,6 +12,10 @@
     </td>
     <td>
       <%= (booking.calculate_end_time + 60).strftime('%e %b %Y %H:%M%p') %>
+    </td>
+    <td>
+      <%#= booking.user_id %>
+      <%= booking.user.customer_name %>
     </td>
     <td><%= link_to "Delete", room_booking_path(@room, booking), data: { confirm: 'Are you sure?' }, method: :delete %>
     </td>

@@ -50,7 +50,7 @@ class BookingsController < ApplicationController
       if request.xhr?
         render json: {status: :success}.to_json
       else
-        redirect_to room_bookings_path(@room)
+        redirect_to resource_bookings_path(@room)
       end
     else
       render 'edit'
@@ -72,6 +72,17 @@ class BookingsController < ApplicationController
     if params[:room_id]
       @room = Room.find_by_id(params[:room_id])
     end
+  end
+
+	# If resource not found redirect to root and flash error.
+	def resource_not_found
+		yield
+	rescue ActiveRecord::RecordNotFound
+		redirect_to root_url, :notice => "Booking not found."
+	end
+
+  def booking_params
+     params.require(:booking).permit(:user_id)
   end
 
 end
