@@ -1,6 +1,9 @@
 <%= form_for([@room, @booking]) do |f| %>
+<p> Select Customer </p>
+<%= f.collection_select :user_id, User.all, :id, :user_info %>
+
   <p>
-    <%= f.label 'start_time', 'Start time' %>
+    <%= f.label 'start_time', 'Start Date and Time' %>
     <%= f.datetime_select :start_time, { minute_step: 15 } %>
   </p>
   <p>
@@ -8,11 +11,12 @@
     <%= f.number_field 'length', min: 1 %>
   </p>
   <p>
-  <br />
-  <% if not current_user.customer? %>
-      <p> Select Customer </p>
-    	<%= f.collection_select :user_id, User.all, :id, :user_info %>
-  <% end %>
+    Room price  £<%= @room.price %>
   </p>
+  <p> Extras </p>
+  Type of Extra
+
+  <%#= f.collection_select :extra_id, Extra.all, :id, :extra_info %>
+
   <%= f.submit 'Submit' %>
 <% end %>

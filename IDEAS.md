@@ -12,9 +12,9 @@ Price (room)
 
 Extras
 
-Checkbox for extras
+Checkbox for extras cat
 
-Select from dropdown type of extra
+Select from dropdown  extra
 
 Price of extra
 

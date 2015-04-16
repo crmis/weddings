@@ -2,6 +2,8 @@ class BookingsController < ApplicationController
   respond_to :html, :xml, :json
 
   before_action :find_room
+  # before_action :find_extra
+
 
   def index
     @bookings = Booking.where("room_id = ? AND end_time >= ?", @room.id, Time.now).order(:start_time)
@@ -73,6 +75,12 @@ class BookingsController < ApplicationController
       @room = Room.find_by_id(params[:room_id])
     end
   end
+
+  # def find_extra
+  #   if params[:extra_id]
+  #     @extra = Extra.find_by_id(params[:extra_id])
+  #   end
+  # end
 
 	# If resource not found redirect to root and flash error.
 	def resource_not_found
