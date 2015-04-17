@@ -11,12 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150415102746) do
+# Example migration: rails g migration AddExtraIdToBookings extra_id:integer
+
+ActiveRecord::Schema.define(version: 20150417021705) do
+
+  create_table "bookings", force: :cascade do |t|
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "length"
+    t.integer  "room_id"
+    t.integer  "user_id"
+    t.integer  "extra_id"
+  end
+
+  add_index "bookings", ["room_id"], name: "index_bookings_on_room_id"
 
   create_table "enquiries", force: :cascade do |t|
     t.string   "subject"
     t.text     "e_description"
-		t.integer  "user_id"
+    t.integer  "user_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
@@ -94,15 +107,5 @@ ActiveRecord::Schema.define(version: 20150415102746) do
   end
 
   add_index "viewings", ["room_id"], name: "index_viewings_on_room_id"
-
-  create_table "bookings", force: :cascade do |t|
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.integer  "length"
-    t.integer  "room_id"
-    t.integer  "user_id"
-  end
-
-  add_index "bookings", ["room_id"], name: "index_bookings_on_room_id"
 
 end

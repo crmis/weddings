@@ -3,6 +3,8 @@ module Bookable
 
   included do
     belongs_to :room
+    belongs_to :user
+    has_many :extras
 
     validates :start_time, presence: true
     validates :length, presence: true, numericality: { greater_than: 0 }

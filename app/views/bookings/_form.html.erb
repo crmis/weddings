@@ -1,22 +1,29 @@
 <%= form_for([@room, @booking]) do |f| %>
-<p> Select Customer </p>
-<%= f.collection_select :user_id, User.all, :id, :customer_name %>
-
   <p>
-    <%= f.label 'start_time', 'Start Date and Time' %>
+    <%= f.label 'Select Customer:' %>
+    <%= f.collection_select :user_id, User.all, :id, :customer_name %>
+  </p>
+  <p>
+    <%= f.label 'start_time', 'Start Date and Time:' %>
     <%= f.datetime_select :start_time, { minute_step: 15 } %>
   </p>
   <p>
-    <%= f.label 'length', 'Length of booking in hours' %>
+    <%= f.label 'length', 'Length of booking in hours:' %>
     <%= f.number_field 'length', min: 1 %>
   </p>
   <p>
-    Room price  £<%= @room.price %>
+    <%= f.label 'Room Price:' %>
+    <%= number_to_currency @room.price, unit: "£" %>
   </p>
-  <p> Extras </p>
-  Type of Extra
-
-  <%#= f.collection_select :extra_id, Extra.all, :id, :extra_info %>
-
+  <p>
+  <!-- NOTE(Tom) Because of the set extras we offer is this necessary?? -->
+  <%#= f.label 'Type of Extra:' %>
+  </p>
+  <p>
+    <%= f.label 'Extras:' %>
+    <%= f.collection_select :extra_id, Extra.all, :id, :extra_info, :prompt => 'Choose any extras' %>
+  </p>
+  <!-- NOTE(Tom) Was worth a shot -->
+  <%= Room.sum(:price) + Extra.sum(:price) %>
   <%= f.submit 'Submit' %>
 <% end %>

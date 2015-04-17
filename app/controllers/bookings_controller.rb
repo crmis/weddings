@@ -77,9 +77,9 @@ class BookingsController < ApplicationController
   end
 
   # def find_extra
-  #   if params[:extra_id]
-  #     @extra = Extra.find_by_id(params[:extra_id])
-  #   end
+  #    if params[:extra_id]
+  #      @extra = Extra.find_by_id(params[:extra_id])
+  #    end
   # end
 
 	# If resource not found redirect to root and flash error.
@@ -90,7 +90,7 @@ class BookingsController < ApplicationController
 	end
 
   def booking_params
-     params.require(:booking).permit(:user_id)
+     params.require(:booking).permit(:user_id, :extra_id)
   end
 
 end
