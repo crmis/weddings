@@ -28,10 +28,17 @@
 
 ###### Remember to add these git alias configs in lab: .git/config or even better .git folder on H: drive.
 Also change default commit editor to atom.
+
 [core]
-	editor = 'C:/Brackets/Brackets.exe'
+
+  editor = 'C:/Brackets/Brackets.exe'
+	
 [alias]
+
   tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  
   ec  = config --local -e
+  
   ecg = config --global -e
-	up  = !git add -A && git commit -m # "Commit message here."
+  
+  up  = !git add -A && git commit -m # "Commit message here."
