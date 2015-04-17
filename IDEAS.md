@@ -35,3 +35,6 @@ Also change default commit editor to atom.
   ec  = config --local -e
   ecg = config --global -e
 	up  = !git add -A && git commit -m # "Commit message here."
+
+
+	https://www.ruby-forum.com/topic/3546147
