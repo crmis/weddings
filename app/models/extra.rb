@@ -2,6 +2,8 @@
 class Extra < ActiveRecord::Base
 	belongs_to :extracat
 	belongs_to :booking
+	has_many :additions
+	has_many :extras, :through => :additions
 
 	def extra_info
 		"#{name}"

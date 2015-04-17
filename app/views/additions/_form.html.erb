@@ -1,0 +1,25 @@
+<%= form_for(@addition) do |f| %>
+  <% if @addition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@addition.errors.count, "error") %> prohibited this addition from being saved:</h2>
+
+      <ul>
+      <% @addition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :booking_id %><br>
+    <%= f.number_field :booking_id %>
+  </div>
+  <div class="field">
+    <%= f.label :extra_id %><br>
+    <%= f.number_field :extra_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

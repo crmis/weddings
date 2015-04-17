@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	resources :extras
 	resources :extracats
 	resources :enquiries
+  resources :additions
 
 	root :to => redirect('/pages/home')
 	get 'pages/home'
