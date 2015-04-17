@@ -16,13 +16,13 @@
 
 - [x] Extras
 
-- [x] Select from dropdown extra
+- [x] Select extra with checkboxes.
 
-* Checkbox for extras cat
+* Dropdown for extras cat
 
 * Price of extra
 
-* Total price
+* Total price (sorta!)
 
 * Payment type (checkbox or dropdown)
 
@@ -32,13 +32,13 @@ Also change default commit editor to atom.
 [core]
 
   editor = 'C:/Brackets/Brackets.exe'
-	
+
 [alias]
 
   tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  
+
   ec  = config --local -e
-  
+
   ecg = config --global -e
-  
+
   up  = !git add -A && git commit -m # "Commit message here."
