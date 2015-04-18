@@ -1,25 +1,25 @@
-<%= form_for([@room, @booking]) do |f| %>
-  <p>
-    <%= f.label 'Select Customer:' %>
-    <%= f.collection_select :user_id, User.all, :id, :user_info %>
-  </p>
-  <p>
-    <%= f.label 'start_time', 'Start Date and Time:' %>
-    <%= f.datetime_select :start_time, { minute_step: 15 } %>
-  </p>
-  <p>
-    <%= f.label 'length', 'Length of booking in hours:' %>
-    <%= f.number_field 'length', min: 1 %>
-  </p>
-  <p>
-    <%= f.label 'Room Price:' %>
-    <%= number_to_currency @room.price, unit: "£" %>
-  </p>
-  <p>
-    <%= f.label 'Extras:' %>
-    <%= f.collection_check_boxes :extra_ids, Extra.all, :id, :extra_info %>
-  </p>
-  <!-- NOTE(Tom) Was worth a shot -->
-  <%= Room.sum(:price) + Extra.sum(:price) %>
-  <%= f.submit 'Submit' %>
-<% end %>
+<div class="main-form">
+  <%= form_for([@room, @booking]) do |f| %>
+    <p>
+      <%= f.label 'Select Customer:' %>
+      <%= f.collection_select :user_id, User.all, :id, :user_info %>
+    </p>
+    <p>
+      <%= f.label 'start_time', 'Start Date and Time:' %>
+      <%= f.datetime_select :start_time, { minute_step: 15 } %>
+    </p>
+    <p>
+      <%= f.label 'length', 'Length of booking in hours:' %>
+      <%= f.number_field 'length', min: 1 %>
+    </p>
+    <p>
+      <%= f.label 'Room Price:' %>
+      <%= number_to_currency @room.price, unit: "£" %>
+    </p>
+    <p>
+      <%= f.label 'Extras:', class: 'checkbox' %>
+      <%= f.collection_check_boxes :extra_ids, Extra.all, :id, :extra_info %>
+    </p>
+    <%= f.submit 'Submit' %>
+  <% end %>
+</div>

@@ -2,7 +2,7 @@
 	width: 50em;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 2em;
+	margin-top: 0.5em;
 	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
 	/* effects all font body, header, title and label text sizes ...*/
 	/* font-size: 0.8em; */
@@ -20,7 +20,7 @@
 
 label{
 	/* labels appear on line above fields */
-	display: block;
+	display: inline;
 	font-weight:bold;
 	font-size: 1em;
 	line-height: 1.2em;

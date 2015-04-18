@@ -6,10 +6,11 @@
       <%= @booking.start_time.strftime('%e %b %Y %H:%M%p') %>
       until
       <%= (@booking.calculate_end_time + 60).strftime('%e %b %Y %H:%M%p') %>
-      <p> <strong> You added extras are: </strong>
-
-        <% @booking.extras.each do |e| %>
-          <%= e.name %>,
-        <% end %>
+      <p>
+        <strong> Your added extras are: </strong>
+          <% @booking.extras.each do |e| %>
+            <%= e.name %> |
+          <% end %>
+      </p>
     </fieldset>
 </div>
