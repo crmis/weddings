@@ -13,13 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150417112804) do
 
-  create_table "additions", force: :cascade do |t|
-    t.integer  "booking_id"
-    t.integer  "extra_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "bookings", force: :cascade do |t|
     t.datetime "start_time"
     t.datetime "end_time"
@@ -30,13 +23,6 @@ ActiveRecord::Schema.define(version: 20150417112804) do
   end
 
   add_index "bookings", ["room_id"], name: "index_bookings_on_room_id"
-
-  create_table "bookings_extras", force: :cascade do |t|
-    t.integer  "booking_id"
-    t.integer  "extra_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "enquiries", force: :cascade do |t|
     t.string   "subject"

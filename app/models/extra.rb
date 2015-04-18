@@ -1,9 +1,7 @@
 # @author Stacey Rees <https://github.com/staceysmells>
 class Extra < ActiveRecord::Base
 	belongs_to :extracat
-	belongs_to :booking
-	has_many :additions
-	has_many :extras, :through => :additions
+	# belongs_to :booking
 
 	def extra_info
 		"#{name}"
