@@ -15,7 +15,8 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @booking =  Booking.new(params[:booking].permit(:room_id, :start_time, :length))
+    # Needed a plural on extra_id and as it is an array we need the => []
+    @booking =  Booking.new(params[:booking].permit(:room_id, :start_time, :length, :extra_ids => []))
     @booking.room = @room
     if @booking.save
       redirect_to room_bookings_path(@room, method: :get)
@@ -90,7 +91,6 @@ class BookingsController < ApplicationController
 	end
 
   def booking_params
-    # Needed a plural on extra_id and as it is an array we need the => []
     params.require(:booking).permit(:user_id, :extra_ids => [])
   end
 
