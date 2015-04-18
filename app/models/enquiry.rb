@@ -8,4 +8,14 @@ class Enquiry < ActiveRecord::Base
 	def user_info
 		"#{id} #{customer_name}"
 	end
+
+	# Declare the e-mail headers. It accepts anything the mail method
+	# in ActionMailer accepts.
+	# def headers
+	# 	{
+	# 		:subject => "mvweddings - enquiry",
+	# 		:to => "tomcox.media@gmail.com",
+	# 		:from => "#{customer_name} <#{email}>"
+	# 	}
+	# end
 end
