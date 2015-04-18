@@ -19,7 +19,8 @@ class Ability
 			cannot [:read], [Rmcat, Extracat, Booking]
 		end
 		if user
-			can [:manage], [Viewing, Booking, Enquiry]
+			can [:manage], [Viewing, Booking]
+			can [:create], [Enquiry]
 		end
 	end
 end
