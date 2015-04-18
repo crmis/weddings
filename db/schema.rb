@@ -11,13 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150418141616) do
+ActiveRecord::Schema.define(version: 20150418142712) do
+
+  create_table "additions", force: :cascade do |t|
+    t.integer  "booking_id"
+    t.integer  "extra_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "bookings_extras", id: false, force: :cascade do |t|
     t.integer "booking_id"
     t.integer "extra_id"
   end
-  
+
   create_table "bookings", force: :cascade do |t|
     t.datetime "start_time"
     t.datetime "end_time"
