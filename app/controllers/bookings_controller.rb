@@ -90,7 +90,8 @@ class BookingsController < ApplicationController
 	end
 
   def booking_params
-     params.require(:booking).permit(:user_id, :extra_id)
+    # Needed a plural on extra_id and as it is an array we need the => []
+    params.require(:booking).permit(:user_id, :extra_ids => [])
   end
 
 end

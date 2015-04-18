@@ -3,8 +3,6 @@ module Viewable
   extend ActiveSupport::Concern
 
   included do
-    belongs_to :room
-    belongs_to :user
 
     validates :start_time, presence: true
     validates :length, presence: true, numericality: { greater_than: 0 }
