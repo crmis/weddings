@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(version: 20150418144658) do
     t.integer  "length"
     t.integer  "room_id"
     t.integer  "user_id"
-    t.integer  "extra_id"
   end
 
   add_index "bookings", ["room_id"], name: "index_bookings_on_room_id"
