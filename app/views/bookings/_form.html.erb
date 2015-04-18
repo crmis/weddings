@@ -20,8 +20,14 @@
   <%#= f.label 'Type of Extra:' %>
   </p>
   <p>
-    <%= f.label 'Extras:' %>
-    <%= f.collection_select :extra_id, Extra.all, :id, :extra_info, :prompt => 'Choose any extras' %>
+    <%#= f.label 'Extras:' %>
+    <%#= f.collection_select :extra_id, Extra.all, :id, :extra_info, :prompt => 'Choose any extras' %>
+
+    <p>
+      <%#= f.fields_for :additions %>
+      <%= f.label 'Extras:' %>
+      <%= f.collection_check_boxes :extra_ids, Extra.all, :id, :extra_info %>
+    </p>
   </p>
   <!-- NOTE(Tom) Was worth a shot -->
   <%= Room.sum(:price) + Extra.sum(:price) %>
