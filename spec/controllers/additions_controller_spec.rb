@@ -20,140 +20,140 @@ require 'rails_helper'
 
 RSpec.describe AdditionsController, type: :controller do
 
-  # This should return the minimal set of attributes required to create a valid
-  # Addition. As you add validations to Addition, be sure to
-  # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+	# This should return the minimal set of attributes required to create a valid
+	# Addition. As you add validations to Addition, be sure to
+	# adjust the attributes here as well.
+	let(:valid_attributes) {
+		skip("Add a hash of attributes valid for your model")
+	}
 
-  let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-  }
+	let(:invalid_attributes) {
+		skip("Add a hash of attributes invalid for your model")
+	}
 
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # AdditionsController. Be sure to keep this updated too.
-  let(:valid_session) { {} }
+	# This should return the minimal set of values that should be in the session
+	# in order to pass any filters (e.g. authentication) defined in
+	# AdditionsController. Be sure to keep this updated too.
+	let(:valid_session) { {} }
 
-  describe "GET #index" do
-    it "assigns all additions as @additions" do
-      addition = Addition.create! valid_attributes
-      get :index, {}, valid_session
-      expect(assigns(:additions)).to eq([addition])
-    end
-  end
+	describe "GET #index" do
+		it "assigns all additions as @additions" do
+			addition = Addition.create! valid_attributes
+			get :index, {}, valid_session
+			expect(assigns(:additions)).to eq([addition])
+		end
+	end
 
-  describe "GET #show" do
-    it "assigns the requested addition as @addition" do
-      addition = Addition.create! valid_attributes
-      get :show, {:id => addition.to_param}, valid_session
-      expect(assigns(:addition)).to eq(addition)
-    end
-  end
+	describe "GET #show" do
+		it "assigns the requested addition as @addition" do
+			addition = Addition.create! valid_attributes
+			get :show, {:id => addition.to_param}, valid_session
+			expect(assigns(:addition)).to eq(addition)
+		end
+	end
 
-  describe "GET #new" do
-    it "assigns a new addition as @addition" do
-      get :new, {}, valid_session
-      expect(assigns(:addition)).to be_a_new(Addition)
-    end
-  end
+	describe "GET #new" do
+		it "assigns a new addition as @addition" do
+			get :new, {}, valid_session
+			expect(assigns(:addition)).to be_a_new(Addition)
+		end
+	end
 
-  describe "GET #edit" do
-    it "assigns the requested addition as @addition" do
-      addition = Addition.create! valid_attributes
-      get :edit, {:id => addition.to_param}, valid_session
-      expect(assigns(:addition)).to eq(addition)
-    end
-  end
+	describe "GET #edit" do
+		it "assigns the requested addition as @addition" do
+			addition = Addition.create! valid_attributes
+			get :edit, {:id => addition.to_param}, valid_session
+			expect(assigns(:addition)).to eq(addition)
+		end
+	end
 
-  describe "POST #create" do
-    context "with valid params" do
-      it "creates a new Addition" do
-        expect {
-          post :create, {:addition => valid_attributes}, valid_session
-        }.to change(Addition, :count).by(1)
-      end
+	describe "POST #create" do
+		context "with valid params" do
+			it "creates a new Addition" do
+				expect {
+					post :create, {:addition => valid_attributes}, valid_session
+				}.to change(Addition, :count).by(1)
+			end
 
-      it "assigns a newly created addition as @addition" do
-        post :create, {:addition => valid_attributes}, valid_session
-        expect(assigns(:addition)).to be_a(Addition)
-        expect(assigns(:addition)).to be_persisted
-      end
+			it "assigns a newly created addition as @addition" do
+				post :create, {:addition => valid_attributes}, valid_session
+				expect(assigns(:addition)).to be_a(Addition)
+				expect(assigns(:addition)).to be_persisted
+			end
 
-      it "redirects to the created addition" do
-        post :create, {:addition => valid_attributes}, valid_session
-        expect(response).to redirect_to(Addition.last)
-      end
-    end
+			it "redirects to the created addition" do
+				post :create, {:addition => valid_attributes}, valid_session
+				expect(response).to redirect_to(Addition.last)
+			end
+		end
 
-    context "with invalid params" do
-      it "assigns a newly created but unsaved addition as @addition" do
-        post :create, {:addition => invalid_attributes}, valid_session
-        expect(assigns(:addition)).to be_a_new(Addition)
-      end
+		context "with invalid params" do
+			it "assigns a newly created but unsaved addition as @addition" do
+				post :create, {:addition => invalid_attributes}, valid_session
+				expect(assigns(:addition)).to be_a_new(Addition)
+			end
 
-      it "re-renders the 'new' template" do
-        post :create, {:addition => invalid_attributes}, valid_session
-        expect(response).to render_template("new")
-      end
-    end
-  end
+			it "re-renders the 'new' template" do
+				post :create, {:addition => invalid_attributes}, valid_session
+				expect(response).to render_template("new")
+			end
+		end
+	end
 
-  describe "PUT #update" do
-    context "with valid params" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
+	describe "PUT #update" do
+		context "with valid params" do
+			let(:new_attributes) {
+				skip("Add a hash of attributes valid for your model")
+			}
 
-      it "updates the requested addition" do
-        addition = Addition.create! valid_attributes
-        put :update, {:id => addition.to_param, :addition => new_attributes}, valid_session
-        addition.reload
-        skip("Add assertions for updated state")
-      end
+			it "updates the requested addition" do
+				addition = Addition.create! valid_attributes
+				put :update, {:id => addition.to_param, :addition => new_attributes}, valid_session
+				addition.reload
+				skip("Add assertions for updated state")
+			end
 
-      it "assigns the requested addition as @addition" do
-        addition = Addition.create! valid_attributes
-        put :update, {:id => addition.to_param, :addition => valid_attributes}, valid_session
-        expect(assigns(:addition)).to eq(addition)
-      end
+			it "assigns the requested addition as @addition" do
+				addition = Addition.create! valid_attributes
+				put :update, {:id => addition.to_param, :addition => valid_attributes}, valid_session
+				expect(assigns(:addition)).to eq(addition)
+			end
 
-      it "redirects to the addition" do
-        addition = Addition.create! valid_attributes
-        put :update, {:id => addition.to_param, :addition => valid_attributes}, valid_session
-        expect(response).to redirect_to(addition)
-      end
-    end
+			it "redirects to the addition" do
+				addition = Addition.create! valid_attributes
+				put :update, {:id => addition.to_param, :addition => valid_attributes}, valid_session
+				expect(response).to redirect_to(addition)
+			end
+		end
 
-    context "with invalid params" do
-      it "assigns the addition as @addition" do
-        addition = Addition.create! valid_attributes
-        put :update, {:id => addition.to_param, :addition => invalid_attributes}, valid_session
-        expect(assigns(:addition)).to eq(addition)
-      end
+		context "with invalid params" do
+			it "assigns the addition as @addition" do
+				addition = Addition.create! valid_attributes
+				put :update, {:id => addition.to_param, :addition => invalid_attributes}, valid_session
+				expect(assigns(:addition)).to eq(addition)
+			end
 
-      it "re-renders the 'edit' template" do
-        addition = Addition.create! valid_attributes
-        put :update, {:id => addition.to_param, :addition => invalid_attributes}, valid_session
-        expect(response).to render_template("edit")
-      end
-    end
-  end
+			it "re-renders the 'edit' template" do
+				addition = Addition.create! valid_attributes
+				put :update, {:id => addition.to_param, :addition => invalid_attributes}, valid_session
+				expect(response).to render_template("edit")
+			end
+		end
+	end
 
-  describe "DELETE #destroy" do
-    it "destroys the requested addition" do
-      addition = Addition.create! valid_attributes
-      expect {
-        delete :destroy, {:id => addition.to_param}, valid_session
-      }.to change(Addition, :count).by(-1)
-    end
+	describe "DELETE #destroy" do
+		it "destroys the requested addition" do
+			addition = Addition.create! valid_attributes
+			expect {
+				delete :destroy, {:id => addition.to_param}, valid_session
+			}.to change(Addition, :count).by(-1)
+		end
 
-    it "redirects to the additions list" do
-      addition = Addition.create! valid_attributes
-      delete :destroy, {:id => addition.to_param}, valid_session
-      expect(response).to redirect_to(additions_url)
-    end
-  end
+		it "redirects to the additions list" do
+			addition = Addition.create! valid_attributes
+			delete :destroy, {:id => addition.to_param}, valid_session
+			expect(response).to redirect_to(additions_url)
+		end
+	end
 
 end
