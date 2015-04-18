@@ -1,5 +1,6 @@
+# @author Tom Cox <https://github.com/koxzi95>
 require 'rails_helper'
-
+# rspec spec\models\addition_spec.rb
 RSpec.describe Addition, type: :model do
 
   it "has a valid factory" do
