@@ -1,10 +1,17 @@
 # @author Tom Cox <https://github.com/koxzi95>
 ## Required if CI fails default task
 
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new
-task :default => :spec
+# Absence of rspec doesn't stop your rakefile loading.
+begin
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec)
+rescue LoadError
+end
 
+# Old, Heroku couldn't pick up rakefile.
+# require 'rspec/core/rake_task'
+# RSpec::Core::RakeTask.new
+# task :default => :spec
 
 # require 'rspec/core/rake_task'
 # RSpec::Core::RakeTask.new(:spec)
