@@ -42,3 +42,6 @@ Also change default commit editor to atom.
   ecg = config --global -e
 
   up  = !git add -A && git commit -m # "Commit message here."
+
+
+  ###### admin user for active admin @ localhost:port/admin is: admin@example.com p
