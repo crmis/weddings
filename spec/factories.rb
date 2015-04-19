@@ -1,11 +1,11 @@
 FactoryGirl.define do
 
-	factory :addition do
+  factory :addition do
 		booking_id 1
 		extra_id 1
 	end
 
-	# :name, :description, :size, :capacity, :price, :picture, :rmcat_id
+		# :name, :description, :size, :capacity, :price, :picture, :rmcat_id
 	factory :room do
 		name "The New Room"
 		description  "The Really Good New Room"
