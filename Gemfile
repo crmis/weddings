@@ -19,7 +19,7 @@ group :production do
 	# 12 Factor App Gem for Heroku.
 	gem 'rails_12factor', '~> 0.0.3'
 	# New Relic for application metrics.
-	gem 'newrelic_rpm', '~> 3.11.1.284'
+	gem 'newrelic_rpm', '~> 3.11.2.286'
 end
 
 group :development do
@@ -59,13 +59,13 @@ gem 'cancancan', '~> 1.10.1'
 gem 'paperclip', '~> 4.2.1'
 
 # Viewable to make rooms viewable.
-gem 'viewable', '~> 0.5.16'
+gem 'viewable', '~> 0.5.18'
 
 #my-bookable
 gem 'my-bookable', :git => 'https://github.com/staceysmells/bookable.git', :branch => 'master'
 
 # Mail Form gem for sending mail directly from a form.
-gem 'mail_form', '~> 1.5.0'
+gem 'mail_form', '~> 1.5.1'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
@@ -73,12 +73,12 @@ platforms :ruby do
 	# => should now only bundle on OSX & Linux. And hopefully deploy!
 	gem 'unicorn', '~> 4.8.3'
 	# CLI gem for atom-beautify package. (Ctrl+Alt+B)
-	gem 'ruby-beautify', '~> 0.97.2'
+	gem 'ruby-beautify', '~> 0.97.3'
 end
 
 platforms :mingw, :mswin, :x64_mingw, :jruby do
 	# tz-info for windows timezone data.
-	gem 'tzinfo-data', '~> 1.2015.1'
+	gem 'tzinfo-data', '~> 1.2015.3'
 	# Responders gem, required on windows for viewable
 	gem 'responders', '~> 2.0'
 end

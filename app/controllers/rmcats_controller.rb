@@ -49,7 +49,7 @@ class RmcatsController < ApplicationController
 	end
 
 	private
-	# Use callbacks to share common setup or constraints between actions.
+
 	def set_rmcat
 		@rmcat = Rmcat.find(params[:id])
 	end
@@ -61,7 +61,6 @@ class RmcatsController < ApplicationController
 		redirect_to root_url, :notice => "Room Category not found."
 	end
 
-	# Only allow a trusted parameter "white list" through.
 	def rmcat_params
 		params.require(:rmcat).permit(:rmtype)
 	end

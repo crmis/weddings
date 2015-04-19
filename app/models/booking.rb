@@ -5,4 +5,8 @@ class Booking < ActiveRecord::Base
   belongs_to :user
   has_many :additions
   has_many :extras, :through => :additions
+
+  def user_info
+    "#{customer_name}"
+  end
 end
