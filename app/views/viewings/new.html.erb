@@ -1,10 +1,14 @@
-<h3>Add viewing for <%= @room.name %></h3>
-
 <%= render 'errors' %>
-<%= render 'form' %>
 
-<div class="calendar_container">
-  <div id="calendar">
+<div class="main-form">
+  <h3>Add viewing for <%= @room.name %></h3>
+  <fieldset>
+    <%= render 'form' %>
+  </fieldset>
+</div>
+
+<div class="calendar_container_viewings">
+  <div id="calendar_viewings">
   </div>
   <form>
   	<input type="button" onClick="history.go(0)" value="Save Changes">

@@ -1,16 +1,25 @@
 // $(document).ready(function() {
 // 	calendar();
 // });
-$(document).on('page:load', function() {
+// $(document).on('page:load', function() {
+// 	calendar();
+// });
+// $(document).on('ready page:load', function () {
+// 	calendar();
+// });
+$(document).on('page:change', function () {
 	calendar();
 });
+// onLoad(function() {
+// 	calendar();
+// });
 var calendar = function() {
 	// page is now ready, initialize the calendar...
 	var current_room = function() {
 		return window.location.href.match(/rooms\/(\d+)\/viewings/)[1];
 	};
 	var today_or_later = function() {
-		var check = $('#calendar').fullCalendar('getDate');
+		var check = $('#calendar_viewings').fullCalendar('getDate');
 		var today = new Date();
 		if (check < today) {
 			return false;
@@ -19,7 +28,7 @@ var calendar = function() {
 		};
 	};
 	// Various inline settings for fullCalendar.
-	$('#calendar').fullCalendar({
+	$('#calendar_viewings').fullCalendar({
 		header: {
 			left: 'prev,next today',
 			center: 'title',
@@ -77,15 +86,15 @@ var calendar = function() {
 		dayClick: function(date, allDay, jsEvent, view) {
 			// console.log(view.name);
 			if (view.name === "month") {
-				$('#calendar').fullCalendar('gotoDate', date);
-				$('#calendar').fullCalendar('changeView', 'agendaDay');
+				$('#calendar_viewings').fullCalendar('gotoDate', date);
+				$('#calendar_viewings').fullCalendar('changeView', 'agendaDay');
 			}
 		},
 		select: function(start, end, allDay) {
 			if (window.location.href.match(/new/)) {
 				if (today_or_later()) {
 					var length = (end - start) / (3600000);
-					$('#calendar').fullCalendar('renderEvent', {
+					$('#calendar_viewings').fullCalendar('renderEvent', {
 						start: start,
 						end: end,
 						allDay: false

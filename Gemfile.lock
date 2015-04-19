@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/staceysmells/bookable.git
+  revision: b1cd779bb8d1cd59d23747cad19767f6f90d947c
+  branch: master
+  specs:
+    my-bookable (0.0.53)
+      jbuilder (~> 2.0)
+      rails_12factor
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -181,7 +190,7 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.9.0)
     simplecov-html (0.9.0)
-    spring (1.3.3)
+    spring (1.3.4)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -230,6 +239,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.5.0)
   jquery-rails (~> 4.0.3)
   mail_form (~> 1.5.0)
+  my-bookable!
   newrelic_rpm (~> 3.11.1.284)
   paperclip (~> 4.2.1)
   pg (~> 0.18.1)
@@ -241,7 +251,7 @@ DEPENDENCIES
   ruby-beautify (~> 0.97.2)
   sass-rails (~> 5.0.3)
   seed_dump (= 3.2.2)
-  spring (~> 1.3.3)
+  spring (~> 1.3.4)
   sqlite3 (~> 1.3.10)
   turbolinks (~> 2.5.3)
   tzinfo-data (~> 1.2015.1)

@@ -36,7 +36,7 @@ group :development do
 	# Database Cleaner for testing
 	gem 'database_cleaner', '~> 1.4.0'
 	# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-	gem 'spring', '~> 1.3.3'
+	gem 'spring', '~> 1.3.4'
 end
 
 group :doc, :development do
@@ -60,6 +60,9 @@ gem 'paperclip', '~> 4.2.1'
 
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.16'
+
+#my-bookable
+gem 'my-bookable', :git => 'https://github.com/staceysmells/bookable.git', :branch => 'master'
 
 # Mail Form gem for sending mail directly from a form.
 gem 'mail_form', '~> 1.5.0'

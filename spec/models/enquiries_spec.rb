@@ -11,7 +11,7 @@ RSpec.describe Enquiry, :type => :model do
 		expect(build(:enquiry, subject: "Enquiry Subject")).to be_valid
 	end
 
-	it "is valid with a subject" do
+	it "is valid with a description" do
 		expect(build(:enquiry, e_description: "Enquiry Description")).to be_valid
 	end
 
