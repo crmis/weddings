@@ -2,9 +2,6 @@ os:
 - linux
 language: ruby
 install: bundle install --jobs=3 --retry=3
-cache:
-- bundler
-- apt
 rvm:
 - 2.2.0
 before_install:
