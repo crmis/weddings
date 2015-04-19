@@ -1,8 +1,10 @@
 <div class="main-form">
   <fieldset>
     <h3>Booking Confirmation</h3>
-    <p>Your booking is confirmed for the
-      <%= @room.name %>:
+    <p> <%= @booking.user.user_info %>, your booking is confirmed for the
+      <%= @room.name %> on:
+      <br>
+      <br>
       <%= @booking.start_time.strftime('%e %b %Y %H:%M%p') %>
       until
       <%= (@booking.calculate_end_time + 60).strftime('%e %b %Y %H:%M%p') %>

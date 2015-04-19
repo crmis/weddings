@@ -5,4 +5,8 @@ class Viewing < ActiveRecord::Base
 	include Viewable
 	belongs_to :user
 	belongs_to :room
+
+	def user_info
+		"#{customer_name}"
+	end
 end

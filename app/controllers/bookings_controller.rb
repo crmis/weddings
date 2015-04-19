@@ -1,9 +1,14 @@
+# @author Tom Cox <https://github.com/koxzi95>
+# @author Richard Mitchell <https://github.com/mr-mitch>
+# @author Stacey Rees <https://github.com/staceysmells>
 class BookingsController < ApplicationController
   respond_to :html, :xml, :json
+	# @see def resource_not_found
+	around_filter :resource_not_found
 
   before_action :find_room
   # before_action :find_extra
-
+	load_and_authorize_resource
 
   def index
     @bookings = Booking.where("room_id = ? AND end_time >= ?", @room.id, Time.now).order(:start_time)
@@ -16,7 +21,7 @@ class BookingsController < ApplicationController
 
   def create
     # Needed a plural on extra_id and as it is an array we need the => []
-    @booking =  Booking.new(params[:booking].permit(:room_id, :start_time, :length, :extra_ids => []))
+    @booking =  Booking.new(params[:booking].permit(:room_id, :user_id, :start_time, :length, :extra_ids => []))
     @booking.room = @room
     if @booking.save
       redirect_to room_bookings_path(@room, method: :get)

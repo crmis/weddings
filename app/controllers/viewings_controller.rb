@@ -17,7 +17,7 @@ class ViewingsController < ApplicationController
   end
 
   def create
-    @viewing =  Viewing.new(params[:viewing].permit(:room_id, :start_time, :user_id, :length))
+    @viewing =  Viewing.new(params[:viewing].permit(:room_id, :user_id, :start_time, :length))
       if current_user.customer?
         @viewing.user_id = current_user.id
       end

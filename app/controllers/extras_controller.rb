@@ -42,7 +42,7 @@ class ExtrasController < ApplicationController
 	end
 
 	private
-	# Use callbacks to share common setup or constraints between actions.
+
 	def set_extra
 		@extra = Extra.find(params[:id])
 	end
@@ -54,7 +54,6 @@ class ExtrasController < ApplicationController
 		redirect_to root_url, :notice => "Room Category not found."
 	end
 
-	# Only allow a trusted parameter "white list" through.
 	def extra_params
 		params.require(:extra).permit(:extraimg, :name, :description, :quantity, :price, :extracat_id)
 	end

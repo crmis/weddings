@@ -48,7 +48,7 @@ class ExtracatsController < ApplicationController
 	end
 
 	private
-	# Use callbacks to share common setup or constraints between actions.
+
 	def set_extracat
 		@extracat = Extracat.find(params[:id])
 	end
@@ -60,7 +60,6 @@ class ExtracatsController < ApplicationController
 		redirect_to root_url, :notice => "Extra Category not found."
 	end
 
-	# Only allow a trusted parameter "white list" through.
 	def extracat_params
 		params.require(:extracat).permit(:extratype)
 	end

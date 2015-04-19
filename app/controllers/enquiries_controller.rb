@@ -48,7 +48,7 @@ class EnquiriesController < ApplicationController
 	end
 
 	private
-	# Use callbacks to share common setup or constraints between actions.
+
 	def set_enquiry
 		@enquiry = Enquiry.find(params[:id])
 	end
@@ -60,7 +60,6 @@ class EnquiriesController < ApplicationController
 		redirect_to root_url, :notice => "Room not found."
 	end
 
-	# Only allow a trusted parameter "white list" through.
 	def enquiry_params
 		params.require(:enquiry).permit(:subject, :e_description, :user_id)
 	end
