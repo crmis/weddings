@@ -1,7 +1,7 @@
 # weddings
 [![Build Status](https://travis-ci.org/crmis/weddings.svg?branch=master)](https://travis-ci.org/crmis/weddings)
-[![Code Climate](https://codeclimate.com/github/crmis/weddings/badges/gpa.svg)](https://codeclimate.com/github/crmis/weddings)
-[![Test Coverage](https://codeclimate.com/github/crmis/weddings/badges/coverage.svg)](https://codeclimate.com/github/crmis/weddings)
+
+[ ![Codeship Status for Koxzi95/weddings](https://codeship.com/projects/7a352590-ab51-0132-a3c9-262a69de4513/status?branch=master)](https://codeship.com/projects/68279)
 
 ## Testing
 * To run the test suite run `rspec` in your terminal/cmd.

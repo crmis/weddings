@@ -39,16 +39,6 @@ group :development do
 	gem 'spring', '~> 1.3.4'
 end
 
-group :doc, :development do
-	# Yard for documentation, replaces sdoc/rdoc.
-	gem 'yard', '~> 0.8.7.6'
-end
-
-group :test do
-	# Codeclimate Test Reporting.
-	gem 'codeclimate-test-reporter', '~> 0.4.7', require: nil
-end
-
 # Devise for authentication.
 gem 'devise', '~> 3.4.1'
 
@@ -67,7 +57,7 @@ gem 'mail_form', '~> 1.5.1'
 #my-bookable
 gem 'my-bookable', :git => 'https://github.com/staceysmells/bookable.git', :branch => 'master'
 
-# Active Admin 
+# Active Admin
 gem 'activeadmin', :git => 'https://github.com/activeadmin/activeadmin.git', :branch => 'master'
 
 # Bundle on OSX and Linux only. (including deployment)
