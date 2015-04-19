@@ -12,5 +12,3 @@
 ## Contributing and Bugs
 
 We use the rebase style for contributions as it makes reverting back easier. Checkout our guide on how to do so [Contributing](https://github.com/crmis/weddings/blob/master/CONTRIBUTING.md "Contributing")
-
-###### Perhaps add more to this?
