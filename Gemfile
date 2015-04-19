@@ -67,6 +67,9 @@ gem 'mail_form', '~> 1.5.1'
 #my-bookable
 gem 'my-bookable', :git => 'https://github.com/staceysmells/bookable.git', :branch => 'master'
 
+# Active Admin 
+gem 'activeadmin', :git => 'https://github.com/activeadmin/activeadmin.git', :branch => 'master'
+
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
 	# Unicorn for worker process management (won't bundle on non-unix)
