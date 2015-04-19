@@ -16,10 +16,10 @@ class Ability
 		if user.customer
 			can [:create], [Viewing]
 			# Yes is really is cannot
-			cannot [:read], [Rmcat, Extracat]
+			cannot [:read], [Rmcat, Extracat, Booking]
 		end
 		if user
-			can [:manage], [Viewing]
+			can [:manage], [Viewing, Booking]
 			can [:create], [Enquiry]
 		end
 	end

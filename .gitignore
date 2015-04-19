@@ -17,7 +17,7 @@ coverage/
 ## Documentation ignore.
 /doc/
 .yardoc
-# .yardopts
+.yardopts
 
 ## Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
@@ -30,6 +30,7 @@ config/initializers/secret_token.rb
 # these should all be checked in to normalise the environment:
 # Gemfile.lock
 # .ruby-version, .ruby-gemset
+.ruby-beautify
 
 ## Node/Grunt ignores:
 # /node_modules/

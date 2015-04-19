@@ -1,5 +1,4 @@
-# @author Tom Cox <https://github.com/koxzi95>
-module Viewable
+module Bookable
   extend ActiveSupport::Concern
 
   included do
@@ -8,7 +7,6 @@ module Viewable
     validates :length, presence: true, numericality: { greater_than: 0 }
     validate :start_date_cannot_be_in_the_past
     validate :overlaps
-
 
     before_validation :calculate_end_time
 
@@ -27,17 +25,17 @@ module Viewable
   end
 
   def overlaps
-    overlapping_viewings = [
-      room.viewings.end_during(start_time, end_time),
-      room.viewings.start_during(start_time, end_time),
-      room.viewings.happening_during(start_time, end_time),
-      room.viewings.enveloping(start_time, end_time),
-      room.viewings.identical(start_time, end_time)
+    overlapping_bookings = [
+      room.bookings.end_during(start_time, end_time),
+      room.bookings.start_during(start_time, end_time),
+      room.bookings.happening_during(start_time, end_time),
+      room.bookings.enveloping(start_time, end_time),
+      room.bookings.identical(start_time, end_time)
     ].flatten
 
-    overlapping_viewings.delete self
-    if overlapping_viewings.any?
-      errors.add(:base, 'Slot has already been booked for viewing')
+    overlapping_bookings.delete self
+    if overlapping_bookings.any?
+      errors.add(:base, 'Slot has already been booked')
     end
   end
 
@@ -47,18 +45,18 @@ module Viewable
     end
   end
 
-	def calculate_end_time
-		start_time = validate_start_time
-		length = validate_length
-		if start_time && length
-			self.end_time = start_time + (length.hours - 60)
-		end
-	end
+  def calculate_end_time
+    start_time = validate_start_time
+    length = validate_length
+    if start_time && length
+      self.end_time = start_time + (length.hours - 60)
+    end
+  end
 
 
   def as_json(options = {})
    {
-    :title => "Viewing",
+    :id => self.id,
     :start => self.start_time,
     :end => self.end_time + 60,
     :recurring => false,
@@ -83,4 +81,5 @@ module Viewable
         return nil
       end
     end
+
 end
