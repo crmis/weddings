@@ -17,6 +17,8 @@
         </td>
         <td>
           <%= booking.user_id %>
+          <!-- This works for viewings?! -->
+          <%#= booking.user.user_info %>
         </td>
         <td><%= link_to "Show", room_booking_path(@room, booking) %>
         </td>
