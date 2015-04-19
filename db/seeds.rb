@@ -3,6 +3,9 @@ User.create!([
   {email: "testuser@mvmanor.co.uk", password: "u", password_confirmation: "u", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-02-06 14:03:01", last_sign_in_at: "2015-02-06 14:03:01", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", admin: false, customer: false, customer_name: "Mr User"},
   {email: "testcustomer@customer.co.uk", password: "c", password_confirmation: "c", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 3, current_sign_in_at: "2015-03-09 12:19:43", last_sign_in_at: "2015-03-09 12:12:05", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", admin: false, customer: true, customer_name: "Mr Customer"}
 ])
+AdminUser.create!([
+  {email: "theadmin@mvmanor.co.uk", password: "p", password_confirmation: "p"},
+])
 Addition.create!([
   {booking_id: 1, extra_id: 1},
   {booking_id: 1, extra_id: 2},
