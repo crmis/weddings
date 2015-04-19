@@ -61,11 +61,11 @@ gem 'paperclip', '~> 4.2.1'
 # Viewable to make rooms viewable.
 gem 'viewable', '~> 0.5.18'
 
-#my-bookable
-gem 'my-bookable', :git => 'https://github.com/staceysmells/bookable.git', :branch => 'master'
-
 # Mail Form gem for sending mail directly from a form.
 gem 'mail_form', '~> 1.5.1'
+
+#my-bookable
+gem 'my-bookable', :git => 'https://github.com/staceysmells/bookable.git', :branch => 'master'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
