@@ -4,7 +4,7 @@
 
 - [x] Name of User that booking is being made with.
 
-* Customer Name (Already done?)
+- [x] Customer Name on Show (Already done?)
 
 - [x] Room Name
 
@@ -18,13 +18,13 @@
 
 - [x] Select extra with checkboxes.
 
-* Dropdown for extras cat
+- [x] Dropdown for extras cat (not needed)
 
-* Price of extra
+- [ ] Price of extra (not needed)
 
-* Total price (sorta!)
+- [ ] Total price (sorta!)
 
-* Payment type (checkbox or dropdown)
+- [ ] Payment type (checkbox or dropdown)
 
 ###### Remember to add these git alias configs in lab: .git/config or even better .git folder on H: drive.
 Also change default commit editor to atom.
@@ -44,4 +44,4 @@ Also change default commit editor to atom.
   up  = !git add -A && git commit -m # "Commit message here."
 
 
-  ###### admin user for active admin @ localhost:port/admin is: admin@example.com p
+  ###### admin user for dashboard @ localhost:port/admin is: theadmin@mvmanor.co.uk p
