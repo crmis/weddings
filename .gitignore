@@ -3,7 +3,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 ## Basic Rails.
-# .rspec
+.rspec
 /log
 /tmp
 /db/*.sqlite3
@@ -28,20 +28,12 @@ config/initializers/secret_token.rb
 /vendor/bundle
 
 # these should all be checked in to normalise the environment:
-# Gemfile.lock
-# .ruby-version, .ruby-gemset
-.ruby-beautify
-
-## Node/Grunt ignores:
-# /node_modules/
-# Gruntfile.js
-# package.json
-# build/
-# npm-debug.log
+Gemfile.lock
+.ruby-version, .ruby-gemset
 
 ## Ignore RubyMine/IDE folders
-.idea/
-.c9/
+/.idea/
+/.c9/
 
 ## Ignore CI config
 # .travis.yml
