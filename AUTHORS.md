@@ -10,6 +10,3 @@
 
 ## Stacey Rees
 #### [Github](https://github.com/staceysmells)
-
-## Vincent Vay
-#### [Github](https://github.com/VincentVay)
