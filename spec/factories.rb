@@ -1,9 +1,10 @@
 FactoryGirl.define do
 
-  # factory :admin_user do
-  #
-  # end
-
+  factory :admin_user do
+    email "basicadmin@mvmanor.co.uk"
+    password "p"
+    password_confirmation "p"
+  end
 
   factory :addition do
 		booking_id 1
