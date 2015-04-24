@@ -1,15 +1,9 @@
 # C|R|M
-
 > Cox | Rees | Mitchell | [crmis](https://crm-is.herokuapp.com)
 
 ## Tom Cox
-#### [Github](https://github.com/Koxzi95) | [Blog](http://koxzi.me) | [Twitter](https://twitter.com/Koxzi95) | [![endorse](https://api.coderwall.com/koxzi95/endorsecount.png)](https://coderwall.com/koxzi95)
-
+#### [GitHub](https://github.com/Koxzi95) | [Blog](http://koxzi.me) | [twitter](https://twitter.com/Koxzi95) | [![endorse](https://api.coderwall.com/koxzi95/endorsecount.png)](https://coderwall.com/koxzi95)
 ## Richard Mitchell
-#### [Github](https://github.com/mr-mitch)
-
+#### [GitHub](https://github.com/mr-mitch) | [twitter](https://twitter.com/mr_mitch85)
 ## Stacey Rees
-#### [Github](https://github.com/staceysmells)
-
-## Vincent Vay
-#### [Github](https://github.com/VincentVay)
+#### [GitHub](https://github.com/staceysmells)

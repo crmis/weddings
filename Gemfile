@@ -22,7 +22,7 @@ group :production do
 	gem 'newrelic_rpm', '~> 3.11.2.286'
 end
 
-group :development do
+group :development, :test do
 	# Use sqlite3 as the database for Active Record.
 	gem 'sqlite3', '~> 1.3.10'
 	# seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
