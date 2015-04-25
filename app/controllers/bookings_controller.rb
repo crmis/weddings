@@ -3,12 +3,12 @@
 # @author Stacey Rees <https://github.com/staceysmells>
 class BookingsController < ApplicationController
   respond_to :html, :xml, :json
-	# @see def resource_not_found
-	around_filter :resource_not_found
+  # @see def resource_not_found
+  around_filter :resource_not_found
 
   before_action :find_room
   # before_action :find_extra
-	load_and_authorize_resource
+  load_and_authorize_resource
 
   def index
     @bookings = Booking.where("room_id = ? AND end_time >= ?", @room.id, Time.now).order(:start_time)
@@ -21,7 +21,7 @@ class BookingsController < ApplicationController
 
   def create
     # Needed a plural on extra_id and as it is an array we need the => []
-    @booking =  Booking.new(params[:booking].permit(:room_id, :user_id, :start_time, :length, :extra_ids => []))
+    @booking = Booking.new(params[:booking].permit(:room_id, :user_id, :start_time, :length, :extra_ids => []))
     @booking.room = @room
     if @booking.save
       redirect_to room_bookings_path(@room, method: :get)
@@ -69,11 +69,11 @@ class BookingsController < ApplicationController
 
   def save booking
     if @booking.save
-        flash[:notice] = 'booking added'
-        redirect_to room_booking_path(@room, @booking)
-      else
-        render 'new'
-      end
+      flash[:notice] = 'booking added'
+      redirect_to room_booking_path(@room, @booking)
+    else
+      render 'new'
+    end
   end
 
   def find_room
@@ -88,12 +88,12 @@ class BookingsController < ApplicationController
   #    end
   # end
 
-	# If resource not found redirect to root and flash error.
-	def resource_not_found
-		yield
-	rescue ActiveRecord::RecordNotFound
-		redirect_to root_url, :notice => "Booking not found."
-	end
+  # If resource not found redirect to root and flash error.
+  def resource_not_found
+    yield
+  rescue ActiveRecord::RecordNotFound
+    redirect_to root_url, :notice => "Booking not found."
+  end
 
   def booking_params
     params.require(:booking).permit(:user_id, :extra_ids => [])

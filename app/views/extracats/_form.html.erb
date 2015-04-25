@@ -1,23 +1,23 @@
 <%= form_for(@extracat) do |f| %>
-  <% if @extracat.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@extracat.errors.count, "error") %> prohibited this extracat from being saved:</h2>
-      <ul>
-      <% @extracat.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <% if @extracat.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@extracat.errors.count, "error") %> prohibited this extracat from being saved:</h2>
+          <ul>
+            <% @extracat.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="main-form">
+      <fieldset>
+        <div class="field">
+          <%= f.label :extratype %><br>
+          <%= f.text_field :extratype %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      </fieldset>
     </div>
-  <% end %>
-<div class="main-form">
-<fieldset>
-  <div class="field">
-    <%= f.label :extratype %><br>
-    <%= f.text_field :extratype %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-</fieldset>
-</div>
 <% end %>

@@ -1,25 +1,26 @@
 <body>
-  <div class="landing-image">
-    <div id="carousel" class="owl-carousel">
-      <div> <%= image_tag("home_landing.jpg") %> </div>
-      <div> <%= image_tag("lake_landing.jpg") %> </div>
-      <div> <%= image_tag("bw_landing.jpg") %> </div>
-      <div> <%= image_tag("cake_landing.jpg") %> </div>
-      <div> <%= image_tag("ring_landing.jpg") %> </div>
-      <div> <%= image_tag("car_landing.jpg") %> </div>
-      <div> <%= image_tag("flower_landing.jpg") %> </div>
-      </div>
+<div class="landing-image">
+  <div id="carousel" class="owl-carousel">
+    <div> <%= image_tag("home_landing.jpg") %> </div>
+    <div> <%= image_tag("lake_landing.jpg") %> </div>
+    <div> <%= image_tag("bw_landing.jpg") %> </div>
+    <div> <%= image_tag("cake_landing.jpg") %> </div>
+    <div> <%= image_tag("ring_landing.jpg") %> </div>
+    <div> <%= image_tag("car_landing.jpg") %> </div>
+    <div> <%= image_tag("flower_landing.jpg") %> </div>
   </div>
-  <br>
-  <div class="footer">
-    <a class="a-link" href="/admin">Dashboard</a>
-  </div>
+</div>
+<br>
+
+<div class="footer">
+  <a class="a-link" href="/admin">Dashboard</a>
+</div>
 </body>
 <script>
-$(document).ready(function() {
-  $("#carousel").owlCarousel({
-    items : 1, //1 items above 1000px browser width
-    autoPlay: true
-  });
-});
+    $(document).ready(function () {
+        $("#carousel").owlCarousel({
+            items: 1, //1 items above 1000px browser width
+            autoPlay: true
+        });
+    });
 </script>

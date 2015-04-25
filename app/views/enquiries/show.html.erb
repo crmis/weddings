@@ -1,23 +1,26 @@
 <div class="main-form">
-<fieldset>
-<p>
-  <strong>Subject:</strong>
-  <%= @enquiry.subject %>
-</p>
-<p>
-  <strong>Customer Name:</strong>
-  <%= @enquiry.user.customer_name %>
-</p>
-<p>
-  <strong>Email:</strong>
-  <%= @enquiry.user.email %>
-</p>
-<p>
-  <strong>Description:</strong>
-  <%= @enquiry.e_description %>
-</p>
+  <fieldset>
+    <p>
+      <strong>Subject:</strong>
+      <%= @enquiry.subject %>
+    </p>
 
-<%= link_to 'Edit', edit_enquiry_path(@enquiry) %> |
-<%= link_to 'Back', enquiries_path %>
-</fieldset>
+    <p>
+      <strong>Customer Name:</strong>
+      <%= @enquiry.user.customer_name %>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <%= @enquiry.user.email %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @enquiry.e_description %>
+    </p>
+
+    <%= link_to 'Edit', edit_enquiry_path(@enquiry) %> |
+    <%= link_to 'Back', enquiries_path %>
+  </fieldset>
 </div>

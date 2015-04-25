@@ -8,25 +8,25 @@
         <th>User</th>
       </tr>
       <% @bookings.each do |booking| %>
-      <tr>
-        <td>
-          <%= booking.start_time.strftime('%e %b %Y %H:%M%p') %> |
-        </td>
-        <td>
-          <%= (booking.calculate_end_time + 60).strftime('%e %b %Y %H:%M%p') %> |
-        </td>
-        <td>
-          <%= booking.user_id %>
-          <!-- This works for viewings?! -->
-          <%#= booking.user.user_info %>
-        </td>
-        <td><%= link_to "Show", room_booking_path(@room, booking) %>
-        </td>
-        <td><%= link_to "Edit", edit_room_booking_path(@room, booking) %>
-        </td>
-        <td><%= link_to "Delete", room_booking_path(@room, booking), data: { confirm: 'Are you sure?' }, method: :delete %>
-        </td>
-      </tr>
+          <tr>
+            <td>
+              <%= booking.start_time.strftime('%e %b %Y %H:%M%p') %> |
+            </td>
+            <td>
+              <%= (booking.calculate_end_time + 60).strftime('%e %b %Y %H:%M%p') %> |
+            </td>
+            <td>
+              <%= booking.user_id %>
+              <!-- This works for viewings?! -->
+              <%#= booking.user.user_info %>
+            </td>
+            <td><%= link_to "Show", room_booking_path(@room, booking) %>
+            </td>
+            <td><%= link_to "Edit", edit_room_booking_path(@room, booking) %>
+            </td>
+            <td><%= link_to "Delete", room_booking_path(@room, booking), data: {confirm: 'Are you sure?'}, method: :delete %>
+            </td>
+          </tr>
       <% end %>
     </table>
   </fieldset>

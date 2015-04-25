@@ -4,7 +4,7 @@ module Bookable
   included do
 
     validates :start_time, presence: true
-    validates :length, presence: true, numericality: { greater_than: 0 }
+    validates :length, presence: true, numericality: {greater_than: 0}
     validate :start_date_cannot_be_in_the_past
     validate :overlaps
 
@@ -16,11 +16,11 @@ module Bookable
       where "%s ? AND %s ?" % [c1, c2], f1, f2
     end
 
-    scope :end_during,       ->(start_time, end_time) { time_constraint "end_time >",   start_time, "end_time <",   end_time }
-    scope :start_during,     ->(start_time, end_time) { time_constraint "start_time >", start_time, "start_time <", end_time }
-    scope :happening_during, ->(start_time, end_time) { time_constraint "start_time >", start_time, "end_time <",   end_time }
-    scope :enveloping,       ->(start_time, end_time) { time_constraint "start_time <", start_time, "end_time >",   end_time }
-    scope :identical,        ->(start_time, end_time) { time_constraint "start_time =", start_time, "end_time =",   end_time }
+    scope :end_during, ->(start_time, end_time) { time_constraint "end_time >", start_time, "end_time <", end_time }
+    scope :start_during, ->(start_time, end_time) { time_constraint "start_time >", start_time, "start_time <", end_time }
+    scope :happening_during, ->(start_time, end_time) { time_constraint "start_time >", start_time, "end_time <", end_time }
+    scope :enveloping, ->(start_time, end_time) { time_constraint "start_time <", start_time, "end_time >", end_time }
+    scope :identical, ->(start_time, end_time) { time_constraint "start_time =", start_time, "end_time =", end_time }
 
   end
 
@@ -55,31 +55,31 @@ module Bookable
 
 
   def as_json(options = {})
-   {
-    :id => self.id,
-    :start => self.start_time,
-    :end => self.end_time + 60,
-    :recurring => false,
-    :allDay => false
-   }
+    {
+      :id => self.id,
+      :start => self.start_time,
+      :end => self.end_time + 60,
+      :recurring => false,
+      :allDay => false
+    }
   end
 
   private
 
-    def validate_start_time
-      if !self.start_time.nil?
-        start_time = self.start_time
-      else
-        return nil
-      end
+  def validate_start_time
+    if !self.start_time.nil?
+      start_time = self.start_time
+    else
+      return nil
     end
+  end
 
-    def validate_length
-      if !self.length.nil?
-        length = self.length.to_i
-      else
-        return nil
-      end
+  def validate_length
+    if !self.length.nil?
+      length = self.length.to_i
+    else
+      return nil
     end
+  end
 
 end
