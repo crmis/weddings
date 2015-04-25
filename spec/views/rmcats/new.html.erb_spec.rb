@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe "rmcats/new", type: :view do
   before(:each) do
     assign(:rmcat, Rmcat.new(
-                     :rmtype => "Ceremony",
+                   :rmtype => "Ceremony",
                  ))
   end
   it "renders new rmcat form" do

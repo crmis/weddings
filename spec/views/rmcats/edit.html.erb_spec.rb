@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe "rmcats/edit", type: :view do
   before(:each) do
     @rmcat = assign(:rmcat, Rmcat.create!(
-                              :rmtype => "MyString",
+                            :rmtype => "MyString",
                           ))
   end
   it "renders the edit rmcat form" do

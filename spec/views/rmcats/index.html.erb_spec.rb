@@ -4,12 +4,12 @@ require 'rails_helper'
 RSpec.describe "rmcats/index", type: :view do
   before(:each) do
     assign(:rmcats, [
-                      Rmcat.create!(
-                          :rmtype => "Ceremony",
-                      ),
-                      Rmcat.create!(
-                          :rmtype => "Ceremony",
-                      )
+                    Rmcat.create!(
+                      :rmtype => "Ceremony",
+                    ),
+                    Rmcat.create!(
+                      :rmtype => "Ceremony",
+                    )
                   ])
   end
   it "renders a list of rmcats" do

@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe "extracats/edit", type: :view do
   before(:each) do
     @extracat = assign(:extracat, Extracat.create!(
-                                    :extratype => "MyString",
+                                  :extratype => "MyString",
                                 ))
   end
   it "renders the edit extracat form" do

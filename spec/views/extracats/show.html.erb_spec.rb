@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe "extracats/show", type: :view do
   before(:each) do
     @extracat = assign(:extracat, Extracat.create!(
-                                    :extratype => "Flowers",
+                                  :extratype => "Flowers",
                                 ))
   end
   it "renders attributes in <p>" do

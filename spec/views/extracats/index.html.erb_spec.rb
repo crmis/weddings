@@ -4,12 +4,12 @@ require 'rails_helper'
 RSpec.describe "extracats/index", type: :view do
   before(:each) do
     assign(:extracats, [
-                         Extracat.create!(
-                             :extratype => "MyString",
-                         ),
-                         Extracat.create!(
-                             :extratype => "MyString",
-                         )
+                       Extracat.create!(
+                         :extratype => "MyString",
+                       ),
+                       Extracat.create!(
+                         :extratype => "MyString",
+                       )
                      ])
   end
   it "renders a list of extracats" do

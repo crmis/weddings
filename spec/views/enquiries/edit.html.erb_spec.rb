@@ -4,8 +4,8 @@ require 'rails_helper'
 RSpec.describe "enquiries/edit", type: :view do
   before(:each) do
     @enquiry = assign(:enquiry, Enquiry.create!(
-                                  :subject => "MyString",
-                                  :e_description => "MyText"
+                                :subject => "MyString",
+                                :e_description => "MyText"
                               ))
   end
 

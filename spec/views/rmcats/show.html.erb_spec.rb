@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe "rmcats/show", type: :view do
   before(:each) do
     @rmcat = assign(:rmcat, Rmcat.create!(
-                              :rmtype => "Ceremony",
+                            :rmtype => "Ceremony",
                           ))
   end
   it "renders attributes in <p>" do

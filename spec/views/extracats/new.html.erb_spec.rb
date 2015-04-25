@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe "extracats/new", type: :view do
   before(:each) do
     assign(:extracat, Extracat.new(
-                        :extratype => "Flowers",
+                      :extratype => "Flowers",
                     ))
   end
   it "renders new extracat form" do
