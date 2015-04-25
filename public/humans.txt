@@ -1,0 +1,25 @@
+
+/* C|R|M - Cox | Rees | Mitchell | https://crm-is.herokuapp.com */
+
+
+Development Lead: Tom Cox
+  http://koxzi.me
+  @Koxzi95
+
+Development: Richard Mitchell
+  https://github.com/mr-mitch
+
+Design and Development: Stacey Rees
+  https://github.com/staceysmells
+
+
+Location: England, United Kingdom
+
+
+
+/* manorweddings */
+
+
+Last update: 2015/04/25
+
+Software: Atom, Github, Git, RubyMine. Tested with Firefox, Chrome and Safari.
