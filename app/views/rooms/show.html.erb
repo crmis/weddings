@@ -18,47 +18,24 @@
 </nav>
 <div class="room-title"> <%= @room.name %> </div>
 <div id="room-img">
-  <#% if not @room.picture.blank? %>
-    <%= link_to (image_tag @room.picture, size: "650x500"), rooms_path, :title => 'return to rooms.' %>
-    <#% end %>
+    <%= link_to (image_tag @room.picture, size: "650x500"), rooms_path, :title => 'return to all.' %>
 </div>
 <div id="room-details">
   <div class="room-show">
-    <#% if not @room.rmcat.rmtype.blank? %>
       Room Type: <%= @room.rmcat.rmtype %>
-      <#% end %>
   </div>
   <div class="room-show">
-    <#% if not @room.description.blank? %>
       Description: <%= @room.description %>
-      <#% end %>
   </div>
   <div class="room-show">
-    <# if not @room.size.blank? %>
-      Room Size: <%= @room.size %> Square feet
-      <#% end %>
+      Room Size: <%= @room.size %> sqft
   </div>
   <div class="room-show">
-    <#% if not @room.capacity.blank? %>
       Room Capacity: <%= @room.capacity %> People
-      <#% end %>
   </div>
   <div class="room-show">
-    <#% if not @room.price.blank? %>
       Room Price: <%= number_to_currency @room.price, unit: "£" %>
-      <#% end %>
         <br/>
         <%= link_to 'Back', rooms_path %>
-        <% if can? :update, @room %>
-            <%= link_to "Edit", edit_room_path(@room) %>
-        <% end %>
-        <br>
-        <!-- TODO(tom): Remove these because of the CMS.
-      <#% if user_signed_in? %>
-        <%#= link_to 'Add viewing', new_room_viewing_path(@room) %> |
-        <%#= link_to 'Show viewings', room_viewings_path(@room) %> <br>
-        <%#= link_to 'Add booking', new_room_booking_path(@room) %> |
-        <%#= link_to 'Show bookings', room_bookings_path(@room) %>
-      <#% end %>
     </div>
 </div>

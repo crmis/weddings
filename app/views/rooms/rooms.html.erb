@@ -1,33 +1,23 @@
 <div id="all-content">
   <% @rooms.each do |room| %>
       <div id="img-box" , title="select image for more details ...">
-        <#% if not room.picture.blank? %>
           <%= link_to (image_tag room.picture, :size => "100x125"), room %>
-          <#% end %>
       </div>
       <div id="details-box">
         <div id="title-box">
           <%= room.name %>
         </div>
         <div id="rmtype">
-          <#% if not room.rmcat.rmtype.blank? %>
             Room Type: <%= room.rmcat.rmtype %>
-            <#% end %>
         </div>
         <div id="size-box">
-          <#% if not room.size.blank? %>
             Room Size: <%= room.size %> Square Feet
-            <#% end %>
         </div>
         <div id="capacity">
-          <#% if not room.capacity.blank? %>
             Capacity: <%= room.capacity %> People
-            <#% end %>
         </div>
         <div id="price-box">
-          <#% if not room.price.blank? %>
             Price: <%= number_to_currency room.price, unit: "£" %>
-            <#% end %>
         </div>
       </div>
   <% end %>
