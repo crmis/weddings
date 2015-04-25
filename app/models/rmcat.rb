@@ -2,23 +2,24 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 class Rmcat < ActiveRecord::Base
 
-	has_many :rooms
-	def rmcat_info
-		"#{rmtype}"
-	end
+  has_many :rooms
 
-	def rmtype=(s)
-		super s.titleize
-	end
+  def rmcat_info
+    "#{rmtype}"
+  end
 
-	validates :rmtype, :presence => { :message => "cannot be blank."}
+  def rmtype=(s)
+    super s.titleize
+  end
 
-	# before I am destroyed, check if rmcat is deletable
-	before_destroy :rmcat_deletable?
+  validates :rmtype, :presence => {:message => "cannot be blank."}
 
-	private
-	def rmcat_deletable?
-		# the rmcat is deletable if it has no rooms assigned to it
-		self.rooms.empty?
-	end
+  # before I am destroyed, check if rmcat is deletable
+  before_destroy :rmcat_deletable?
+
+  private
+  def rmcat_deletable?
+    # the rmcat is deletable if it has no rooms assigned to it
+    self.rooms.empty?
+  end
 end

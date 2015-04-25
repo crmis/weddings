@@ -1,23 +1,23 @@
 <%= form_for(enquiry) do |f| %>
-  <% if enquiry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
-      <ul>
-      <% enquiry.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <% if enquiry.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
+          <ul>
+            <% enquiry.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="field">
+      <%= f.label :subject, "Subject:" %><br>
+      <%= f.text_field :subject, :size => "40" %>
     </div>
-  <% end %>
-  <div class="field">
-    <%= f.label :subject, "Subject:" %><br>
-    <%= f.text_field :subject, :size => "40" %>
-  </div>
-  <div class="field">
-    <%= f.label :e_description, "Description:" %><br>
-    <%= f.text_area :e_description, :cols => "80", :rows => "10" %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="field">
+      <%= f.label :e_description, "Description:" %><br>
+      <%= f.text_area :e_description, :cols => "80", :rows => "10" %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>

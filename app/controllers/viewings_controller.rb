@@ -2,11 +2,12 @@
 # @author Richard Mitchell <https://github.com/mr-mitch>
 class ViewingsController < ApplicationController
   respond_to :html, :xml, :json
-	# @see def resource_not_found
-	around_filter :resource_not_found
+  # @see def resource_not_found
+  around_filter :resource_not_found
 
   before_action :find_room
-	load_and_authorize_resource
+  load_and_authorize_resource
+
   def index
     @viewings = Viewing.where("room_id = ? AND end_time >= ?", @room.id, Time.now).order(:start_time)
     respond_with @viewings
@@ -17,10 +18,10 @@ class ViewingsController < ApplicationController
   end
 
   def create
-    @viewing =  Viewing.new(params[:viewing].permit(:room_id, :user_id, :start_time, :length))
-      if current_user.customer?
-        @viewing.user_id = current_user.id
-      end
+    @viewing = Viewing.new(params[:viewing].permit(:room_id, :user_id, :start_time, :length))
+    if current_user.customer?
+      @viewing.user_id = current_user.id
+    end
     @viewing.room = @room
     if @viewing.save
       redirect_to room_viewings_path(@room, method: :get)
@@ -68,11 +69,11 @@ class ViewingsController < ApplicationController
 
   def save viewing
     if @viewing.save
-        flash[:notice] = 'viewing added'
-        redirect_to room_viewing_path(@room, @viewing)
-      else
-        render 'new'
-      end
+      flash[:notice] = 'viewing added'
+      redirect_to room_viewing_path(@room, @viewing)
+    else
+      render 'new'
+    end
   end
 
   def find_room
@@ -81,15 +82,15 @@ class ViewingsController < ApplicationController
     end
   end
 
-	# If resource not found redirect to root and flash error.
-	def resource_not_found
-		yield
-	rescue ActiveRecord::RecordNotFound
-		redirect_to root_url, :notice => "Viewing not found."
-	end
+  # If resource not found redirect to root and flash error.
+  def resource_not_found
+    yield
+  rescue ActiveRecord::RecordNotFound
+    redirect_to root_url, :notice => "Viewing not found."
+  end
 
   def viewing_params
-     params.require(:viewing).permit(:user_id)
+    params.require(:viewing).permit(:user_id)
   end
 
 end
