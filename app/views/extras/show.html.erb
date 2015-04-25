@@ -1,7 +1,6 @@
 <nav class="extranavbar navbar-default" role="navigation">
   <div class="extracontainer">
     <div class="extranavbar-header">
-      <!-- <div class="roomheader"><a class="roomnavbar-brand" href="/rooms">Rooms</a></div> -->
       <ul class="extraliststyle">
         <li>
           Flowers
@@ -32,11 +31,7 @@
   <%= @extra.name %>
 </div>
 <div class="extras-img">
-  <% if not @extra.extraimg.blank? %>
-      <%= link_to (image_tag @extra.extraimg, size: "650x500"), extras_path, :title => 'return to extras.' %>
-  <% else %>
-      <%= image_tag "no-image.jpg", :size => "200x250" %>
-  <% end %>
+  <%= link_to (image_tag @extra.extraimg, size: "650x500"), extras_path, :title => 'return to extras.' %>
 </div>
 <div id="extras-details">
   <div class="extras-show">
@@ -51,8 +46,5 @@
     <strong>Price:</strong>
     <%= @extra.price %>
   </div>
-  <% if can? :update, @extra %>
-      <%= link_to 'Edit', edit_extra_path(@extra) %> |
-  <% end %>
   <%= link_to 'Back', extras_path %>
 </div>

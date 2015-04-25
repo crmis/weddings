@@ -1,13 +1,12 @@
 <body>
 <div class="contact-details">
   <h1>Contact Us</h1>
-
   <p>
     <br>
     If you have any queries, or are interested in any of our rooms, please get in touch with us on
-    <strong> 0116 555 54321 </strong>
+    <strong> <a href="tel:011655554321">0116 555 54321</a> </strong>
     <br><br>
-    We can also be contacted by email at <strong> enquiries@meadowview.co.uk </strong>
+    We can also be contacted by email at <strong> <address> <a href="mailto:enquiries@meadowview.co.uk">enquiries@meadowview.co.uk</a> </address> </strong>
     <br><br>
     If you have an account you can make an enquiry using our form system, if not sign up or send us an email:
     <br><br>
@@ -27,7 +26,7 @@
 <!--
 might look at refactoring eventually.
 Since it is a user that is signed in,
-you could have a User has-many :inquiries and an Inquiry belongs_to a user.
+you could have a User has-many :enquiries and an Enquiry belongs_to a user.
 This is where accepts_nested_attributes comes into play,
 then you are using resourced routes, nested forms, etc
 -->
