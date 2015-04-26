@@ -2,51 +2,83 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #extras-details {
-width: 35em;
-/* left right margins set to auto to centre div */
-/* margins top right bottom left */
-margin: 0em 0em 0em 17em;
-padding: 1em 0em 1em 1em;
-font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-font-weight: normal;
-/* border: 0.1em solid red; */
+  width: 35em;
+  /* left right margins set to auto to centre div */
+  /* margins top right bottom left */
+  margin: 0em 0em 0em 17em;
+  padding: 1em 0em 1em 1em;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+  font-weight: normal;
+  /* border: 0.1em solid red; */
 }
 
 .extras-img {
-width: 12em;
-/*float: left;*/
-/* margins top right bottom left */
-margin: 1em 0em 0em 20em;
-padding: 0em 0em 0em 0em;
-/*  takes the width of the image */
-font-familys: serif;
-/* border: 0.1em solid blue; */
+  width: 12em;
+  /*float: left;*/
+  /* margins top right bottom left */
+  margin: 1em 0em 0em 20em;
+  padding: 0em 0em 0em 0em;
+  /*  takes the width of the image */
+  font-familys: serif;
+  /* border: 0.1em solid blue; */
 }
 
-.extras-show{
-font-weight:bold;
-font-size: 1.2em;
-line-height: 1.2em;
-margin-left: 1em;
-margin-bottom: 0.2em;
-/* border: 0.1em solid red; */
-padding: 0.8em;
+.extras-show {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  /* border: 0.1em solid red; */
+  padding: 0.8em;
 
 }
+
 .extras-title {
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
   font-weight: normal;
   font-size: 2em;
   margin-left: 48%;
 }
 
-.extranavbar {min-height: 45px; background-colors: #FEFF00;width: 100%; font-size: 17.5px; padding-top: 9px; padding-bottom: 30px; padding-left: 12%;}
-.extranavbar-header {/*background-color: #FFF499;*/ padding-left: 10%; padding-right:10%; padding-top: 5px; width: auto;}
+.extranavbar {
+  min-height: 45px;
+  background-colors: #FEFF00;
+  width: 100%;
+  font-size: 17.5px;
+  padding-top: 9px;
+  padding-bottom: 30px;
+  padding-left: 12%;
+}
+
+.extranavbar-header {
+  /*background-color: #FFF499;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  width: auto;
+}
+
 /* The .brand makes it show up as a link for example with 'a:brand:hover', the actual div for these is "navbar-brand" */
-.extranavbar-brand:link {text-decoration: none; color: black;}
-.extranavbar-brand:visited {text-decoration: none; color: black;}
-.extranavbar-brand:active {text-decoration: none; color: black;}
-.extranavbar-brand:hover {text-decoration: none; color: black;}
+.extranavbar-brand:link {
+  text-decoration: none;
+  color: black;
+}
+
+.extranavbar-brand:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.extranavbar-brand:active {
+  text-decoration: none;
+  color: black;
+}
+
+.extranavbar-brand:hover {
+  text-decoration: none;
+  color: black;
+}
 
 .extraliststyle ul {
   text-align: left;
@@ -60,6 +92,7 @@ padding: 0.8em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
   background-color: #FFF499;
 }
+
 /*.roomheader {
   font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
   background-colors: #FEFF00;
@@ -67,9 +100,13 @@ padding: 0.8em;
   margin-left: 45%;
   font-size: 2em;
   }*/
-.extraliststyle li {background-color: #FFF9A6; margin-right: 0.3px;}
+.extraliststyle li {
+  background-color: #FFF9A6;
+  margin-right: 0.3px;
+}
+
 .extraliststyle ul li {
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
   display: inline-block;
   margin-right: -4px;
   position: relative;
@@ -78,10 +115,12 @@ padding: 0.8em;
   cursor: pointer;
 
 }
+
 .extraliststyle ul li:hover {
   xbackground: #FEFF00;
   cxolor: #FEFF00;
 }
+
 .extraliststyle ul li ul {
   padding: 0;
   position: absolute;
@@ -96,13 +135,18 @@ padding: 0.8em;
   visibility: hidden;
   /*background-color: #FEFF00;*/
 }
+
 .extraliststyle ul li ul li {
   /*background-color: #FEFF00;*/
   display: block;
   color: #fff;
 
 }
-.extraliststyle ul li ul li:hover { background-color: #FEFF00; }
+
+.extraliststyle ul li ul li:hover {
+  background-color: #FEFF00;
+}
+
 .extraliststyle ul li:hover ul {
   display: block;
   opacity: 0;

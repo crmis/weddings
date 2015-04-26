@@ -18,24 +18,24 @@
 </nav>
 <div class="room-title"> <%= @room.name %> </div>
 <div id="room-img">
-    <%= link_to (image_tag @room.picture, size: "650x500"), rooms_path, :title => 'return to all.' %>
+  <%= link_to (image_tag @room.picture, size: "650x500"), rooms_path, :title => 'return to all.' %>
 </div>
 <div id="room-details">
   <div class="room-show">
-      Room Type: <%= @room.rmcat.rmtype %>
+    Room Type: <%= @room.rmcat.rmtype %>
   </div>
   <div class="room-show">
-      Description: <%= @room.description %>
+    Description: <%= @room.description %>
   </div>
   <div class="room-show">
-      Room Size: <%= @room.size %> sqft
+    Room Size: <%= @room.size %> sqft
   </div>
   <div class="room-show">
-      Room Capacity: <%= @room.capacity %> People
+    Room Capacity: <%= @room.capacity %> People
   </div>
   <div class="room-show">
-      Room Price: <%= number_to_currency @room.price, unit: "£" %>
-        <br/>
-        <%= link_to 'Back', rooms_path %>
-    </div>
+    Room Price: <%= number_to_currency @room.price, unit: "£" %>
+    <br/>
+    <%= link_to 'Back', rooms_path %>
+  </div>
 </div>

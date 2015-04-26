@@ -1,66 +1,70 @@
-.main-form{
-	width: 50em;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0.5em;
-	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-	/* effects all font body, header, title and label text sizes ...*/
-	/* font-size: 0.8em; */
-	/* border: 0.1em solid green; */
+.main-form {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    /* effects all font body, header, title and label text sizes ...*/
+    /* font-size: 0.8em; */
+    /* border: 0.1em solid green; */
 }
 
-.main-title{
-	font-weight:bold;
-	font-size: 1.2em;
-	line-height: 1.1em;
-  margin-left: 40%;
-	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-	/* border: 0.1em solid green; */
+.main-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    margin-left: 40%;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    /* border: 0.1em solid green; */
 }
 
-label{
-	/* labels appear on line above fields */
-	display: inline;
-	font-weight:bold;
-	font-size: 1em;
-	line-height: 1.2em;
+label {
+    /* labels appear on line above fields */
+    display: inline;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 .field {
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-div.ui-datepicker{
-	 font-size: 0.7em;
+div.ui-datepicker {
+    font-size: 0.7em;
 }
 
 .actions {
     margin-bottom: 0.5em;
 }
 
-#notice { color: green; }
+#notice {
+    color: green;
+}
 
-#alert { color: red; }
+#alert {
+    color: red;
+}
 
 .field_with_errors {
-	padding: 0.1em;
-	background-color: pink;
-	display: table;
- }
+    padding: 0.1em;
+    background-color: pink;
+    display: table;
+}
 
 #error_explanation {
-	width: 15em;
-	float: right;
-	font-size: 1em;
-	padding: 1em;
-	/* margins top right bottom left */
-	margin: 4em 2em 0em 0em;
-	/* background-color: #f0f0f0;*/
+    width: 15em;
+    float: right;
+    font-size: 1em;
+    padding: 1em;
+    /* margins top right bottom left */
+    margin: 4em 2em 0em 0em;
+    /* background-color: #f0f0f0;*/
 }
 
 #error_explanation ul li {
-  font-size: 0.8em;
-	font-style: italic;
-  list-style: circle ;
-	color: black;
+    font-size: 0.8em;
+    font-style: italic;
+    list-style: circle;
+    color: black;
 }

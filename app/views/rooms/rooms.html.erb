@@ -1,23 +1,23 @@
 <div id="all-content">
   <% @rooms.each do |room| %>
       <div id="img-box" , title="select image for more details ...">
-          <%= link_to (image_tag room.picture, :size => "100x125"), room %>
+        <%= link_to (image_tag room.picture, :size => "100x125"), room %>
       </div>
       <div id="details-box">
         <div id="title-box">
           <%= room.name %>
         </div>
         <div id="rmtype">
-            Room Type: <%= room.rmcat.rmtype %>
+          Room Type: <%= room.rmcat.rmtype %>
         </div>
         <div id="size-box">
-            Room Size: <%= room.size %> Square Feet
+          Room Size: <%= room.size %> Square Feet
         </div>
         <div id="capacity">
-            Capacity: <%= room.capacity %> People
+          Capacity: <%= room.capacity %> People
         </div>
         <div id="price-box">
-            Price: <%= number_to_currency room.price, unit: "£" %>
+          Price: <%= number_to_currency room.price, unit: "£" %>
         </div>
       </div>
   <% end %>
