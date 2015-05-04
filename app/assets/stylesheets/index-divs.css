@@ -3,76 +3,75 @@
 */
 
 #all-content {
-	widths: 80em;
-	margin-left: 4.5%;
-	margin-rights: auto;
-	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
-	font-size: 0.8em;
-	/* border: 0.1em solid black; */
+    widths: 80em;
+    margin-left: 4.5%;
+    margin-rights: auto;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    font-size: 0.8em;
+    /* border: 0.1em solid black; */
 }
 
 #product-box {
-	width: 29em;
-	height: 15em;
-	padding-top: 1em;
-	padding-left: 1em;
-	float: left;
-	/* border: 0.1em solid brown; */
+    width: 29em;
+    height: 15em;
+    padding-top: 1em;
+    padding-left: 1em;
+    float: left;
+    /* border: 0.1em solid brown; */
 }
 
 #img-box {
-	width: 7.5em;
-	height: 9em;
-	float: left;
-  padding-top: 1.5em;
-	/* border: 0.2em solid purple; */
+    width: 7.5em;
+    height: 9em;
+    float: left;
+    padding-top: 1.5em;
+    /* border: 0.2em solid purple; */
 }
 
 #details-box {
-	width: 12em;
-	height: 12em;
-	padding-left:  1em;
-	padding-top: 1em;
-	float: left;
-	/* border: 0.2em solid crimson; */
+    width: 12em;
+    height: 12em;
+    padding-left: 1em;
+    padding-top: 1em;
+    float: left;
+    /* border: 0.2em solid crimson; */
 }
 
 #title-box {
-	padding-top: 0.3em;
-  padding-bottom: 0.2em;
-	font-size: 1.5em;
-	font-weight:bold;
-	/* border: 0.1em solid DarkGray; */
+    padding-top: 0.3em;
+    padding-bottom: 0.2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* border: 0.1em solid DarkGray; */
 }
 
 #rmtype {
-	padding-top: 0.4em;
-	font-size: 1.1em;
-	/* border: 0.1em solid DarkGray; */
+    padding-top: 0.4em;
+    font-size: 1.1em;
+    /* border: 0.1em solid DarkGray; */
 }
 
 #admin-box {
-	padding-top: 0.3em;
-	font-size: 1em;
-	/* border: 0.1em solid orange; */
+    padding-top: 0.3em;
+    font-size: 1em;
+    /* border: 0.1em solid orange; */
 }
 
-
 #capacity {
-  padding-top: 0.3em;
-  font-size: 1.1em;
-  /* border: 0.1em solid orange; */
+    padding-top: 0.3em;
+    font-size: 1.1em;
+    /* border: 0.1em solid orange; */
 }
 
 #size-box {
-	padding-top: 0.4em;
-	font-size: 1.1em;
-	/* border: 0.1em solid DarkGray; */
-  width: 20em;
+    padding-top: 0.4em;
+    font-size: 1.1em;
+    /* border: 0.1em solid DarkGray; */
+    width: 20em;
 }
 
 #price-box {
-  padding-top: 0.3em;
-  font-size: 1.1em;
-  /* border: 0.1em solid orange; */
- }
+    padding-top: 0.3em;
+    font-size: 1.1em;
+    /* border: 0.1em solid orange; */
+}
