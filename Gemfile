@@ -28,9 +28,9 @@ group :development, :test do
   # seed_dump creates a seeds file from the active database. Run: rake db:seed:dump
   gem 'seed_dump', '3.2.2'
   # rspec for dependency
-  gem 'rspec', '~> 3.2.0'
+  gem 'rspec', '~> 3.3.0'
   # rspec for BDD tests (Behaviour Driven Development)
-  gem 'rspec-rails', '~> 3.2.1'
+  gem 'rspec-rails', '~> 3.3.1'
   # Factory Girl for testing setup
   gem 'factory_girl_rails', '~> 4.5.0'
   # Database Cleaner for testing
@@ -71,7 +71,7 @@ end
 
 platforms :mingw, :mswin, :x64_mingw, :jruby do
   # tz-info for windows timezone data.
-  gem 'tzinfo-data', '~> 1.2015.3'
+  gem 'tzinfo-data', '~> 1.2015.5'
   # Responders gem, required on windows for viewable
   gem 'responders', '~> 2.0'
 end
